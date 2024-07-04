@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="./js/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Lineage 2 Mechanics</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="background-top"></div>
+        <div class="background-fill"></div>
+        <div class="background-footer"></div>
+    </div>
+
+    <header>
+        <div class="logo"><a  class="link" href="http://l2p.lacrafter.ru/">
+            <img class="logo-image" src="../img/logo.svg" alt="L2 Mechanics Logo"/>
+        </a>
+        </div>
+        <a class="link" href="http://l2p.lacrafter.ru/">
+            <div class="logo-text">Lineage 2 Mechanics</div>
+        </a>
+
+    </header>
+
+    <main>
+        <nav class="navigation">
+            <div class="nav-section">
+                <div onclick="nav_btn_1()" class="nav-header nav-btn-1"> Skills and Items</div>
+                <div id="nav-1" class="nav-1">
+                    <div class="nav-item"> Boss Jewelry
+                    </div>
+                    <div class="nav-item"> Hero Weapons
+                    </div>
+                    <div class="nav-item"> +6 Armor Bonuses
+                    </div>
+                    <div class="nav-item"> Buffs
+                    </div>
+                    <div class="nav-item"> Passives
+                    </div>
+                    <div class="nav-item"> Toggles
+                    </div>
+                    <div class="nav-item"> Summons and Pets
+                    </div>
+                    <div class="nav-item"> Skill Enchant
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_2()" class="nav-header nav-btn-2"> Status Window Info</div>
+                <div id="nav-2" class="nav-2">
+                    <div class="nav-item"> Overview
+                    </div>
+                    <div class="nav-item"> Base Stats
+                    </div>
+                    <div class="nav-item"> HP
+                    </div>
+                    <div class="nav-item"> CP
+                    </div>
+                    <div class="nav-item"> MP
+                    </div>
+                    <div class="nav-item"> P.Atk.
+                    </div>
+                    <div class="nav-item"> P.Atk.
+                    </div>
+                    <div class="nav-item"> M.Atk.
+                    </div>
+                    <div class="nav-item"> P.Def.
+                    </div>
+                    <div class="nav-item"> Accuracy
+                    </div>
+                    <div class="nav-item"> Evasion
+                    </div>
+                    <div class="nav-item"> Critical
+                    </div>
+                    <div class="nav-item"> Speed
+                    </div>
+                    <div class="nav-item"> Atk. Spd.
+                    </div>
+                    <div class="nav-item"> Casting Spd.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_3()" class="nav-header nav-btn-3"> Mastery</div>
+                <div id="nav-3" class="nav-3">
+                    <div class="nav-item"> Weapon
+                    </div>
+                    <div class="nav-item"> Armor
+                    </div>
+                    <div class="nav-item"> M.Def
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_4()" class="nav-header nav-btn-4"> Debuffs</div>
+                <div id="nav-4" class="nav-4">
+                    <div class="nav-item"> Theory
+                    </div>
+                    <div class="nav-item"> Base Land Rates
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_5()" class="nav-header nav-btn-5"> Combat Physics & Misc.</div>
+                <div id="nav-5" class="nav-5">
+                    <div class="nav-item"> Attributes
+                    </div>
+                    <div class="nav-item"> Magic Critical Hits
+                    </div>
+                    <div class="nav-item"> Non-Skill Attacks
+                    </div>
+                    <div class="nav-item"> Resurrection
+                    </div>
+                    <div class="nav-item"> Shield Block Rate
+                    </div>
+                    <div class="nav-item"> Weight Limit
+                    </div>
+                    <div class="nav-item"> Misc.
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="gap"></div>
+        <section class="main-content">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> Home </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div class="btn-close"></div>
+                <div class="btn-hide"></div>
+            </div>
+            <div class="shadow"></div>
+
+            <div class="black-h-line"></div>
+            <div class="middle-container">
+                <div class="black-v-line"></div>
+                <div class="container">
+                    <div class="gray-h-line"></div>
+                    <div class="middle-container">
+                        <div class="gray-v-line"></div>
+                        <div class="container">
+                            <div class="black-h-line"></div>
+                            <div class="middle-container">
+                                <div class="black-v-line"></div>
+                                <div class="container-inner">
+                                    <br>
+                                    <div class="main-header">
+                                        Welcome! You are in the information portal of one of the famous games Lineage
+                                        2.<br>
+                                        Information on this portal actually till Interlude Chronicles.<br>
+                                        This is a rework of one of the information portals <a
+                                            href="http://l2p.lacrafter.ru/" target="blank">l2p.lacrafter.ru</a>
+                                        <br>
+                                        Due to country restrictions on <a href="http://l2p.lacrafter.ru/"
+                                            target="blank">l2p.lacrafter.ru</a>
+                                        because it has a
+                                        Russian domain name it couldn't be displayed in many countries.<br>
+                                        <br>
+
+                                        Here you will find out how physics in Lineage 2 actually works.<br>
+                                        This site absolutely does not have any advertisements, feel free to share it
+                                        with your friends.<br>
+
+                                    </div>
+
+                                    <hr class="solid">
+                                    <div class="header center-text">
+                                        Credits and Thank-You's <br>
+                                    </div>
+                                    <div class="center-text">
+                                        Here is a list of the people who have contributed to the information that is
+                                        located in this portal.<br>
+                                    </div>
+                                    <br>
+                                    &#9679 ForsakenFlame - various corrections and a couple of additions to l2calc
+                                    FPCalc, a Japanese Lineage 2 Calculator, for introducing the Japanese community to
+                                    L2Calc. <br>
+                                    &#9679 billy - for offering to host L2Calc on l2guru, and keeping it up all this
+                                    time <br>
+                                    &#9679 Chair - helped out quite a lot with Dwarf skills <br>
+                                    &#9679 <a href="https://cromik.exblog.jp/" target="blank">cromik.exblog.jp</a> -
+                                    some of the buff/passive
+                                    info comes from
+                                    here. <br>
+                                    &#9679 DAISEN - various corrections and a couple of additions to l2calc <br>
+                                    &#9679 Dargaard - provided both useful information and a simplification of the HP
+                                    formulas for all classes
+                                    <br>
+                                    &#9679 himred - provided quite a lot of buff statistical data. A lot of the
+                                    Chronicle 5 skills were <br>
+                                    extrapolated as a result of this man's talent. <br>
+                                    &#9679 hostility - this guy has supplied quite a considerable amount of "endgame"
+                                    info - hard to get and
+                                    probably wouldn't be known without hostility's support <br>
+                                    &#9679 iuztrewq - lots of support over time, especially with finding my mitsakes
+                                    <br>
+                                    &#9679 Lance - support in a couple of ways. Lance is one of the first and most
+                                    beneficial members of the
+                                    English-speaking Lineage 2 community. <br>
+                                    &#9679 loopback - javascript help; is the reason why L2Calc doesn't lag much in
+                                    Internet Explorer <br>
+                                    &#9679 Serinda Arnimane - for providing a great deal of help over time, especially
+                                    early on. Wouldn't be
+                                    where
+                                    we are without you. <br>
+
+                                    <div class="credits">
+                                        <div class="cont-1">
+                                            &#9679 AACRJimbo <br>
+                                            &#9679 Aeze <br>
+                                            &#9679 Anakozel <br>
+                                            &#9679 AnGrYKiD <br>
+                                            &#9679 APTX4869 <br>
+                                            &#9679 Ask_A_Question <br>
+                                            &#9679 Auro <br>
+                                            &#9679 Blitzball <br>
+                                            &#9679 Borda <br>
+                                            &#9679 botserver <br>
+                                            &#9679 Claira <br>
+                                            &#9679 Communism <br>
+                                            &#9679 Coriantumr <br>
+                                            &#9679 Craylon <br>
+                                            &#9679 CrShNbRn <br>
+                                            &#9679 Dalavita <br>
+                                            &#9679 davviddd <br>
+                                        </div>
+                                        <div class="cont-2">
+                                            &#9679 Degia <br>
+                                            &#9679 deg <br>
+                                            &#9679 Degia <br>
+                                            &#9679 DemonStar <br>
+                                            &#9679 DininX <br>
+                                            &#9679 Dracan <br>
+                                            &#9679 Emina <br>
+                                            &#9679 eric <br>
+                                            &#9679 EternalElement <br>
+                                            &#9679 fel <br>
+                                            &#9679 Ferine <br>
+                                            &#9679 flcon16 <br>
+                                            &#9679 flus <br>
+                                            &#9679 Fumiko <br>
+                                            &#9679 Goldshlager <br>
+                                            &#9679 davviddd <br>
+                                            &#9679 Degia <br>
+
+                                        </div>
+                                        <div class="cont-3">
+                                            &#9679 deg <br>
+                                            &#9679 Degia <br>
+                                            &#9679 DemonStar <br>
+                                            &#9679 DininX <br>
+                                            &#9679 Dracan <br>
+                                            &#9679 Emina <br>
+                                            &#9679 eric <br>
+                                            &#9679 EternalElement <br>
+                                            &#9679 fel <br>
+                                            &#9679 Ferine <br>
+                                            &#9679 flcon16 <br>
+                                            &#9679 flus <br>
+                                            &#9679 Fumiko <br>
+                                            &#9679 Goldshlager <br>
+                                            &#9679 gr4vity <br>
+                                            &#9679 HeadHunter <br>
+                                            &#9679 Hrolf <br>
+                                        </div>
+                                        <div class="cont-4">
+                                            &#9679 iono <br>
+                                            &#9679 IronSmith <br>
+                                            &#9679 Ireral <br>
+                                            &#9679 Jestine <br>
+                                            &#9679 Kane1 <br>
+                                            &#9679 kathooloo <br>
+                                            &#9679 Keian <br>
+                                            &#9679 Kieran <br>
+                                            &#9679 Kilgore <br>
+                                            &#9679 Kirill <br>
+                                            &#9679 koev <br>
+                                            &#9679 krowv <br>
+                                            &#9679 kvza <br>
+                                            &#9679 Luca <br>
+                                            &#9679 Lvrene <br>
+                                            &#9679 maian <br>
+                                            &#9679 -mal- <br>
+
+                                        </div>
+                                        <div class="cont-5">
+                                            &#9679 Martzch <br>
+                                            &#9679 michelgaetano <br>
+                                            &#9679 MooMooCow <br>
+                                            &#9679 Mugi <br>
+                                            &#9679 Nanny <br>
+                                            &#9679 NinjaLoot <br>
+                                            &#9679 Nya <br>
+                                            &#9679 Orlox <br>
+                                            &#9679 Pakas <br>
+                                            &#9679 playa <br>
+                                            &#9679 Populus <br>
+                                            &#9679 prow1er <br>
+                                            &#9679 purehobby <br>
+                                            &#9679 Rairden <br>
+                                            &#9679 RANDOM <br>
+                                            &#9679 Shawnta* <br>
+                                            &#9679 SilverSurfer1 <br>
+                                        </div>
+
+                                        <div class="cont-6">
+                                            &#9679 small <br>
+                                            &#9679 soultaker <br>
+                                            &#9679 Stubbie <br>
+                                            &#9679 Sunspark <br>
+                                            &#9679 SyntesizeR <br>
+                                            &#9679 Tsakiris <br>
+                                            &#9679 ttekert <br>
+                                            &#9679 TwistedElvis <br>
+                                            &#9679 Valador <br>
+                                            &#9679 Veirilli <br>
+                                            &#9679 Vina <br>
+                                            &#9679 Vlahd <br>
+                                            &#9679 warefare <br>
+                                            &#9679 whaiyun <br>
+                                            &#9679 Xadhoom <br>
+                                            &#9679 xmode <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="black-v-line"></div>
+                            </div>
+                            <div class="black-h-line"></div>
+                        </div>
+                        <div class="gray-v-line"></div>
+                    </div>
+                    <div class="gray-h-line"></div>
+                </div>
+                <div class="black-v-line"></div>
+            </div>
+            <div class="black-h-line"></div>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+            </div>
+            <div class="shadow"></div>
+
+            <div class="black-h-line"></div>
+            <div class="middle-container">
+                <div class="black-v-line"></div>
+                <div class="container">
+                    <div class="gray-h-line"></div>
+                    <div class="middle-container">
+                        <div class="gray-v-line"></div>
+                        <div class="container">
+                            <div class="black-h-line"></div>
+                            <div class="middle-container">
+                                <div class="black-v-line"></div>
+                                <div class="container-inner">
+                                    <p class="footer-credits"> Made with &#128151 in Ukraine </p>
+                                </div>
+                                <div class="black-v-line"></div>
+                            </div>
+                            <div class="black-h-line"></div>
+                        </div>
+                        <div class="gray-v-line"></div>
+                    </div>
+                    <div class="gray-h-line"></div>
+                </div>
+                <div class="black-v-line"></div>
+            </div>
+            <div class="black-h-line"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
