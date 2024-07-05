@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <div class="background">
         <div class="background-top"></div>
         <div class="background-fill"></div>
@@ -30,7 +29,7 @@
                 <div class="breadscrumbs"> </div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
-                <div class="btn-close"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
                 <div onclick="lang_btn_hide()" class="lang-btn-hide"></div>
             </div>
 
@@ -189,7 +188,7 @@
                 <div class="breadscrumbs"> Home </div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
-                <div class="btn-close"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
                 <div onclick="main_btn_hide()" class="btn-hide"></div>
             </div>
 
@@ -446,6 +445,45 @@
             <div class="black-h-line"></div>
         </div>
     </footer>
+    <div id=confirmation-window style="display:none">
+        <div class="gui-frame">
+            <div class="gui-frame-left"></div>
+            <div class="gui-frame-mid"></div>
+            <div class="gui-frame-mid"></div>
+            <div class="gui-frame-back"></div>
+            <div onclick="show_conf()" class="btn-close"></div>
+
+        </div>
+        <div class="shadow"></div>
+
+        <div class="black-h-line"></div>
+        <div class="middle-container">
+            <div class="black-v-line"></div>
+            <div class="container">
+                <div class="gray-h-line"></div>
+                <div class="middle-container">
+                    <div class="gray-v-line"></div>
+                    <div class="container">
+                        <div class="black-h-line"></div>
+                        <div class="middle-container">
+                            <div class="black-v-line"></div>
+                            <div class="conf-cont">
+                                <p class="conf-text">Are you really sure that you want to exit from the game?</p>
+                                <div onclick="show_conf()" onmouseover="btn_exit(this)" id="btn-exit">Exit</div>
+                            </div>
+                            <div class="black-v-line"></div>
+                        </div>
+                        <div class="black-h-line"></div>
+                    </div>
+                    <div class="gray-v-line"></div>
+                </div>
+                <div class="gray-h-line"></div>
+            </div>
+            <div class="black-v-line"></div>
+        </div>
+        <div class="black-h-line"></div>
+    </div>
+
 </body>
 
 </html>

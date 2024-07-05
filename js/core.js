@@ -33,3 +33,26 @@ function main_btn_hide() {
     var element = document.getElementById("main-cont");
     element.classList.toggle("hide");
 };
+
+function show_conf() {
+    var stats = document.getElementById("confirmation-window").style.display;
+
+    if (stats == "none") {
+        document.getElementById("confirmation-window").style.display = "inline-block";
+    } else {
+        document.getElementById("confirmation-window").style.display = "none";
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function btn_exit(element) {
+    element.style.right = getRandomInt(76) + '%';
+    element.style.left = getRandomInt(76) + '%';
+    element.style.top = getRandomInt(76) + '%';
+    element.style.bottom = getRandomInt(76) + '%';
+
+    console.log('Event triggered');
+};
