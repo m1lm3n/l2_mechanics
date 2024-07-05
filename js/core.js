@@ -23,3 +23,13 @@ function nav_btn_5() {
     var element = document.getElementById("nav-5");
     element.classList.toggle("open");
 };
+
+function lang_btn_hide() {
+    var element = document.getElementById("lang-cont");
+    element.classList.toggle("hide");
+};
+
+function main_btn_hide() {
+    var element = document.getElementById("main-cont");
+    element.classList.toggle("hide");
+};

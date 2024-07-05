@@ -45,6 +45,32 @@ header {
     justify-content: center;
 }
 
+.lang-btn-hide {
+    position: absolute;
+    top: 3px;
+    right: 26px;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameMiniBtn(Texture)_0.png");
+
+}
+
+.lang-btn-hide:hover {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.frameminibtn_over\(Texture\)_0.png");
+}
+
+.lang-btn-hide:active {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameMiniOnBtn\(Texture\)_0.png");
+}
+
+.lang-cont.hide{
+
+    display: none;
+}
+.lang-cont{
+    position: relative;
+}
 .container-inner-2 > *{
     margin-left: 8px;
 }
@@ -209,6 +235,10 @@ main {
 
 .btn-hide:active {
     background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameMiniOnBtn\(Texture\)_0.png");
+}
+
+.main-cont.hide{
+    display: none;
 }
 
 .credits {
