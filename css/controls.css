@@ -1,0 +1,75 @@
+#btn-exit:hover{
+    background-image: url("../img/L2UI_CH3.utx-Button.Btn1_normalOn(Texture)_0.png");
+}
+
+#btn-exit:hover{
+    background-image: url("../img/L2UI_CH3.utx-Button.btn1_normal_over(Texture)_0.png");
+}
+
+#btn-exit{
+    position: absolute;
+    top: 65%;
+    left: 38%;
+    right: 0;
+    bottom: 0;
+    width: 74px;
+    height: 21px;
+    background-image: url("../img/L2UI_CH3.utx-Button.Btn1_normal(Texture)_0.png");
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameCloseBtn\(Texture\)_0.png");
+
+}
+
+.btn-close:hover {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.frameclosebtn_over(Texture)_0.png");
+}
+
+.btn-close:active {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameCloseOnBtn(Texture)_0.png");
+}
+
+.btn-hide {
+    position: absolute;
+    top: 3px;
+    right: 26px;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameMiniBtn(Texture)_0.png");
+
+}
+
+.btn-hide:hover {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.frameminibtn_over\(Texture\)_0.png");
+}
+
+.btn-hide:active {
+    background-image: url("../img/L2UI_CH3.utx-FRAMECTRL.FrameMiniOnBtn\(Texture\)_0.png");
+}
+
+#confirmation-window {
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    box-sizing: content-box;
+    width: 350px;
+
+}

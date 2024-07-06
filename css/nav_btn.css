@@ -1,0 +1,194 @@
+.nav-btn-1:hover {
+    background-image: url("../img/header_200_hover.png");
+}
+
+.nav-btn-1:active {
+    background-image: url("../img/header_200_pressed.png");
+}
+
+.nav-btn-2:hover {
+    background-image: url("../img/header_200_hover.png");
+}
+
+.nav-btn-2:active {
+    background-image: url("../img/header_200_pressed.png");
+}
+
+.nav-btn-3:hover {
+    background-image: url("../img/header_200_hover.png");
+}
+
+.nav-btn-3:active {
+    background-image: url("../img/header_200_pressed.png");
+}
+
+.nav-btn-4:hover {
+    background-image: url("../img/header_200_hover.png");
+}
+
+.nav-btn-4:active {
+    background-image: url("../img/header_200_pressed.png");
+}
+
+.nav-btn-5:hover {
+    background-image: url("../img/header_200_hover.png");
+}
+
+.nav-btn-5:active {
+    background-image: url("../img/header_200_pressed.png");
+}
+
+.nav-1 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-1>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-1.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-1.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-2 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-2>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-2.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-2.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-3 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-3>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-3.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-3.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-4 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-4>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-4.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-4.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-5 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-5>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-5.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-5.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
