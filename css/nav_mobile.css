@@ -18,7 +18,7 @@
     width: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0px 00% 0px 0px;
+    padding: 0px 0% 0px 0px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
