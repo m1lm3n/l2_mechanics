@@ -1,3 +1,16 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     background-color: #222222;
     color: #e6d9be;
@@ -16,19 +29,17 @@ body {
     z-index: -1;
 }
 
-.app-header{
+.app-header {
     display: flex;
     background-color: #000000;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    width: 100%;
+    height: 56px;
 }
 
-.btn-header{
-    width: 40px;
-    height: 40px;
-    background-color:#514f4f
-}
+
 
 .logotype-header {
     display: flex;
@@ -40,6 +51,7 @@ body {
     width: auto;
     display: flex;
     justify-content: center;
+margin-right: auto;    
 }
 
 .logo-text-header {
@@ -158,10 +170,37 @@ header {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    position: relative;
+    /* fix bug on iOS */
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.7s;
+    -moz-transition: -moz-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
 }
 
+.navigation-is-open main {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
 
 .main-header {
     font-size: 16px;
@@ -201,7 +240,7 @@ main {
 
 }
 
-.conf-text{
+.conf-text {
     font-weight: 100;
     font-size: 14px;
 }
