@@ -70,7 +70,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -129,11 +129,13 @@ header {
     border: solid 1px rgb(255, 0, 0);
 
 }
+
 .lang-2 {
     width: 100%;
     border: solid 1px rgb(255, 0, 0);
 
 }
+
 .logotype {
     display: flex;
 }
@@ -212,6 +214,7 @@ main {
 }
 
 .navigation {
+    display: none;
     width: 200px;
     height: auto;
     border: solid 1px rgb(255, 0, 0);
@@ -221,10 +224,12 @@ main {
     width: 16px;
     height: auto;
 }
+
 .gap-2 {
     width: 38px;
     height: auto;
 }
+
 .main-content {
     max-width: 100%;
     margin: 0px;
@@ -239,6 +244,7 @@ main {
 .main-cont.hide {
     display: none;
 }
+
 .mob-content {
     max-width: 100%;
     margin: 0px;
@@ -251,6 +257,7 @@ main {
 .mob-cont.hide {
     display: none;
 }
+
 .conf-cont {
     height: 150px;
     width: 100%;
@@ -384,19 +391,31 @@ footer {
     text-align: center;
 }
 
-.flex{
+.flex {
     display: flex;
     width: 100%;
     justify-content: stretch;
     padding: 0px;
 }
 
-.under-flex-cont{
+.under-flex-cont {
     display: block;
     width: 100%;
 }
 
-.cd-half-block{
+.cd-half-block {
     display: flex;
     justify-content: center;
+}
+
+@media (width >=1024px) {
+    header {
+        display: flex;
+    }
+    .flex {
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
 }
