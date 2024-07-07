@@ -31,11 +31,12 @@ body {
 
 .app-header {
     display: flex;
-    background-color: #000000;
+    background-color: rgba(22, 20, 18, 0.85);
     justify-content: space-between;
     align-items: center;
     padding: 8px;
     width: 100%;
+    margin: 0px;
     height: 56px;
 }
 
@@ -51,7 +52,7 @@ body {
     width: auto;
     display: flex;
     justify-content: center;
-margin-right: auto;    
+    margin-right: auto;
 }
 
 .logo-text-header {
@@ -172,12 +173,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: auto;
     position: relative;
     /* fix bug on iOS */
-    height: 100vh;
+    /* height: 100vh;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; */
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -219,6 +220,7 @@ main {
 
 .main-content {
     max-width: 100%;
+    margin: 0px;
     position: relative;
     width: 782px;
     border: solid 1px rgb(255, 0, 0);
@@ -312,7 +314,35 @@ footer {
     height: auto;
     display: flex;
     justify-content: center;
+    width: 100%;
     position: relative;
+    /* fix bug on iOS */
+    /* height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; */
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.7s;
+    -moz-transition: -moz-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+
+}
+
+.navigation-is-open footer {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
 }
 
 .footer {
@@ -320,6 +350,7 @@ footer {
     border: solid 1px rgb(255, 0, 0);
     position: relative;
     display: block;
+
 }
 
 

@@ -57,21 +57,29 @@ function btn_exit(element) {
     console.log('Event triggered');
 };
 
-jQuery(document).ready(function($){
-	var isLateralNavAnimating = false;
-	
-	//open/close lateral navigation
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running 
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-			
-			$('body').toggleClass('navigation-is-open');
-			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
+jQuery(document).ready(function ($) {
+    var isLateralNavAnimating = false;
+
+    //open/close lateral navigation
+    $('.cd-nav-trigger').on('click', function (event) {
+        event.preventDefault();
+        //stop if nav animation is running 
+        if (!isLateralNavAnimating) {
+            if ($(this).parents('.csstransitions').length > 0) {
+                    // $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
+                    isLateralNavAnimating = true;
+            }
+
+            $('body').toggleClass('navigation-is-open');
+            $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+                //animation is over
+                // $(".cd-navigation-wrapper").css("padding", "0px");
+                isLateralNavAnimating = false;
+            });
+        }
+        // else{
+        //     $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
+        // }
+    });
 });
+
