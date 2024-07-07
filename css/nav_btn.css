@@ -62,7 +62,7 @@
 }
 
 .nav-1.open {
-    height: auto;
+    height: 100%;
     visibility: visible;
     opacity: 1;
     display: block;
@@ -186,6 +186,161 @@
 }
 
 .nav-5.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-1-1 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-1-1>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-1-1.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-1-1.open {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-2-2 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-2-2>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-2-2.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-2-2.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-3-3 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-3-3>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-3-3.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-3-3.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-4-4 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-4-4>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-4-4.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-4-4.open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: 0.25s;
+}
+
+.nav-5-5 {
+    background-color: rgba(22, 20, 18, 0.85);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-5-5>* {
+    transform: rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.nav-5-5.open>* {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: rotate(0);
+    transition: 0.25s;
+}
+
+.nav-5-5.open {
     height: auto;
     visibility: visible;
     opacity: 1;

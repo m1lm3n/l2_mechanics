@@ -129,7 +129,11 @@ header {
     border: solid 1px rgb(255, 0, 0);
 
 }
+.lang-2 {
+    width: 100%;
+    border: solid 1px rgb(255, 0, 0);
 
+}
 .logotype {
     display: flex;
 }
@@ -217,7 +221,10 @@ main {
     width: 16px;
     height: auto;
 }
-
+.gap-2 {
+    width: 38px;
+    height: auto;
+}
 .main-content {
     max-width: 100%;
     margin: 0px;
@@ -227,12 +234,23 @@ main {
     font-size: 14px;
 }
 
+
+
 .main-cont.hide {
     display: none;
 }
+.mob-content {
+    max-width: 100%;
+    margin: 0px;
+    position: relative;
+    width: 782px;
+    border: solid 1px rgb(255, 0, 0);
+    font-size: 14px;
+}
 
-
-
+.mob-cont.hide {
+    display: none;
+}
 .conf-cont {
     height: 150px;
     width: 100%;
@@ -267,17 +285,7 @@ main {
     text-align: center;
 }
 
-.nav-item {
-    padding: 4px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    text-align: center;
-    height: 21px;
-    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2(Texture)_0.png");
-    color: #e6d9be;
-    font-size: 14px;
-    line-height: 21px;
-}
+
 
 .nav-section {
     position: relative;
@@ -289,13 +297,6 @@ main {
     transition: all .25s
 }
 
-.nav-item:hover {
-    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_over(Texture)_0.png");
-}
-
-.nav-item:active {
-    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_down(Texture)_0.png");
-}
 
 .nav-header {
     height: 20px;
@@ -381,4 +382,21 @@ footer {
 
 .footer-credits {
     text-align: center;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+    padding: 0px;
+}
+
+.under-flex-cont{
+    display: block;
+    width: 100%;
+}
+
+.cd-half-block{
+    display: flex;
+    justify-content: center;
 }

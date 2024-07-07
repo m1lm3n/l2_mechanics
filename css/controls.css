@@ -8,6 +8,7 @@
 
 #btn-exit {
     position: absolute;
+    z-index: 20;
     top: 65%;
     left: 38%;
     right: 0;
@@ -110,23 +111,45 @@
     width: 40px;
     height: 40px;
     position: relative;
-    background-color: #514f4f
+    background-image: url("../img/btn_40x40.png");
 
 }
 
 .btn-header:hover {
-    background-color: #514f4f
+    background-image: url("../img/btn_40x40_hover.png");
 }
-
+.btn-header:active {
+    background-image: url("../img/btn_40x40_pressed.png");
+}
 .btn-header-2 {
     margin-right: 8px;
     width: 40px;
     height: 40px;
     position: relative;
-    background-color: #514f4f
-
+    background-image: url("../img/btn_40x40.png");
 }
 
 .btn-header-2:hover {
-    background-color: #514f4f
+    background-image: url("../img/btn_40x40_hover.png");
+}
+.btn-header-2:active {
+    background-image: url("../img/btn_40x40_pressed.png");
+}
+
+.nav-item {
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2(Texture)_0.png");
+    color: #e6d9be;
+    font-size: 14px;
+    line-height: 21px;
+}
+.nav-item:hover {
+    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_over(Texture)_0.png");
+}
+
+.nav-item:active {
+    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_down(Texture)_0.png");
 }

@@ -24,6 +24,32 @@ function nav_btn_5() {
     element.classList.toggle("open");
 };
 
+function nav_btn_1_1() {
+    var element = document.getElementById("nav-1-1");
+    element.classList.toggle("open");
+};
+
+function nav_btn_2_2() {
+    var element = document.getElementById("nav-2-2");
+    element.classList.toggle("open");
+
+};
+
+function nav_btn_3_3() {
+    var element = document.getElementById("nav-3-3");
+    element.classList.toggle("open");
+};
+
+function nav_btn_4_4() {
+    var element = document.getElementById("nav-4-4");
+    element.classList.toggle("open");
+};
+
+function nav_btn_5_5() {
+    var element = document.getElementById("nav-5-5");
+    element.classList.toggle("open");
+};
+
 function lang_btn_hide() {
     var element = document.getElementById("lang-cont");
     element.classList.toggle("hide");
@@ -31,6 +57,11 @@ function lang_btn_hide() {
 
 function main_btn_hide() {
     var element = document.getElementById("main-cont");
+    element.classList.toggle("hide");
+};
+
+function mob_btn_hide() {
+    var element = document.getElementById("mob-cont");
     element.classList.toggle("hide");
 };
 
@@ -53,8 +84,6 @@ function btn_exit(element) {
     element.style.left = getRandomInt(76) + '%';
     element.style.top = getRandomInt(76) + '%';
     element.style.bottom = getRandomInt(76) + '%';
-
-    console.log('Event triggered');
 };
 
 jQuery(document).ready(function ($) {
@@ -66,8 +95,8 @@ jQuery(document).ready(function ($) {
         //stop if nav animation is running 
         if (!isLateralNavAnimating) {
             if ($(this).parents('.csstransitions').length > 0) {
-                    // $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
-                    isLateralNavAnimating = true;
+                // $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
+                isLateralNavAnimating = true;
             }
 
             $('body').toggleClass('navigation-is-open');
