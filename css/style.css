@@ -152,6 +152,7 @@ header {
 
 .logo-image {
     height: 100%;
+    filter: drop-shadow(black 1px 1px);
 }
 
 .logo-text {
@@ -220,6 +221,13 @@ main {
     border: solid 1px rgb(255, 0, 0);
 }
 
+.mob-nav {
+    display: block;
+    width: 200px;
+    height: auto;
+    border: solid 1px rgb(255, 0, 0);
+}
+
 .gap {
     width: 16px;
     height: auto;
@@ -232,7 +240,7 @@ main {
 
 .main-content {
     max-width: 100%;
-    margin: 0px;
+    margin-top: 16px;
     position: relative;
     width: 782px;
     border: solid 1px rgb(255, 0, 0);
@@ -412,10 +420,26 @@ footer {
     header {
         display: flex;
     }
+
+    .link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
     .flex {
         display: none;
     }
-    .navigation{
+
+    .navigation {
         display: block;
+    }
+
+    .main-content {
+        margin-top: 0px;
+    }
+
+    .mob-nav {
+        display: none;
     }
 }
