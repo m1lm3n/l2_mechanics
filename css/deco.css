@@ -136,5 +136,5 @@ hr.solid {
   
   /* selected link */
   a:active {
-    color: blue;
+    color: red;
   } 
