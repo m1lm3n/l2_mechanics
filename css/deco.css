@@ -118,3 +118,23 @@ hr.solid {
     /* border: solid 1px rgb(255, 0, 0); */
 
 }
+
+ /* unvisited link */
+ a:link {
+    color: #ffd175;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #5b739c;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #ffaa00;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  } 
