@@ -15,7 +15,7 @@ body {
     background-color: #222222;
     color: #e6d9be;
     font-family: Verdana, sans-serif;
-
+    overflow-x: hidden;
     position: relative;
 
 }
@@ -487,7 +487,7 @@ footer {
     }
 }
 
-@media (width >=1800px) {
+@media (width >=1700px) {
     header {
         display: flex;
     }
