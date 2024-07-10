@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
 #btn-exit:hover {
     background-image: url("../img/L2UI_CH3.utx-Button.Btn1_normalOn(Texture)_0.png");
 }
@@ -70,7 +77,8 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     width: 350px;
 
 }
@@ -99,11 +107,15 @@
 }
 
 .close:before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .close:after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .btn-header {
