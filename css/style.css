@@ -540,10 +540,12 @@ th {
 
 td {
     padding: 4px;
+    /* white-space:nowrap; */
 }
 
 table {
     width: 100%;
+    border-collapse: collapse
 }
 
 .table-1 tr>*:first-child>* {
@@ -570,4 +572,9 @@ table tr:nth-child(even) {
     border: 1px solid wheat;
     border-radius: 4px;
     filter: drop-shadow(0 0 0.5rem crimson);
+}
+.item-2 {
+    border: 1px solid wheat;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.5rem #e6d9be);
 }
