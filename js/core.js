@@ -85,6 +85,7 @@ function btn_exit(element) {
     element.style.top = getRandomInt(76) + '%';
     element.style.bottom = getRandomInt(76) + '%';
 };
+var windowsize = $(window).width();
 
 jQuery(document).ready(function ($) {
     var isLateralNavAnimating = false;
@@ -111,18 +112,27 @@ jQuery(document).ready(function ($) {
         // }
     });
 
-
 });
 
-var windowsize = $(window).width();
+$(document).ready(function() {
+    // Optimization: Store the references outside the event handler:
+    var $window = $(window);
 
-$(window).resize(function () {
-    var windowsize = $(window).width();
-});
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 440) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            console.log(windowsize);
 
-if (windowsize >= 1024) {
-    //if the window is greater than 440px wide then turn on jScrollPane..
-    if ($('body.navigation-is-open')) {
-        $('body').toggleClass('navigation-is-open');
+            if($('body').hasClass('navigation-is-open')){
+                $('body').toggleClass('navigation-is-open');
+            }
+        
+        }
     }
-}
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
+
