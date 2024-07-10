@@ -159,7 +159,7 @@ header {
     border: solid 1px rgb(255, 0, 0);
     color: white;
     height: 100px;
-    width: 762px;
+    width: 764px;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: right;
@@ -475,14 +475,15 @@ footer {
         display: none;
     }
 
-    .lang{
+    .lang {
         width: 1100px;
     }
 
     .footer {
         width: 1100px;
     }
-    .logo-text{
+
+    .logo-text {
         width: 864px;
     }
 }
@@ -510,7 +511,7 @@ footer {
         width: 1086px;
     }
 
-    .lang{
+    .lang {
         width: 1300px;
     }
 
@@ -521,7 +522,8 @@ footer {
     .mob-nav {
         display: none;
     }
-    .logo-text{
+
+    .logo-text {
         width: 1064px;
     }
 }

@@ -110,5 +110,19 @@ jQuery(document).ready(function ($) {
         //     $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
         // }
     });
+
+
 });
 
+var windowsize = $(window).width();
+
+$(window).resize(function () {
+    var windowsize = $(window).width();
+});
+
+if (windowsize >= 1024) {
+    //if the window is greater than 440px wide then turn on jScrollPane..
+    if ($('body.navigation-is-open')) {
+        $('body').toggleClass('navigation-is-open');
+    }
+}
