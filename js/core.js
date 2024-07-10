@@ -120,10 +120,7 @@ $(document).ready(function() {
 
     function checkWidth() {
         var windowsize = $window.width();
-        if (windowsize > 440) {
-            //if the window is greater than 440px wide then turn on jScrollPane..
-            console.log(windowsize);
-
+        if (windowsize >= 1024) {
             if($('body').hasClass('navigation-is-open')){
                 $('body').toggleClass('navigation-is-open');
             }
