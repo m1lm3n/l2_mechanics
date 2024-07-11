@@ -708,22 +708,39 @@ span {
 
 .icon-menu{
     display: flex;
-    border: 1px solid wheat;
+    border: 1px solid #78ace4;
     border-radius: 4px;
-    filter: drop-shadow(0 0 0.25rem #63fa4f);
+    /* filter: drop-shadow(0 0 0.25rem #63fa4f); */
     width: 20px;
     height: 20px;
 }
 
 .icon-menu-2{
     display: flex;
-    border: 1px solid wheat;
+    border: 1px solid #78ace4;
     border-radius: 4px;
-    filter: drop-shadow(0 0 0.25rem crimson);
+    /* filter: drop-shadow(0 0 0.25rem crimson); */
     width: 20px;
     height: 20px;
 }
 
+.icon-menu-3{
+    display: flex;
+    border: 1px solid #78ace4;
+    border-radius: 4px;
+    /* filter: drop-shadow(0 0 0.25rem #ffaa00); */
+    width: 20px;
+    height: 20px;
+}
+
+.icon-menu-4{
+    display: flex;
+    border: 1px solid #78ace4;
+    border-radius: 4px;
+    /* filter: drop-shadow(0 0 0.25rem #00e1ff); */
+    width: 20px;
+    height: 20px;
+}
 .nav-text{
     left: 0px;
     line-height: 29px;
