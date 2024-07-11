@@ -7,6 +7,7 @@
 
 .nav-btn-1:hover {
     background-image: url("../img/header_200_hover.png");
+    cursor: pointer;
 }
 
 .nav-btn-1:active {
@@ -15,6 +16,7 @@
 
 .nav-btn-2:hover {
     background-image: url("../img/header_200_hover.png");
+    cursor: pointer;
 }
 
 .nav-btn-2:active {
@@ -23,6 +25,7 @@
 
 .nav-btn-3:hover {
     background-image: url("../img/header_200_hover.png");
+    cursor: pointer;
 }
 
 .nav-btn-3:active {
@@ -31,6 +34,7 @@
 
 .nav-btn-4:hover {
     background-image: url("../img/header_200_hover.png");
+    cursor: pointer;
 }
 
 .nav-btn-4:active {
@@ -39,6 +43,7 @@
 
 .nav-btn-5:hover {
     background-image: url("../img/header_200_hover.png");
+    cursor: pointer;
 }
 
 .nav-btn-5:active {

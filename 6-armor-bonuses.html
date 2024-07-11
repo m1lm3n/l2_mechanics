@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/css_reset.css">
+    <!-- <link rel="stylesheet" href="css/css_reset.css"> -->
     <link rel="stylesheet" href="css/controls.css">
     <link rel="stylesheet" href="css/deco.css">
     <link rel="stylesheet" href="css/nav_btn.css">
@@ -149,9 +149,10 @@
                                                         <div class="nav-item"> <a class="menu-link"
                                                                 href="../hero-weapons.html">Hero Weapons</a>
                                                         </div>
-                                                        <div class="nav-item"> <a class="menu-link" href="../6-armor-bonuses.html">+6 Armor Bonuses</a>
+                                                        <div class="nav-item"> <a class="menu-link"
+                                                                href="../6-armor-bonuses.html">+6 Armor Bonuses</a>
                                                         </div>
-                                                        <div class="nav-item"> Buffs
+                                                        <div class="nav-item"> <a class="menu-link" href="../buffs.html">Buffs</a>
                                                         </div>
                                                         <div class="nav-item"> Passives
                                                         </div>
@@ -378,7 +379,7 @@
                     </div>
                     <div class="nav-item"> <a class="menu-link" href="../6-armor-bonuses.html">+6 Armor Bonuses</a>
                     </div>
-                    <div class="nav-item"> Buffs
+                    <div class="nav-item"> <a class="menu-link" href="../buffs.html">Buffs</a>
                     </div>
                     <div class="nav-item"> Passives
                     </div>
@@ -503,17 +504,20 @@
                                                 Only pieces from the set are required to be +6 or higher.
 
                                             </li>
-                                            <li>
-                                                Ex. - There is a Full Plate Boots, Gloves, Body Armor and
-                                                Helmet. The only
-                                                parts
-                                                required for the set are the Body Armor and Helmet.
-                                                Therefore, to get the +6
-                                                Full Plate Armor bonus, you only need a +6 Full Plate Armor
-                                                and +6 Full
-                                                Plate
-                                                Helmet.
-                                            </li>
+                                            <ul>
+                                                <li>
+                                                    Ex. - There is a Full Plate Boots, Gloves, Body Armor and
+                                                    Helmet. The only
+                                                    parts
+                                                    required for the set are the Body Armor and Helmet.
+                                                    Therefore, to get the +6
+                                                    Full Plate Armor bonus, you only need a +6 Full Plate Armor
+                                                    and +6 Full
+                                                    Plate
+                                                    Helmet.
+                                                </li>
+                                            </ul>
+
                                             <li>The +6 Bonuses are split into 3 types - Heavy Armor, Light Armor, and
                                                 Robes -
                                                 and then divided by Grade.</li>
@@ -700,8 +704,7 @@
     <div id=confirmation-window style="display:none">
         <div class="gui-frame">
             <div class="gui-frame-left"></div>
-            <div class="gui-frame-mid"></div>
-            <div class="gui-frame-mid"></div>
+            <div class="breadscrumbs"></div>
             <div class="gui-frame-back"></div>
             <div onclick="show_conf()" class="btn-close"></div>
         </div>

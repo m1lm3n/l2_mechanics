@@ -105,7 +105,7 @@
 }
 
 hr.solid {
-    border-top: 3px solid #817e7e;
+    border-top: 3px solid #708090;
 }
 
 .background-top {
@@ -178,9 +178,9 @@ a:active {
     text-decoration: none;
 }
 
-li:before {
+/* li:before {
     content:"● ";
-  }
+  } */
 
 ul.a {
     list-style-type: circle;
