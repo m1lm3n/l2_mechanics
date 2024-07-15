@@ -171,3 +171,9 @@
 .nav-item:active {
     background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_down(Texture)_0.png");
 }
+
+.nav-item:disabled {
+    background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_disabled(Texture)_0.png");
+}
+
+input, button, submit { border:none; } 
