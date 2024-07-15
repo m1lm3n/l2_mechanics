@@ -646,11 +646,6 @@ table {
     border-collapse: collapse
 }
 
-.table-1 tr>*:first-child>* {
-    text-align: center;
-    
-}
-
 table tr:nth-child(odd) {
     background-color: #191511;
 }
@@ -659,13 +654,25 @@ table tr:nth-child(even) {
     background-color: #2e2b25;
 }
 
+.table-1 tr>*:first-child>* {
+    text-align: center;
+    
+}
+
 .table-2 tr td>* {
     text-align: center;
 }
+
 .table-2 tr>*:first-child>* {
     text-align: center;
     width: 100%;
 }
+
+.table-3 tr td>* {
+    text-align: center;
+    width: auto;
+}
+
 .items {
     margin-top: 8px;
     margin-bottom: 4px;
