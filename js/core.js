@@ -111,10 +111,6 @@ jQuery(document).ready(function ($) {
         //     $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
         // }
     });
-
-});
-
-$(document).ready(function() {
     // Optimization: Store the references outside the event handler:
     var $window = $(window);
 
@@ -131,5 +127,12 @@ $(document).ready(function() {
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
+
+    // document.querySelector(".preloader").style.display = "none";
+
+
 });
 
+window.addEventListener('load', function () {
+    document.querySelector('.preloader').style.display = "none";
+});

@@ -108,6 +108,15 @@ hr.solid {
     border-top: 3px solid #e6d9be;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .background-top {
     background: url("../img/Gi_wall22a.png");
     height: 256px;
@@ -189,3 +198,11 @@ ul.a {
 ul.b {
     list-style-type: square;
 }
+
+
+
+
+
+
+
+
