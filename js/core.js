@@ -88,6 +88,8 @@ function btn_exit(element) {
 var windowsize = $(window).width();
 
 jQuery(document).ready(function ($) {
+    document.querySelector('.preloader').style.display = "block";
+
     var isLateralNavAnimating = false;
 
     //open/close lateral navigation

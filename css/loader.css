@@ -1,3 +1,21 @@
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.preloader-bg {
+    display: flex;
+    justify-content: center;
+    padding-top: 450px;
+    width: 100%;
+    height: calc(100% + 600px);
+    background-color: #1d1512;
+}
+
 .loader-container {
     display: flex;
     justify-content: center;
