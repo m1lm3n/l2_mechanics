@@ -370,6 +370,7 @@ main {
     background-image: url("../img/header_200.png");
     text-align: center;
     font-size: 11px;
+    filter: drop-shadow(0px 1px 0px #000000);
 }
 
 /* .nav-header:hover {
@@ -468,7 +469,18 @@ footer {
     justify-content: stretch;
     padding: 0px;
 }
-
+.flex-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    padding: 0px;
+}
 .under-flex-cont {
     display: block;
     width: 100%;
@@ -767,4 +779,8 @@ span {
     width: 100%;
     height: calc(100% + 600px);
     background-color: #1d1512;
+}
+
+.pad{
+    margin-right: 8px;
 }
