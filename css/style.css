@@ -5,21 +5,6 @@
 * Browsers: last 5 version
 */
 
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}
-
 *,
 *::after,
 *::before {
@@ -469,6 +454,7 @@ footer {
     justify-content: stretch;
     padding: 0px;
 }
+
 .flex-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -481,6 +467,7 @@ footer {
     justify-content: stretch;
     padding: 0px;
 }
+
 .under-flex-cont {
     display: block;
     width: 100%;
@@ -781,6 +768,21 @@ span {
     background-color: #1d1512;
 }
 
-.pad{
+.pad {
     margin-right: 8px;
+}
+
+#collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content {
+    margin-bottom: 8px;
+    padding: 0px 18px;
+    background-color: #2e2b25;
+    border-left: 1px solid #514f4f;
+    border-right: 1px solid #514f4f;
+    border-bottom: 1px solid #514f4f;
 }

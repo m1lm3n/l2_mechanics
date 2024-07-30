@@ -177,3 +177,38 @@
 }
 
 input, button, submit { border:none; } 
+
+
+.collapsible {
+    background-color: #2e2b25;
+    color: #e6d9be;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #514f4f;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #191511;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-top: 10px;
+
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
