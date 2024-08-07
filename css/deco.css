@@ -199,10 +199,6 @@ ul.b {
     list-style-type: square;
 }
 
-
-
-
-
-
-
-
+.underline {
+    text-decoration-line: underline;
+}
