@@ -271,5 +271,163 @@ jQuery(document).ready(function ($) {    // Optimization: Store the references o
               } 
         });
     }
+    var coll = document.getElementsByClassName("collap20");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content20");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+
+    var coll = document.getElementsByClassName("collap21");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content21");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+
+    var coll = document.getElementsByClassName("collap22");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content22");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap23");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content23");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap24");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content24");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap25");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content25");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap26");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content26");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap27");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content27");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap28");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content28");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap29");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content29");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap30");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content30");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap31");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content31");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
 });
 
