@@ -785,4 +785,5 @@ span {
     border-left: 1px solid #514f4f;
     border-right: 1px solid #514f4f;
     border-bottom: 1px solid #514f4f;
+    overflow-x: auto;
 }
