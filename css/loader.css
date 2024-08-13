@@ -24,6 +24,12 @@
 }
 
 .fading-bars {
+    position: fixed;
+    top: calc(50% - 40px);
+    left: calc(50% - 20px);
+    right: 0;
+    bottom: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     width: 80px;
