@@ -78,7 +78,7 @@
     transform: translateY(-50%);
     text-align: center;
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     width: 350px;
 
 }
@@ -108,14 +108,14 @@
 
 .close:before {
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .close:after {
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .btn-header {
@@ -130,9 +130,11 @@
 .btn-header:hover {
     background-image: url("../img/btn_40x40_hover.png");
 }
+
 .btn-header:active {
     background-image: url("../img/btn_40x40_pressed.png");
 }
+
 .btn-header-2 {
     margin-right: 8px;
     width: 40px;
@@ -144,6 +146,7 @@
 .btn-header-2:hover {
     background-image: url("../img/btn_40x40_hover.png");
 }
+
 .btn-header-2:active {
     background-image: url("../img/btn_40x40_pressed.png");
 }
@@ -164,6 +167,7 @@
     font-size: 14px;
     line-height: 21px;
 }
+
 .nav-item:hover {
     background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_over(Texture)_0.png");
 }
@@ -176,7 +180,11 @@
     background-image: url("../img/L2UI_CH3.utx-Button.bigbutton2_disabled(Texture)_0.png");
 }
 
-input, button, submit { border:none; } 
+input,
+button,
+submit {
+    border: none;
+}
 
 
 .collapsible {
@@ -193,22 +201,30 @@ input, button, submit { border:none; }
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #191511;
-  }
+}
 
-  .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #191511;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
     float: right;
     margin-top: 10px;
 
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
+
+.collapsible.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.collapsible.active {
+    position:sticky;
+
+}

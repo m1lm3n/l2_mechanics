@@ -467,6 +467,18 @@ footer {
     justify-content: stretch;
     padding: 0px;
 }
+.flex-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    padding: 0px;
+}
+
 
 .under-flex-cont {
     display: block;
@@ -698,6 +710,12 @@ table tr:nth-child(even) {
 .item-3 {
     border: 1px solid wheat;
     border-radius: 4px;
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+}
+
+.item-4 {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
     filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
 }
 
