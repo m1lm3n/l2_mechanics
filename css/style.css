@@ -672,7 +672,17 @@ table tr:nth-child(even) {
     width: 100%;
 }
 
+.table-2 tr th>* {
+    background-color: #e6d9be;
+    color: #191511;
+
+}
+
 .table-3 tr td>* {
+    text-align: center;
+    width: auto;
+}
+.table-3 {
     text-align: center;
     width: auto;
 }
