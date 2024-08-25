@@ -186,6 +186,21 @@ submit {
     border: none;
 }
 
+.collapsible2 {
+    background-color: #2e2b25;
+    color: #e6d9be;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #514f4f;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .collapsible {
     background-color: #2e2b25;
@@ -222,9 +237,4 @@ submit {
 .collapsible.active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
-}
-
-.collapsible.active {
-    position:sticky;
-
 }
