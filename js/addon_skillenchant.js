@@ -372,4 +372,59 @@ jQuery(document).ready(function ($) {    // Optimization: Store the references o
               } 
         });
     }
+
+    var coll = document.getElementsByClassName("collap28");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content28");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+    var coll = document.getElementsByClassName("collap29");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content29");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+
+    var coll = document.getElementsByClassName("collap30");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content30");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
+
+    var coll = document.getElementsByClassName("collap31");
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-content31");
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              } 
+        });
+    }
 });
