@@ -655,7 +655,7 @@ table tr:nth-child(odd) {
 }
 
 table tr:nth-child(even) {
-    background-color: #2e2b25;
+    background-color: #3b362c;
 }
 
 .table-1 tr>*:first-child>* {
