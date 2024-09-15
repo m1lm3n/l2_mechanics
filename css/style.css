@@ -689,6 +689,10 @@ table tr:nth-child(even) {
     text-align: center;
     width: 100%;
 }
+.table-4 {
+    text-align: center;
+    width: auto;
+}
 
 .items {
     margin-top: 8px;

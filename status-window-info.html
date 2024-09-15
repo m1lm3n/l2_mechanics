@@ -16,23 +16,25 @@
     <link rel="stylesheet" href="css/loader.css">
 
     <script type="text/javascript" src="./js/core.js"></script>
-    <script type="text/javascript" src="./js/addon_skillenchant.js"></script>
-
+    <script type="text/javascript" src="./js/addon_status-window-info.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <title>Skill Enchant - Lineage 2 Mechanics</title>
+    <title>Lineage 2 Mechanics</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 
 <body>
+
     <div class="background">
         <div class="background-top"></div>
         <div class="background-fill"></div>
         <div class="background-footer"></div>
     </div>
+
     <div id="cd-nav" class="cd-nav">
+
         <div class="cd-navigation-wrapper">
             <div class="flex">
                 <div class="element-left"></div>
@@ -188,10 +190,10 @@
                                                             </div>
                                                         </a>
                                                         <a class="menu-link" href="../skillenchant.html">
-                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                            <div class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/etc_codex_of_giant_i00.png" />
                                                                 <div class="nav-text">Skill Enchant</div>
-                                                            </button>
+                                                            </div>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -200,11 +202,11 @@
                                                     <div onclick="nav_btn_2_2()" class="nav-header nav-btn-2">Status
                                                         Window Info</div>
                                                     <div id="nav-2-2" class="nav-2-2">
-                                                        <a class="menu-link" href="../buffs.html">
-                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                        <a class="menu-link" href="../status-window-info.html">
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/question_mark.png" />
                                                                 <div class="nav-text">Overview</div>
-                                                            </div>
+                                                            </button>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
                                                             <div class="nav-item"><img class="icon-menu-4"
@@ -386,7 +388,6 @@
                                                             </a>
                                                         </div>
                                                     </div>
-
                                             </nav>
                                         </div><!-- .cd-half-block -->
                                     </div>
@@ -552,10 +553,9 @@
                         </div>
                     </a>
                     <a class="menu-link" href="../skillenchant.html">
-                        <button disabled class="nav-item"><img class="icon-menu-4"
-                                src="../img/items/etc_codex_of_giant_i00.png" />
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/etc_codex_of_giant_i00.png" />
                             <div class="nav-text">Skill Enchant</div>
-                        </button>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -563,10 +563,11 @@
             <div class="nav-section">
                 <div onclick="nav_btn_2()" class="nav-header nav-btn-2">Status Window Info</div>
                 <div id="nav-2" class="nav-2">
-                    <a class="menu-link" href="../buffs.html">
-                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/question_mark.png" />
+                    <a class="menu-link" href="../status-window-info.html">
+                        <button disabled class="nav-item"><img class="icon-menu-4"
+                                src="../img/items/question_mark.png" />
                             <div class="nav-text">Overview</div>
-                        </div>
+                        </button>
                     </a>
                     <a class="menu-link" href="../buffs.html">
                         <div class="nav-item"><img class="icon-menu-4" src="../img/items/base_stats.png" />
@@ -724,7 +725,7 @@
             <div class="gui-frame">
                 <div class="gui-frame-left"></div>
                 <div class="gui-frame-mid"></div>
-                <div class="breadscrumbs">Skill Enchant</div>
+                <div class="breadscrumbs"> Status Window Info </div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
                 <div onclick="show_conf()" class="btn-close"></div>
@@ -745,8 +746,240 @@
                                 <div class="middle-container">
                                     <div class="black-v-line"></div>
                                     <div class="container-inner">
-                                      
-                                    </div> <!-- .container-inner -->
+                                        <ul>
+                                            <li>
+                                                Level
+                                                <ul>
+                                                    <li>
+                                                        Affects many stats. One piece of data used is the Level
+                                                        Modifier, which is (level+89)/100
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                HP
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how HP is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                CP
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how CP is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                MP
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how MP is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                P.Atk.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how P.Atk. is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                M.Atk.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how M.Atk. is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                P.Def.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how P.Def. is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                M.Def.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how M.Def. is calculated
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                Accuracy
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Accuracy is calculated
+                                                    </li>
+                                                    <li>Accuracy has nothing whatsoever to do with your chance to land a
+                                                        skill such as Deadly Blow.</li>
+                                                    <li>It is unknown exactly how accuracy works. We do know level is
+                                                        already factored into the calculation just because the stat
+                                                        itself goes up by 1 every time you level up.</li>
+                                                    <li>Chance to hit changes based on several factors:</li>
+                                                    <table class="table-4">
+                                                        <tr>
+                                                            <td>
+                                                                <p>in front of target</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>0%</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>to side of target</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>+5%</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>behind target</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>+10%</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>above target</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>3%</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>below target</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>-3%</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </ul>
+                                            </li>
+                                            <li>Evasion
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Evasion is calculated
+                                                    </li>
+                                                    <li>
+                                                        The game measures the attacker's Accuracy versus the defender's
+                                                        Evasion in order to decide if an attack lands.
+                                                        <ul>
+                                                            <li>It is impossible to dodge magic or physical skills.</li>
+                                                            <li>Deadly Blow and similar skills are never evaded. If it
+                                                                misses, it is because the skill cannot hit unless the
+                                                                game determines it was a critical hit.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Critical
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Critical is calculated
+                                                    </li>
+                                                    <li>Chance to critical from the front of a target is critical/1000.
+                                                    </li>
+                                                    <li>The chance is also affected by the attacker's position relative
+                                                        to the defender. </li>
+                                                    <ul>
+                                                        <li>
+                                                            It isn't known how by how much, but attacking from the side
+                                                            or from the rear yields a higher critical chance; my
+                                                            educated guess is a 50% boost from behind and the side
+                                                            equally.
+                                                        </li>
+                                                        <li>It is said that being at a higher than certain angle from
+                                                            the target increases critical while being below decreases in
+                                                            the same way that accuracy does.</li>
+                                                    </ul>
+                                                    <li>Critical is capped at 500. You cannot have higher than 500
+                                                        status window Critical.</li>
+                                                </ul>
+                                            </li>
+                                            <li>Speed
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Speed is calculated</li>
+                                                    <li>200 Speed is exactly twice as fast as 100 Speed. This
+                                                        means a character who already has 200 run speed sees
+                                                        less of a benefit from getting more run speed than a
+                                                        character with less run speed.</li>
+
+                                                    <ul>
+                                                        <li>
+                                                            For example, if you go from 121 run speed to 127,
+                                                            this is a ~5% boost to your run speed. But a
+                                                            character who goes from 190 to 196 run speed will
+                                                            only see a ~3% increase.
+                                                        </li>
+
+                                                    </ul>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Atk. Spd.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Atk. Spd. is calculated</li>
+                                                    <li>
+                                                        Atk. Spd. is supposedly directly relative. 1000 Atk. Spd. is
+                                                        twice as fast as 500 Atk. Speed.
+                                                    </li>
+                                                    <li>
+                                                        To find a non-Yumi bow's true Atk. Spd., divide the status
+                                                        window Atk. Speed by 2.
+                                                    </li>
+                                                    <li>
+                                                        Atk. Spd. has a direct effect on both the time it takes to use a
+                                                        physical skill and the time it takes for the skill to be
+                                                        reusable.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Casting Spd.
+                                                <ul>
+                                                    <li>
+                                                        see <a href="#">here</a> for how Casting Spd. is calculated</li>
+                                                    <li>
+                                                        Casting Spd. has a direct effect on both the time it takes to
+                                                        cast a
+                                                        magical skill and the time it takes for the skill to become
+                                                        reusable.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div class="black-v-line"></div>
                                 </div>
                                 <div class="black-h-line"></div>
