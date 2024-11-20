@@ -692,6 +692,7 @@ table tr:nth-child(even) {
 .table-4 {
     text-align: center;
     width: auto;
+    margin: auto;
 }
 
 .items {
@@ -734,6 +735,7 @@ table tr:nth-child(even) {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 8px;
     filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+
 }
 
 span {

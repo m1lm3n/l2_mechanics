@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/css_reset.css"> -->
+    <link rel="stylesheet" href="css/controls.css">
+    <link rel="stylesheet" href="css/deco.css">
+    <link rel="stylesheet" href="css/nav_btn.css">
+    <link rel="stylesheet" href="css/nav_mobile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <script type="text/javascript" src="./js/core.js"></script>
+    <script type="text/javascript" src="./js/addon_status-window-info.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Lineage 2 Mechanics</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="background-top"></div>
+        <div class="background-fill"></div>
+        <div class="background-footer"></div>
+    </div>
+
+    <div id="cd-nav" class="cd-nav">
+
+        <div class="cd-navigation-wrapper">
+            <div class="flex">
+                <div class="element-left"></div>
+                <div class="under-flex-cont">
+                    <div class="black-h-line"></div>
+                    <div class="middle-container">
+                        <div class="black-v-line"></div>
+                        <div class="container">
+                            <div class="gray-h-line"></div>
+                            <div class="middle-container">
+                                <div class="gray-v-line"></div>
+                                <div class="container">
+                                    <div class="black-h-line"></div>
+                                    <div class="middle-container">
+                                        <div class="black-v-line"></div>
+                                        <div class="container-inner-3">
+                                            <div class="app-header">
+
+                                                <div class="logo-header">
+                                                    <a class="link" href="../index.html">
+                                                        <img class="logo-image" src="../img/logo.svg"
+                                                            alt="L2 Mechanics Logo" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="logo-text-header">Lineage 2 Mechanics</div>
+
+                                                <a href="#cd-nav" class="cd-nav-trigger">
+                                                    <div class="btn-header-2"> <span class="close"></span></div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="black-v-line"></div>
+                                    </div>
+                                    <div class="black-h-line"></div>
+                                </div>
+                                <div class="blue-v-line-1"></div>
+                                <div class="blue-v-line-2"></div>
+                            </div>
+                            <div class="gray-h-line"></div>
+                        </div>
+                        <div class="black-v-line"></div>
+                    </div>
+                    <div class="black-h-line"></div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="element-left-2"></div>
+                <div class="under-flex-cont">
+                    <div class="black-h-line"></div>
+                    <div class="middle-container">
+                        <div class="black-v-line"></div>
+                        <div class="container">
+                            <div class="gray-h-line"></div>
+                            <div class="middle-container">
+                                <div class="gray-v-line"></div>
+                                <div class="container">
+                                    <div class="black-h-line"></div>
+                                    <div class="middle-container">
+                                        <div class="black-v-line"></div>
+                                        <div class="container-inner-3">
+                                            <div class="container-inner-2">
+                                                <img class="flag" src="../img/united-kingdom-flag-icon-64.png" alt="GB">
+                                                <!-- <img class="flag" src="../img/ukraine-flag-icon-64.png" alt="UA">
+                                                <img class="flag" src="../img/spain-flag-small.png" alt="GB"> -->
+                                            </div>
+                                        </div>
+                                        <div class="black-v-line"></div>
+                                    </div>
+                                    <div class="black-h-line"></div>
+                                </div>
+                                <div class="blue-v-line-1"></div>
+                                <div class="blue-v-line-2"></div>
+                            </div>
+                            <div class="gray-h-line"></div>
+                        </div>
+                        <div class="black-v-line"></div>
+                    </div>
+                    <div class="black-h-line"></div>
+                </div>
+            </div>
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> Menu </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="mob_btn_hide()" class="btn-hide"></div>
+            </div>
+
+            <div id="mob-cont" class="mob-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner">
+                                        <div class="cd-half-block">
+                                            <nav class="mob-nav">
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_1_1()" class="nav-header nav-btn-1">Skills and
+                                                        Items</div>
+                                                    <div id="nav-1-1" class="nav-1-1">
+                                                        <a class="menu-link" href="../boss-jewelry.html">
+                                                            <div class="nav-item"><img class="icon-menu-2"
+                                                                    src="../img/items/accessory_necklace_of_valakas_i00.png" />
+                                                                <div class="nav-text">Boss Jewelry</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../hero-weapons.html">
+                                                            <div class="nav-item"><img class="icon-menu-3"
+                                                                    src="../img/items/weapon_the_mace_of_hero_i00_0.png" />
+                                                                <div class="nav-text">Hero Weapons</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../6-armor-bonuses.html">
+                                                            <div class="nav-item"><img class="icon-menu-3"
+                                                                    src="../img/items/etc_scroll_of_enchant_armor_i04.png" />
+                                                                <div class="nav-text">+6 Armor Bonuses</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu"
+                                                                    src="../img/items/skill1352.png" />
+                                                                <div class="nav-text">Buffs</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../passives.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0258.png" />
+                                                                <div class="nav-text">Passives</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../toggles.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0312.png" />
+                                                                <div class="nav-text">Toggles</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../summon.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1225.png" />
+                                                                <div class="nav-text">Summons and Pets</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../skillenchant.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/etc_codex_of_giant_i00.png" />
+                                                                <div class="nav-text">Skill Enchant</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_2_2()" class="nav-header nav-btn-2">Status
+                                                        Window Info</div>
+                                                    <button id="nav-2-2" class="nav-2-2">
+                                                        <a class="menu-link" href="../status-window-info.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/question_mark.png" />
+                                                                <div class="nav-text">Overview</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/base_stats.png" />
+                                                                <div class="nav-text">Base Stats</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0211.png" />
+                                                                <div class="nav-text">HP</div>
+                                                            </button>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0440.png" />
+                                                                <div class="nav-text">CP</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0213.png" />
+                                                                <div class="nav-text">MP</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1068.png" />
+                                                                <div class="nav-text">P.Atk.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1059.png" />
+                                                                <div class="nav-text">M.Atk.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1040.png" />
+                                                                <div class="nav-text">P.Def.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1036.png" />
+                                                                <div class="nav-text">M.Def.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0256.png" />
+                                                                <div class="nav-text">Accuracy</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1087.png" />
+                                                                <div class="nav-text">Evasion</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1077.png" />
+                                                                <div class="nav-text">Critical</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1204.png" />
+                                                                <div class="nav-text">Speed</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0168.png" />
+                                                                <div class="nav-text">Atk. Spd.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1085.png" />
+                                                                <div class="nav-text">Casting Spd.</div>
+                                                            </div>
+                                                        </a>
+                                                </div>
+                                                <br>
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_3_3()" class="nav-header nav-btn-3">
+                                                        Mastery
+                                                    </div>
+                                                    <div id="nav-3-3" class="nav-3-3">
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0141.png" />
+                                                                <div class="nav-text">Weapon</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0142.png" />
+                                                                <div class="nav-text">Armor</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0146.png" />
+                                                                <div class="nav-text">M.Def</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_4_4()" class="nav-header nav-btn-4">
+                                                        Debuffs
+                                                    </div>
+                                                    <div id="nav-4-4" class="nav-4-4">
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/theory.png" />
+                                                                <div class="nav-text">Theory</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0122.png" />
+                                                                <div class="nav-text">Base Land Rates</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_5_5()" class="nav-header nav-btn-5">Combat
+                                                        Physics & Misc.</div>
+                                                    <div id="nav-5-5" class="nav-5-5">
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/attributes.png" />
+                                                                <div class="nav-text">Attributes</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1303.png" />
+                                                                <div class="nav-text">Magic Critical Hits</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/aa.png" />
+                                                                <div class="nav-text">Non-Skill Attacks</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1016.png" />
+                                                                <div class="nav-text">Resurrection</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1304.png" />
+                                                                <div class="nav-text">Shield Block Rate</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1257.png" />
+                                                                <div class="nav-text">Weight Limit</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0000.png" />
+                                                                <div class="nav-text">Misc.</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div><!-- .cd-half-block -->
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="gray-v-line"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+
+
+    <header>
+        <div class="lang">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="lang_btn_hide()" class="lang-btn-hide"></div>
+            </div>
+
+            <div id="lang-cont" class="lang-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner-2">
+                                        <img class="flag" src="../img/united-kingdom-flag-icon-64.png" alt="GB">
+                                        <!-- <img class="flag" src="../img/ukraine-flag-icon-64.png" alt="UA">
+                                        <img class="flag" src="../img/spain-flag-small.png" alt="GB"> -->
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="gray-v-line"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </div>
+        <div class="logotype">
+            <div class="logo"><a class="link" href="../index.html">
+                    <img class="logo-image" src="../img/logo.svg" alt="L2 Mechanics Logo" />
+                </a>
+            </div>
+            <div class="gap-2"></div>
+            <div class="logo-text">Lineage 2 Mechanics</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex">
+            <div class="element-left"></div>
+            <div class="under-flex-cont">
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner-3">
+                                        <div class="app-header">
+                                            <a href="#cd-nav" class="cd-nav-trigger">
+                                                <div class="btn-header"> <span class="cd-nav-icon"></span></div>
+                                            </a>
+
+                                            <div class="logo-header"><a class="link" href="../index.html">
+                                                    <img class="logo-image" src="../img/logo.svg"
+                                                        alt="L2 Mechanics Logo" />
+                                                </a>
+                                            </div>
+                                            <div class="logo-text-header">Lineage 2 Mechanics</div>
+                                        </div>
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="blue-v-line-1"></div>
+                            <div class="blue-v-line-2"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <nav class="navigation">
+            <div class="nav-section">
+                <div onclick="nav_btn_1()" class="nav-header nav-btn-1">Skills and Items</div>
+                <div id="nav-1" class="nav-1">
+                    <a class="menu-link" href="../boss-jewelry.html">
+                        <div class="nav-item"><img class="icon-menu-2"
+                                src="../img/items/accessory_necklace_of_valakas_i00.png" />
+                            <div class="nav-text">Boss Jewelry</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../hero-weapons.html">
+                        <div class="nav-item"><img class="icon-menu-3"
+                                src="../img/items/weapon_the_mace_of_hero_i00_0.png" />
+                            <div class="nav-text">Hero Weapons</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../6-armor-bonuses.html">
+                        <div class="nav-item"><img class="icon-menu-3"
+                                src="../img/items/etc_scroll_of_enchant_armor_i04.png" />
+                            <div class="nav-text">+6 Armor Bonuses</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu" src="../img/items/skill1352.png" />
+                            <div class="nav-text">Buffs</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../passives.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0258.png" />
+                            <div class="nav-text">Passives</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../toggles.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0312.png" />
+                            <div class="nav-text">Toggles</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../summon.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1225.png" />
+                            <div class="nav-text">Summons and Pets</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../skillenchant.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/etc_codex_of_giant_i00.png" />
+                            <div class="nav-text">Skill Enchant</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_2()" class="nav-header nav-btn-2">Status Window Info</div>
+                <div id="nav-2" class="nav-2">
+                    <a class="menu-link" href="../status-window-info.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/question_mark.png" />
+                            <div class="nav-text">Overview</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/base_stats.png" />
+                            <div class="nav-text">Base Stats</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
+                            <div class="nav-text">HP</div>
+                        </button>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
+                            <div class="nav-text">CP</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0213.png" />
+                            <div class="nav-text">MP</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1068.png" />
+                            <div class="nav-text">P.Atk.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1059.png" />
+                            <div class="nav-text">M.Atk.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1040.png" />
+                            <div class="nav-text">P.Def.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1036.png" />
+                            <div class="nav-text">M.Def.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0256.png" />
+                            <div class="nav-text">Accuracy</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1087.png" />
+                            <div class="nav-text">Evasion</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1077.png" />
+                            <div class="nav-text">Critical</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1204.png" />
+                            <div class="nav-text">Speed</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0168.png" />
+                            <div class="nav-text">Atk. Spd.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1085.png" />
+                            <div class="nav-text">Casting Spd.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_3()" class="nav-header nav-btn-3">Mastery</div>
+                <div id="nav-3" class="nav-3">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0141.png" />
+                            <div class="nav-text">Weapon</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0142.png" />
+                            <div class="nav-text">Armor</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0146.png" />
+                            <div class="nav-text">M.Def</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_4()" class="nav-header nav-btn-4">Debuffs</div>
+                <div id="nav-4" class="nav-4">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/theory.png" />
+                            <div class="nav-text">Theory</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0122.png" />
+                            <div class="nav-text">Base Land Rates</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_5()" class="nav-header nav-btn-5">Combat Physics & Misc.</div>
+                <div id="nav-5" class="nav-5">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/attributes.png" />
+                            <div class="nav-text">Attributes</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1303.png" />
+                            <div class="nav-text">Magic Critical Hits</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/aa.png" />
+                            <div class="nav-text">Non-Skill Attacks</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1016.png" />
+                            <div class="nav-text">Resurrection</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1304.png" />
+                            <div class="nav-text">Shield Block Rate</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1257.png" />
+                            <div class="nav-text">Weight Limit</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0000.png" />
+                            <div class="nav-text">Misc.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="gap"></div>
+        <section class="main-content">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs">Dark Mystic Class Base HP</div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="main_btn_hide()" class="btn-hide"></div>
+            </div>
+
+            <div id="main-cont" class="main-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner">
+                                        <table class="table-2">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>Fighter</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>106.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                                <td>
+                                                    <p>121.47</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                                <td>
+                                                    <p>137.11</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                                <td>
+                                                    <p>152.92</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>5</p>
+                                                </td>
+                                                <td>
+                                                    <p>168.90</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>6</p>
+                                                </td>
+                                                <td>
+                                                    <p>185.05</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>7</p>
+                                                </td>
+                                                <td>
+                                                    <p>201.37</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>8</p>
+                                                </td>
+                                                <td>
+                                                    <p>217.86</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>9</p>
+                                                </td>
+                                                <td>
+                                                    <p>234.52</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>10</p>
+                                                </td>
+                                                <td>
+                                                    <p>251.35</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>11</p>
+                                                </td>
+                                                <td>
+                                                    <p>268.35</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>12</p>
+                                                </td>
+                                                <td>
+                                                    <p>285.52</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>13</p>
+                                                </td>
+                                                <td>
+                                                    <p>302.86</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>14</p>
+                                                </td>
+                                                <td>
+                                                    <p>320.37</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>15</p>
+                                                </td>
+                                                <td>
+                                                    <p>338.05</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>16</p>
+                                                </td>
+                                                <td>
+                                                    <p>355.90</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>17</p>
+                                                </td>
+                                                <td>
+                                                    <p>373.92</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>18</p>
+                                                </td>
+                                                <td>
+                                                    <p>392.11</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>19</p>
+                                                </td>
+                                                <td>
+                                                    <p>410.47</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>20</p>
+                                                </td>
+                                                <td>
+                                                    <p>429.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="table-2">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>Mystic</p>
+                                                </th>
+                                                <th>
+                                                    <p>Wizard</p>
+                                                </th>
+                                                <th>
+                                                    <p>SO</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>21</p>
+                                                </td>
+                                                <td>
+                                                    <p>447.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>458.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>465.30</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>22</p>
+                                                </td>
+                                                <td>
+                                                    <p>466.57</p>
+                                                </td>
+                                                <td>
+                                                    <p>488.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>501.93</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>23</p>
+                                                </td>
+                                                <td>
+                                                    <p>485.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>518.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>538.89</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24</p>
+                                                </td>
+                                                <td>
+                                                    <p>504.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>549.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>576.18</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>25</p>
+                                                </td>
+                                                <td>
+                                                    <p>524.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>580.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>613.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>26</p>
+                                                </td>
+                                                <td>
+                                                    <p>543.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>611.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>651.75</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>27</p>
+                                                </td>
+                                                <td>
+                                                    <p>563.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>642.57</p>
+                                                </td>
+                                                <td>
+                                                    <p>690.03</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>28</p>
+                                                </td>
+                                                <td>
+                                                    <p>583.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>674.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>728.64</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>29</p>
+                                                </td>
+                                                <td>
+                                                    <p>603.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>706.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>767.58</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>30</p>
+                                                </td>
+                                                <td>
+                                                    <p>623.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>738.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>806.85</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>31</p>
+                                                </td>
+                                                <td>
+                                                    <p>644.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>770.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>846.45</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>32</p>
+                                                </td>
+                                                <td>
+                                                    <p>664.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>803.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>886.38</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>33</p>
+                                                </td>
+                                                <td>
+                                                    <p>685.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>836.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>926.64</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>34</p>
+                                                </td>
+                                                <td>
+                                                    <p>706.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>869.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>967.23</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>35</p>
+                                                </td>
+                                                <td>
+                                                    <p>727.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>902.85</p>
+                                                </td>
+                                                <td>
+                                                    <p>1008.15</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>36</p>
+                                                </td>
+                                                <td>
+                                                    <p>748.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>936.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>1049.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>37</p>
+                                                </td>
+                                                <td>
+                                                    <p>770.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>970.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1090.98</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>38</p>
+                                                </td>
+                                                <td>
+                                                    <p>791.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>1004.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>1132.89</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>39</p>
+                                                </td>
+                                                <td>
+                                                    <p>813.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1039.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>1175.13</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                                <td>
+                                                    <p>835.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1074.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1217.70</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="table-2">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>Mystic</p>
+                                                </th>
+                                                <th>
+                                                    <p>Wizard</p>
+                                                </th>
+                                                <th>
+                                                    <p>SO</p>
+                                                </th>
+                                                <th>
+                                                    <p>SH</p>
+                                                </th>
+                                                <th>
+                                                    <p>PS</p>
+                                                </th>
+                                                <th>
+                                                    <p>SE</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>41</p>
+                                                </td>
+                                                <td>
+                                                    <p>857.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>1109.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>1260.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>1122.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>1126.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1272.30</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>42</p>
+                                                </td>
+                                                <td>
+                                                    <p>879.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>1144.77</p>
+                                                </td>
+                                                <td>
+                                                    <p>1303.83</p>
+                                                </td>
+                                                <td>
+                                                    <p>1170.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>1178.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1327.32</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>43</p>
+                                                </td>
+                                                <td>
+                                                    <p>902.11</p>
+                                                </td>
+                                                <td>
+                                                    <p>1180.41</p>
+                                                </td>
+                                                <td>
+                                                    <p>1347.39</p>
+                                                </td>
+                                                <td>
+                                                    <p>1219.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>1231.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1382.76</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>44</p>
+                                                </td>
+                                                <td>
+                                                    <p>924.72</p>
+                                                </td>
+                                                <td>
+                                                    <p>1216.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>1391.28</p>
+                                                </td>
+                                                <td>
+                                                    <p>1268.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1284.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1438.62</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>45</p>
+                                                </td>
+                                                <td>
+                                                    <p>947.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1252.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1435.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1318.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1338.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1494.90</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>46</p>
+                                                </td>
+                                                <td>
+                                                    <p>970.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>1288.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>1480.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>1368.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>1392.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1551.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>47</p>
+                                                </td>
+                                                <td>
+                                                    <p>993.57</p>
+                                                </td>
+                                                <td>
+                                                    <p>1325.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>1524.93</p>
+                                                </td>
+                                                <td>
+                                                    <p>1418.77</p>
+                                                </td>
+                                                <td>
+                                                    <p>1446.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1608.72</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>48</p>
+                                                </td>
+                                                <td>
+                                                    <p>1016.86</p>
+                                                </td>
+                                                <td>
+                                                    <p>1362.66</p>
+                                                </td>
+                                                <td>
+                                                    <p>1570.14</p>
+                                                </td>
+                                                <td>
+                                                    <p>1469.46</p>
+                                                </td>
+                                                <td>
+                                                    <p>1501.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1666.26</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>49</p>
+                                                </td>
+                                                <td>
+                                                    <p>1040.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>1399.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1615.68</p>
+                                                </td>
+                                                <td>
+                                                    <p>1520.52</p>
+                                                </td>
+                                                <td>
+                                                    <p>1556.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1724.22</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1063.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>1437.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>1661.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>1571.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>1612.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1782.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>51</p>
+                                                </td>
+                                                <td>
+                                                    <p>1087.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1475.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>1707.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1623.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1668.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1841.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>52</p>
+                                                </td>
+                                                <td>
+                                                    <p>1111.72</p>
+                                                </td>
+                                                <td>
+                                                    <p>1513.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>1754.28</p>
+                                                </td>
+                                                <td>
+                                                    <p>1675.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1724.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1900.62</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>53</p>
+                                                </td>
+                                                <td>
+                                                    <p>1135.86</p>
+                                                </td>
+                                                <td>
+                                                    <p>1551.66</p>
+                                                </td>
+                                                <td>
+                                                    <p>1801.14</p>
+                                                </td>
+                                                <td>
+                                                    <p>1728.46</p>
+                                                </td>
+                                                <td>
+                                                    <p>1781.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1960.26</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>54</p>
+                                                </td>
+                                                <td>
+                                                    <p>1160.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>1590.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>1848.33</p>
+                                                </td>
+                                                <td>
+                                                    <p>1781.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1838.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2020.32</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>55</p>
+                                                </td>
+                                                <td>
+                                                    <p>1184.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>1629.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>1895.85</p>
+                                                </td>
+                                                <td>
+                                                    <p>1834.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>1896.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2080.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>56</p>
+                                                </td>
+                                                <td>
+                                                    <p>1209.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1668.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1943.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1888.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1954.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2141.70</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>57</p>
+                                                </td>
+                                                <td>
+                                                    <p>1234.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>1707.72</p>
+                                                </td>
+                                                <td>
+                                                    <p>1991.88</p>
+                                                </td>
+                                                <td>
+                                                    <p>1942.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>2012.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2203.02</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>58</p>
+                                                </td>
+                                                <td>
+                                                    <p>1259.11</p>
+                                                </td>
+                                                <td>
+                                                    <p>1747.41</p>
+                                                </td>
+                                                <td>
+                                                    <p>2040.39</p>
+                                                </td>
+                                                <td>
+                                                    <p>1996.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>2071.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>2264.76</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>59</p>
+                                                </td>
+                                                <td>
+                                                    <p>1284.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>1787.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>2089.23</p>
+                                                </td>
+                                                <td>
+                                                    <p>2051.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>2130.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2326.92</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>60</p>
+                                                </td>
+                                                <td>
+                                                    <p>1309.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>1827.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>2138.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>2106.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>2190.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2389.50</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>61</p>
+                                                </td>
+                                                <td>
+                                                    <p>1335.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1868.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>2187.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>2162.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>2250.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2452.50</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1360.77</p>
+                                                </td>
+                                                <td>
+                                                    <p>1908.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>2237.73</p>
+                                                </td>
+                                                <td>
+                                                    <p>2217.97</p>
+                                                </td>
+                                                <td>
+                                                    <p>2310.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2515.92</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>63</p>
+                                                </td>
+                                                <td>
+                                                    <p>1386.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>1949.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>2287.89</p>
+                                                </td>
+                                                <td>
+                                                    <p>2274.21</p>
+                                                </td>
+                                                <td>
+                                                    <p>2371.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>2579.76</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>64</p>
+                                                </td>
+                                                <td>
+                                                    <p>1412.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1991.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>2338.38</p>
+                                                </td>
+                                                <td>
+                                                    <p>2330.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>2432.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2644.02</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>65</p>
+                                                </td>
+                                                <td>
+                                                    <p>1438.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>2032.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>2389.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>2387.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>2494.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2708.70</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>66</p>
+                                                </td>
+                                                <td>
+                                                    <p>1465.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>2074.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>2440.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>2445.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>2556.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>2773.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>67</p>
+                                                </td>
+                                                <td>
+                                                    <p>1491.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>2116.77</p>
+                                                </td>
+                                                <td>
+                                                    <p>2491.83</p>
+                                                </td>
+                                                <td>
+                                                    <p>2502.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>2618.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2839.32</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>68</p>
+                                                </td>
+                                                <td>
+                                                    <p>1518.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>2159.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>2543.64</p>
+                                                </td>
+                                                <td>
+                                                    <p>2560.96</p>
+                                                </td>
+                                                <td>
+                                                    <p>2681.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>2905.26</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>69</p>
+                                                </td>
+                                                <td>
+                                                    <p>1545.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>2201.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>2595.78</p>
+                                                </td>
+                                                <td>
+                                                    <p>2619.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>2744.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>2971.62</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>70</p>
+                                                </td>
+                                                <td>
+                                                    <p>1572.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>2244.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>2648.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>2678.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>2808.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>3038.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>71</p>
+                                                </td>
+                                                <td>
+                                                    <p>1599.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>2287.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>2701.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>2737.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>2872.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>3105.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>72</p>
+                                                </td>
+                                                <td>
+                                                    <p>1626.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>2331.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>2754.18</p>
+                                                </td>
+                                                <td>
+                                                    <p>2797.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>2936.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>3173.22</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>73</p>
+                                                </td>
+                                                <td>
+                                                    <p>1654.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>2375.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>2807.64</p>
+                                                </td>
+                                                <td>
+                                                    <p>2856.96</p>
+                                                </td>
+                                                <td>
+                                                    <p>3001.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>3241.26</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>74</p>
+                                                </td>
+                                                <td>
+                                                    <p>1682.07</p>
+                                                </td>
+                                                <td>
+                                                    <p>2419.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>2861.43</p>
+                                                </td>
+                                                <td>
+                                                    <p>2917.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>3066.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>3309.72</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1709.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>2463.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>2915.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>2977.95</p>
+                                                </td>
+                                                <td>
+                                                    <p>3132.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>3378.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>76</p>
+                                                </td>
+                                                <td>
+                                                    <p>1738.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>2508.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>2970.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>3039.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>3198.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>3447.90</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>77</p>
+                                                </td>
+                                                <td>
+                                                    <p>1766.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>2552.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>3024.78</p>
+                                                </td>
+                                                <td>
+                                                    <p>3100.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>3264.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>3517.62</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>78</p>
+                                                </td>
+                                                <td>
+                                                    <p>1794.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>2597.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>3079.89</p>
+                                                </td>
+                                                <td>
+                                                    <p>3162.21</p>
+                                                </td>
+                                                <td>
+                                                    <p>3331.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>3587.76</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>79</p>
+                                                </td>
+                                                <td>
+                                                    <p>1823.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>2643.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>3135.33</p>
+                                                </td>
+                                                <td>
+                                                    <p>3224.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>3398.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>3658.32</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>80</p>
+                                                </td>
+                                                <td>
+                                                    <p>1851.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>2688.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>3191.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>3286.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>3466.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>3729.30</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="gray-v-line"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+            </div>
+            <div class="shadow"></div>
+
+            <div class="black-h-line"></div>
+            <div class="middle-container">
+                <div class="black-v-line"></div>
+                <div class="container">
+                    <div class="gray-h-line"></div>
+                    <div class="middle-container">
+                        <div class="gray-v-line"></div>
+                        <div class="container">
+                            <div class="black-h-line"></div>
+                            <div class="middle-container">
+                                <div class="black-v-line"></div>
+                                <div class="container-inner">
+                                    <p class="footer-credits"> Made with &#128151 in Ukraine </p>
+                                </div>
+                                <div class="black-v-line"></div>
+                            </div>
+                            <div class="black-h-line"></div>
+                        </div>
+                        <div class="gray-v-line"></div>
+                    </div>
+                    <div class="gray-h-line"></div>
+                </div>
+                <div class="black-v-line"></div>
+            </div>
+            <div class="black-h-line"></div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div id=confirmation-window style="display:none">
+        <div class="gui-frame">
+            <div class="gui-frame-left"></div>
+            <div class="breadscrumbs"></div>
+            <div class="gui-frame-back"></div>
+            <div onclick="show_conf()" class="btn-close"></div>
+        </div>
+        <div class="shadow"></div>
+
+        <div class="black-h-line"></div>
+        <div class="middle-container">
+            <div class="black-v-line"></div>
+            <div class="container">
+                <div class="gray-h-line"></div>
+                <div class="middle-container">
+                    <div class="gray-v-line"></div>
+                    <div class="container">
+                        <div class="black-h-line"></div>
+                        <div class="middle-container">
+                            <div class="black-v-line"></div>
+                            <div class="conf-cont">
+                                <p class="conf-text">Are you really sure that you want to exit from the game?</p>
+                                <div onclick="show_conf()" onmouseover="btn_exit(this)" id="btn-exit">Exit</div>
+                            </div>
+                            <div class="black-v-line"></div>
+                        </div>
+                        <div class="black-h-line"></div>
+                    </div>
+                    <div class="gray-v-line"></div>
+                </div>
+                <div class="gray-h-line"></div>
+            </div>
+            <div class="black-v-line"></div>
+        </div>
+        <div class="black-h-line"></div>
+    </div>
+    <div class="preloader">
+        <div class="preloader-bg">
+            <div class="fading-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
