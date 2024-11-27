@@ -215,16 +215,16 @@
                                                             </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                            <div class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill0211.png" />
                                                                 <div class="nav-text">HP</div>
-                                                            </button>
+                                                            </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill0440.png" />
                                                                 <div class="nav-text">CP</div>
-                                                            </div>
+                                                            </button>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
                                                             <div class="nav-item"><img class="icon-menu-4"
@@ -574,14 +574,14 @@
                         </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
                             <div class="nav-text">HP</div>
-                        </button>
+                        </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
                             <div class="nav-text">CP</div>
-                        </div>
+                        </button>
                     </a>
                     <a class="menu-link" href="../buffs.html">
                         <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0213.png" />
@@ -724,7 +724,7 @@
             <div class="gui-frame">
                 <div class="gui-frame-left"></div>
                 <div class="gui-frame-mid"></div>
-                <div class="breadscrumbs">Health Points</div>
+                <div class="breadscrumbs">Combat Points</div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
                 <div onclick="show_conf()" class="btn-close"></div>
@@ -747,22 +747,19 @@
                                     <div class="container-inner">
                                         <ul>
                                             <li>
-                                                HP = ((Class Base HP*CON Modifier)*Buffs*Weapon Bonus)+Boost HP+Armor
-                                                Bonus+M.Def. Bonus
+                                                CP = (Class Base CP*CON Modifier)*Buffs*Weapon Bonus+Armor Bonus
                                             </li>
                                             <li>
-                                                The final HP is rounded down.
+                                                The final CP is rounded down.
                                             </li>
                                         </ul>
                                         <hr class="solid">
                                         <br>
                                         <div class="header center-text">
-                                            Class Base HP
+                                            Class Base CP
                                         </div>
                                         <br>
-                                        <p>Note - if you're a deleveled class, such as a level 30 Treasure Hunter, you
-                                            would use the same HP chart as your pre-40 class - Rogue. All 76+ classes
-                                            use the same HP charts as their respective 40+ classes.</p>
+                                        <p> 76+ classes simply use the same charts as their respective 40+ classes.</p>
                                         <br>
                                         <a href="./hphf.html">Human Fighter classes</a>
                                         <br>
@@ -1212,18 +1209,19 @@
                                         <hr class="solid">
                                         <br>
                                         <div class="header center-text">
-                                            Buffs/Debuffs/Toggles/Clan Vitality
+                                            Buffs/Passives
                                         </div>
                                         <br>
                                         <ul>
-                                            <li>If you have more than one of these, you multiply all of your buffs into
-                                                the formula.</li>
-                                            <li>Please be aware of buffs that do not stack.</li>
+                                            <li>
+                                                If you have more than one of these, you multiply all of your buffs into
+                                                the formula.
+                                            </li>
                                         </ul>
                                         <table class="table-4">
                                             <tr>
                                                 <th>
-                                                    <p>buff</p>
+                                                    <p>passive</p>
                                                 </th>
                                                 <th>
                                                     <p>lvl</p>
@@ -1233,253 +1231,11 @@
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <p>Skill</p>
-                                                </th>
-                                                <th>
-                                                    <p>Level</p>
-                                                </th>
-                                                <th>
-                                                    <p>Value</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
                                                 <td>
-                                                    <p>Battle Roar</p>
+                                                    <p>Clan Spirituality</p>
                                                 </td>
                                                 <td>
                                                     <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Chant of Victory</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.03</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.05</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
                                                 </td>
                                                 <td>
                                                     <p>1.06</p>
@@ -1487,358 +1243,69 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Final Servitor</p>
+                                                    <p>Clan Spirituality</p>
                                                 </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Prophecy of Fire</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Song of Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Warrior Servitor</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Boost HP
-                                        </div>
-                                        <br>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>level</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                                <th>
-                                                    <p>level</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                                <th>
-                                                    <p>level</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>60</p>
-                                                </td>
-                                                <td>
-                                                    <p>+5</p>
-                                                </td>
-                                                <td>
-                                                    <p>496</p>
-                                                </td>
-                                                <td>
-                                                    <p>+20</p>
-                                                </td>
-                                                <td>
-                                                    <p>546</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td>
                                                     <p>2</p>
                                                 </td>
                                                 <td>
-                                                    <p>100</p>
-                                                </td>
-                                                <td>
-                                                    <p>+6</p>
-                                                </td>
-                                                <td>
-                                                    <p>500</p>
-                                                </td>
-                                                <td>
-                                                    <p>+21</p>
-                                                </td>
-                                                <td>
-                                                    <p>550</p>
+                                                    <p>1.10</p>
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>
+                                                    <p>Clan Spirituality</p>
+                                                </td>
                                                 <td>
                                                     <p>3</p>
                                                 </td>
                                                 <td>
-                                                    <p>150</p>
-                                                </td>
-                                                <td>
-                                                    <p>+7</p>
-                                                </td>
-                                                <td>
-                                                    <p>503</p>
-                                                </td>
-                                                <td>
-                                                    <p>+22</p>
-                                                </td>
-                                                <td>
-                                                    <p>553</p>
+                                                    <p>1.12</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>4</p>
+                                                    <p>Master of Combat</p>
                                                 </td>
                                                 <td>
-                                                    <p>200</p>
+                                                    <p>1</p>
                                                 </td>
                                                 <td>
-                                                    <p>+8</p>
-                                                </td>
-                                                <td>
-                                                    <p>506</p>
-                                                </td>
-                                                <td>
-                                                    <p>+23</p>
-                                                </td>
-                                                <td>
-                                                    <p>556</p>
+                                                    <p>1.05</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>5</p>
+                                                    <p>Seal of Strife (winner)</p>
                                                 </td>
                                                 <td>
-                                                    <p>250</p>
+                                                    <p>-</p>
                                                 </td>
                                                 <td>
-                                                    <p>+9</p>
-                                                </td>
-                                                <td>
-                                                    <p>510</p>
-                                                </td>
-                                                <td>
-                                                    <p>+24</p>
-                                                </td>
-                                                <td>
-                                                    <p>560</p>
+                                                    <p>1.10</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>6</p>
+                                                    <p>Seal of Strife (loser)</p>
                                                 </td>
                                                 <td>
-                                                    <p>300</p>
+                                                    <p>-</p>
                                                 </td>
                                                 <td>
-                                                    <p>+10</p>
-                                                </td>
-                                                <td>
-                                                    <p>513</p>
-                                                </td>
-                                                <td>
-                                                    <p>+25</p>
-                                                </td>
-                                                <td>
-                                                    <p>563</p>
+                                                    <p>0.90</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>7</p>
+                                                    <p>Touch of Death</p>
                                                 </td>
                                                 <td>
-                                                    <p>350</p>
+                                                    <p>1</p>
                                                 </td>
                                                 <td>
-                                                    <p>+11</p>
+                                                    <p>0.10</p>
                                                 </td>
-                                                <td>
-                                                    <p>516</p>
-                                                </td>
-                                                <td>
-                                                    <p>+26</p>
-                                                </td>
-                                                <td>
-                                                    <p>566</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>400</p>
-                                                </td>
-                                                <td>
-                                                    <p>+12</p>
-                                                </td>
-                                                <td>
-                                                    <p>520</p>
-                                                </td>
-                                                <td>
-                                                    <p>+27</p>
-                                                </td>
-                                                <td>
-                                                    <p>570</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>9</p>
-                                                </td>
-                                                <td>
-                                                    <p>440</p>
-                                                </td>
-                                                <td>
-                                                    <p>+13</p>
-                                                </td>
-                                                <td>
-                                                    <p>523</p>
-                                                </td>
-                                                <td>
-                                                    <p>+28</p>
-                                                </td>
-                                                <td>
-                                                    <p>573</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>10</p>
-                                                </td>
-                                                <td>
-                                                    <p>480</p>
-                                                </td>
-                                                <td>
-                                                    <p>+14</p>
-                                                </td>
-                                                <td>
-                                                    <p>526</p>
-                                                </td>
-                                                <td>
-                                                    <p>+29</p>
-                                                </td>
-                                                <td>
-                                                    <p>576</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>(Power)</p>
-                                                </td>
-                                                <td></td>
-                                                <td>
-                                                    <p>+15</p>
-                                                </td>
-                                                <td>
-                                                    <p>530</p>
-                                                </td>
-                                                <td>
-                                                    <p>+30</p>
-                                                </td>
-                                                <td>
-                                                    <p>580</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+1</p>
-                                                </td>
-                                                <td>
-                                                    <p>483</p>
-                                                </td>
-                                                <td>
-                                                    <p>+16</p>
-                                                </td>
-                                                <td>
-                                                    <p>533</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+2</p>
-                                                </td>
-                                                <td>
-                                                    <p>486</p>
-                                                </td>
-                                                <td>
-                                                    <p>+17</p>
-                                                </td>
-                                                <td>
-                                                    <p>536</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+3</p>
-                                                </td>
-                                                <td>
-                                                    <p>490</p>
-                                                </td>
-                                                <td>
-                                                    <p>+18</p>
-                                                </td>
-                                                <td>
-                                                    <p>540</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+4</p>
-                                                </td>
-                                                <td>
-                                                    <p>493</p>
-                                                </td>
-                                                <td>
-                                                    <p>+19</p>
-                                                </td>
-                                                <td>
-                                                    <p>543</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
                                             </tr>
                                         </table>
                                         <br>
@@ -1846,6 +1313,39 @@
                                         <br>
                                         <div class="header center-text">
                                             Weapon Bonus
+                                        </div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Legion's Edge*Tallum Blade</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.3</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Hero Weapon if it boosts CP</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.5</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Armor Bonus
                                         </div>
                                         <ul>
                                             <li>
@@ -1863,50 +1363,26 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Health SA</p>
+                                                    <p>Apella Brigandine</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Hero Weapon if it boosts HP</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
+                                                    <p>195</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Anger SA</p>
+                                                    <p>Apella Doublet</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.85</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Conversion SA</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.60</p>
+                                                    <p>177</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Critical Anger SA</p>
+                                                    <p>Apella Plate Armor</p>
                                                 </td>
                                                 <td>
-                                                    <p>-11.98</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Dark Legion's Edge*Tallum Blade</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
+                                                    <p>232</p>
                                                 </td>
                                             </tr>
                                         </table>
@@ -1914,18 +1390,29 @@
                                         <hr class="solid">
                                         <br>
                                         <div class="header center-text">
-                                            Armor Bonus
+                                            Boost HP Enchanted for CP
                                         </div>
                                         <ul>
                                             <li>
-                                                Armor sets actually add a decimal value to you HP despite the in game
-                                                description.
+                                                This is just tacked on at the end of the formula if you have it.
                                             </li>
                                         </ul>
                                         <table class="table-4">
                                             <tr>
                                                 <th>
-                                                    <p>type</p>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                                <th>
+                                                    <p>level</p>
                                                 </th>
                                                 <th>
                                                     <p>modifier</p>
@@ -1933,126 +1420,206 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Avadon heavy set</p>
+                                                    <p>+1</p>
                                                 </td>
                                                 <td>
-                                                    <p>294.49</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Brigandine no Shield</p>
+                                                    <p>10</p>
                                                 </td>
                                                 <td>
-                                                    <p>153</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Brigandine w/Shield</p>
+                                                    <p>+11</p>
                                                 </td>
                                                 <td>
-                                                    <p>173</p>
+                                                    <p>110</p>
+                                                </td>
+                                                <td>
+                                                    <p>+21</p>
+                                                </td>
+                                                <td>
+                                                    <p>210</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Chain set</p>
+                                                    <p>+2</p>
                                                 </td>
                                                 <td>
-                                                    <p>198.21</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Oath Plate Armor</p>
+                                                    <p>20</p>
                                                 </td>
                                                 <td>
-                                                    <p>85</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Demon set</p>
+                                                    <p>+12</p>
                                                 </td>
                                                 <td>
-                                                    <p>-269.65</p>
+                                                    <p>120</p>
+                                                </td>
+                                                <td>
+                                                    <p>+22</p>
+                                                </td>
+                                                <td>
+                                                    <p>220</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Doom heavy set</p>
+                                                    <p>+3</p>
                                                 </td>
                                                 <td>
-                                                    <p>320</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Full Plate set</p>
+                                                    <p>30</p>
                                                 </td>
                                                 <td>
-                                                    <p>269.65</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Imperial Crusader set</p>
+                                                    <p>+13</p>
                                                 </td>
                                                 <td>
-                                                    <p>445</p>
+                                                    <p>130</p>
+                                                </td>
+                                                <td>
+                                                    <p>+23</p>
+                                                </td>
+                                                <td>
+                                                    <p>230</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Mithril heavy set</p>
+                                                    <p>+4</p>
                                                 </td>
                                                 <td>
-                                                    <p>126.13</p>
+                                                    <p>40</p>
+                                                </td>
+                                                <td>
+                                                    <p>+14</p>
+                                                </td>
+                                                <td>
+                                                    <p>140</p>
+                                                </td>
+                                                <td>
+                                                    <p>+24</p>
+                                                </td>
+                                                <td>
+                                                    <p>240</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Wooden set</p>
+                                                    <p>+5</p>
                                                 </td>
                                                 <td>
-                                                    <p>41</p>
+                                                    <p>50</p>
+                                                </td>
+                                                <td>
+                                                    <p>+15</p>
+                                                </td>
+                                                <td>
+                                                    <p>150</p>
+                                                </td>
+                                                <td>
+                                                    <p>+25</p>
+                                                </td>
+                                                <td>
+                                                    <p>250</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Zubei heavy set</p>
+                                                    <p>+6</p>
                                                 </td>
                                                 <td>
-                                                    <p>294.49</p>
+                                                    <p>60</p>
+                                                </td>
+                                                <td>
+                                                    <p>+16</p>
+                                                </td>
+                                                <td>
+                                                    <p>160</p>
+                                                </td>
+                                                <td>
+                                                    <p>+26</p>
+                                                </td>
+                                                <td>
+                                                    <p>260</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>+7</p>
+                                                </td>
+                                                <td>
+                                                    <p>70</p>
+                                                </td>
+                                                <td>
+                                                    <p>+17</p>
+                                                </td>
+                                                <td>
+                                                    <p>170</p>
+                                                </td>
+                                                <td>
+                                                    <p>+27</p>
+                                                </td>
+                                                <td>
+                                                    <p>270</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>+8</p>
+                                                </td>
+                                                <td>
+                                                    <p>80</p>
+                                                </td>
+                                                <td>
+                                                    <p>+18</p>
+                                                </td>
+                                                <td>
+                                                    <p>180</p>
+                                                </td>
+                                                <td>
+                                                    <p>+28</p>
+                                                </td>
+                                                <td>
+                                                    <p>280</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>+9</p>
+                                                </td>
+                                                <td>
+                                                    <p>90</p>
+                                                </td>
+                                                <td>
+                                                    <p>+19</p>
+                                                </td>
+                                                <td>
+                                                    <p>190</p>
+                                                </td>
+                                                <td>
+                                                    <p>+29</p>
+                                                </td>
+                                                <td>
+                                                    <p>290</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>+10</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                                <td>
+                                                    <p>+20</p>
+                                                </td>
+                                                <td>
+                                                    <p>200</p>
+                                                </td>
+                                                <td>
+                                                    <p>+30</p>
+                                                </td>
+                                                <td>
+                                                    <p>300</p>
                                                 </td>
                                             </tr>
                                         </table>
                                         <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            M.Def. Bonus
-                                        </div>
-                                        <br>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>type</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Necklace of Valakas</p>
-                                                </td>
-                                                <td>
-                                                    <p>445</p>
-                                                </td>
-                                            </tr>
-                                        </table>
                                     </div>
                                     <div class="black-v-line"></div>
                                 </div>

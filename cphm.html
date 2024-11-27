@@ -215,16 +215,16 @@
                                                             </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                            <div class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill0211.png" />
                                                                 <div class="nav-text">HP</div>
-                                                            </button>
+                                                            </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill0440.png" />
                                                                 <div class="nav-text">CP</div>
-                                                            </div>
+                                                            </button>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
                                                             <div class="nav-item"><img class="icon-menu-4"
@@ -574,14 +574,14 @@
                         </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
+                        <div  class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
                             <div class="nav-text">HP</div>
-                        </button>
+                        </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
                             <div class="nav-text">CP</div>
-                        </div>
+                        </button>
                     </a>
                     <a class="menu-link" href="../buffs.html">
                         <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0213.png" />
@@ -724,7 +724,7 @@
             <div class="gui-frame">
                 <div class="gui-frame-left"></div>
                 <div class="gui-frame-mid"></div>
-                <div class="breadscrumbs">Health Points</div>
+                <div class="breadscrumbs">Human Mystic Class Base CP</div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
                 <div onclick="show_conf()" class="btn-close"></div>
@@ -745,66 +745,31 @@
                                 <div class="middle-container">
                                     <div class="black-v-line"></div>
                                     <div class="container-inner">
-                                        <ul>
-                                            <li>
-                                                HP = ((Class Base HP*CON Modifier)*Buffs*Weapon Bonus)+Boost HP+Armor
-                                                Bonus+M.Def. Bonus
-                                            </li>
-                                            <li>
-                                                The final HP is rounded down.
-                                            </li>
-                                        </ul>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Class Base HP
-                                        </div>
-                                        <br>
-                                        <p>Note - if you're a deleveled class, such as a level 30 Treasure Hunter, you
-                                            would use the same HP chart as your pre-40 class - Rogue. All 76+ classes
-                                            use the same HP charts as their respective 40+ classes.</p>
-                                        <br>
-                                        <a href="./hphf.html">Human Fighter classes</a>
-                                        <br>
-                                        <a href="./hphm.html">Human Mystic classes</a>
-                                        <br>
-                                        <a href="./hpef.html">Elven Fighter classes</a>
-                                        <br>
-                                        <a href="./hpem.html">Elven Mystic classes</a>
-                                        <br>
-                                        <a href="./hpdf.html">Dark Fighter classes</a>
-                                        <br>
-                                        <a href="./hpdm.html">Dark Mystic classes</a>
-                                        <br>
-                                        <a href="./hpo.html">Orc classes</a>
-                                        <br>
-                                        <a href="./hpd.html">Dwarf classes</a>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            CON Modifier
-                                        </div>
-                                        <br>
-                                        <table class="table-4">
+                                        <table class="table-2">
                                             <tr>
                                                 <th>
-                                                    <p>CON</p>
+                                                    <p>level</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Mystic</p>
                                                 </th>
                                                 <th>
-                                                    <p>CON</p>
+                                                    <p>Wizard</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Cleric</p>
                                                 </th>
                                                 <th>
-                                                    <p>CON</p>
+                                                    <p>Sorc/Necro</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Warlock</p>
+                                                </th>
+                                                <th>
+                                                    <p>Bishop</p>
+                                                </th>
+                                                <th>
+                                                    <p>Prophet</p>
                                                 </th>
                                             </tr>
                                             <tr>
@@ -812,19 +777,25 @@
                                                     <p>1</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.46</p>
+                                                    <p>50.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>21</p>
+                                                    <p>50.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.82</p>
+                                                    <p>50.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>41</p>
+                                                    <p>50.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.48</p>
+                                                    <p>60.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>70.70</p>
+                                                </td>
+                                                <td>
+                                                    <p>50.50</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -832,19 +803,25 @@
                                                     <p>2</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.47</p>
+                                                    <p>58.23</p>
                                                 </td>
                                                 <td>
-                                                    <p>22</p>
+                                                    <p>58.23</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.85</p>
+                                                    <p>58.23</p>
                                                 </td>
                                                 <td>
-                                                    <p>42</p>
+                                                    <p>58.23</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.53</p>
+                                                    <p>69.88</p>
+                                                </td>
+                                                <td>
+                                                    <p>81.52</p>
+                                                </td>
+                                                <td>
+                                                    <p>58.23</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -852,19 +829,25 @@
                                                     <p>3</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.48</p>
+                                                    <p>66.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>23</p>
+                                                    <p>66.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.87</p>
+                                                    <p>66.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>43</p>
+                                                    <p>66.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.58</p>
+                                                    <p>79.26</p>
+                                                </td>
+                                                <td>
+                                                    <p>92.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>66.05</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -872,19 +855,25 @@
                                                     <p>4</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.50</p>
+                                                    <p>73.96</p>
                                                 </td>
                                                 <td>
-                                                    <p>24</p>
+                                                    <p>73.96</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.90</p>
+                                                    <p>73.96</p>
                                                 </td>
                                                 <td>
-                                                    <p>44</p>
+                                                    <p>73.96</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.62</p>
+                                                    <p>88.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>103.54</p>
+                                                </td>
+                                                <td>
+                                                    <p>73.96</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -892,19 +881,25 @@
                                                     <p>5</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.51</p>
+                                                    <p>81.95</p>
                                                 </td>
                                                 <td>
-                                                    <p>25</p>
+                                                    <p>81.95</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.93</p>
+                                                    <p>81.95</p>
                                                 </td>
                                                 <td>
-                                                    <p>45</p>
+                                                    <p>81.95</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.67</p>
+                                                    <p>98.34</p>
+                                                </td>
+                                                <td>
+                                                    <p>114.73</p>
+                                                </td>
+                                                <td>
+                                                    <p>81.95</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -912,19 +907,25 @@
                                                     <p>6</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.53</p>
+                                                    <p>90.02</p>
                                                 </td>
                                                 <td>
-                                                    <p>26</p>
+                                                    <p>90.02</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.95</p>
+                                                    <p>90.02</p>
                                                 </td>
                                                 <td>
-                                                    <p>46</p>
+                                                    <p>90.02</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.72</p>
+                                                    <p>108.03</p>
+                                                </td>
+                                                <td>
+                                                    <p>126.03</p>
+                                                </td>
+                                                <td>
+                                                    <p>90.02</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -932,19 +933,25 @@
                                                     <p>7</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.54</p>
+                                                    <p>98.18</p>
                                                 </td>
                                                 <td>
-                                                    <p>27</p>
+                                                    <p>98.18</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.98</p>
+                                                    <p>98.18</p>
                                                 </td>
                                                 <td>
-                                                    <p>47</p>
+                                                    <p>98.18</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.77</p>
+                                                    <p>117.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>137.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>98.18</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -952,19 +959,25 @@
                                                     <p>8</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.56</p>
+                                                    <p>106.43</p>
                                                 </td>
                                                 <td>
-                                                    <p>28</p>
+                                                    <p>106.43</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.01</p>
+                                                    <p>106.43</p>
                                                 </td>
                                                 <td>
-                                                    <p>48</p>
+                                                    <p>106.43</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.83</p>
+                                                    <p>127.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>149.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>106.43</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -972,19 +985,25 @@
                                                     <p>9</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.58</p>
+                                                    <p>114.76</p>
                                                 </td>
                                                 <td>
-                                                    <p>29</p>
+                                                    <p>114.76</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.04</p>
+                                                    <p>114.76</p>
                                                 </td>
                                                 <td>
-                                                    <p>49</p>
+                                                    <p>114.76</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.88</p>
+                                                    <p>137.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>160.66</p>
+                                                </td>
+                                                <td>
+                                                    <p>114.76</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -992,19 +1011,25 @@
                                                     <p>10</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.59</p>
+                                                    <p>123.17</p>
                                                 </td>
                                                 <td>
-                                                    <p>30</p>
+                                                    <p>123.17</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.07</p>
+                                                    <p>123.17</p>
                                                 </td>
                                                 <td>
-                                                    <p>50</p>
+                                                    <p>123.17</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.94</p>
+                                                    <p>147.81</p>
+                                                </td>
+                                                <td>
+                                                    <p>172.44</p>
+                                                </td>
+                                                <td>
+                                                    <p>123.17</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1012,19 +1037,25 @@
                                                     <p>11</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.61</p>
+                                                    <p>131.67</p>
                                                 </td>
                                                 <td>
-                                                    <p>31</p>
+                                                    <p>131.67</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.10</p>
+                                                    <p>131.67</p>
                                                 </td>
                                                 <td>
-                                                    <p>51</p>
+                                                    <p>131.67</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.00</p>
+                                                    <p>158.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>184.34</p>
+                                                </td>
+                                                <td>
+                                                    <p>131.67</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1032,19 +1063,25 @@
                                                     <p>12</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.63</p>
+                                                    <p>140.26</p>
                                                 </td>
                                                 <td>
-                                                    <p>32</p>
+                                                    <p>140.26</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.14</p>
+                                                    <p>140.26</p>
                                                 </td>
                                                 <td>
-                                                    <p>52</p>
+                                                    <p>140.26</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.06</p>
+                                                    <p>168.31</p>
+                                                </td>
+                                                <td>
+                                                    <p>196.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>140.26</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1052,19 +1089,25 @@
                                                     <p>13</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.65</p>
+                                                    <p>148.93</p>
                                                 </td>
                                                 <td>
-                                                    <p>33</p>
+                                                    <p>148.93</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.17</p>
+                                                    <p>148.93</p>
                                                 </td>
                                                 <td>
-                                                    <p>53</p>
+                                                    <p>148.93</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.12</p>
+                                                    <p>178.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>208.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>148.93</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1072,19 +1115,25 @@
                                                     <p>14</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.67</p>
+                                                    <p>157.68</p>
                                                 </td>
                                                 <td>
-                                                    <p>34</p>
+                                                    <p>157.68</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.21</p>
+                                                    <p>157.68</p>
                                                 </td>
                                                 <td>
-                                                    <p>54</p>
+                                                    <p>157.68</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.18</p>
+                                                    <p>189.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>220.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>157.68</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1092,19 +1141,25 @@
                                                     <p>15</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.69</p>
+                                                    <p>166.52</p>
                                                 </td>
                                                 <td>
-                                                    <p>35</p>
+                                                    <p>166.52</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.24</p>
+                                                    <p>166.52</p>
                                                 </td>
                                                 <td>
-                                                    <p>55</p>
+                                                    <p>166.52</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.25</p>
+                                                    <p>199.83</p>
+                                                </td>
+                                                <td>
+                                                    <p>233.13</p>
+                                                </td>
+                                                <td>
+                                                    <p>166.52</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1112,19 +1167,25 @@
                                                     <p>16</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.71</p>
+                                                    <p>175.45</p>
                                                 </td>
                                                 <td>
-                                                    <p>36</p>
+                                                    <p>175.45</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.28</p>
+                                                    <p>175.45</p>
                                                 </td>
                                                 <td>
-                                                    <p>56</p>
+                                                    <p>175.45</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.31</p>
+                                                    <p>210.54</p>
+                                                </td>
+                                                <td>
+                                                    <p>245.63</p>
+                                                </td>
+                                                <td>
+                                                    <p>175.45</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1132,19 +1193,25 @@
                                                     <p>17</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.73</p>
+                                                    <p>184.46</p>
                                                 </td>
                                                 <td>
-                                                    <p>37</p>
+                                                    <p>184.46</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.32</p>
+                                                    <p>184.46</p>
                                                 </td>
                                                 <td>
-                                                    <p>57</p>
+                                                    <p>184.46</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.38</p>
+                                                    <p>221.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>258.24</p>
+                                                </td>
+                                                <td>
+                                                    <p>184.46</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1152,19 +1219,25 @@
                                                     <p>18</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.75</p>
+                                                    <p>193.55</p>
                                                 </td>
                                                 <td>
-                                                    <p>38</p>
+                                                    <p>193.55</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.36</p>
+                                                    <p>193.55</p>
                                                 </td>
                                                 <td>
-                                                    <p>58</p>
+                                                    <p>193.55</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.45</p>
+                                                    <p>232.26</p>
+                                                </td>
+                                                <td>
+                                                    <p>270.97</p>
+                                                </td>
+                                                <td>
+                                                    <p>193.55</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1172,19 +1245,25 @@
                                                     <p>19</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.77</p>
+                                                    <p>202.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>39</p>
+                                                    <p>202.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.40</p>
+                                                    <p>202.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>59</p>
+                                                    <p>202.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>2.53</p>
+                                                    <p>243.28</p>
+                                                </td>
+                                                <td>
+                                                    <p>283.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>202.73</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1192,864 +1271,1641 @@
                                                     <p>20</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.80</p>
+                                                    <p>212.00</p>
                                                 </td>
+                                                <td>
+                                                    <p>212.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>212.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>212.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>254.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>296.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>212.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="table-2">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>Mystic</p>
+                                                </th>
+                                                <th>
+                                                    <p>Wizard</p>
+                                                </th>
+                                                <th>
+                                                    <p>Cleric</p>
+                                                </th>
+                                                <th>
+                                                    <p>Sorc/Necro</p>
+                                                </th>
+                                                <th>
+                                                    <p>Warlock</p>
+                                                </th>
+                                                <th>
+                                                    <p>Bishop</p>
+                                                </th>
+                                                <th>
+                                                    <p>Prophet</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>21</p>
+                                                </td>
+                                                <td>
+                                                    <p>221.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>225.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>229.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>225.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>270.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>320.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>229.05</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>22</p>
+                                                </td>
+                                                <td>
+                                                    <p>230.78</p>
+                                                </td>
+                                                <td>
+                                                    <p>239.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>246.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>239.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>287.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>344.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>246.25</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>23</p>
+                                                </td>
+                                                <td>
+                                                    <p>240.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>253.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>263.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>253.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>304.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>369.06</p>
+                                                </td>
+                                                <td>
+                                                    <p>263.61</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24</p>
+                                                </td>
+                                                <td>
+                                                    <p>249.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>267.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>281.13</p>
+                                                </td>
+                                                <td>
+                                                    <p>267.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>321.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>393.58</p>
+                                                </td>
+                                                <td>
+                                                    <p>281.13</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>25</p>
+                                                </td>
+                                                <td>
+                                                    <p>259.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>282.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>298.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>282.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>338.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>418.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>298.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>26</p>
+                                                </td>
+                                                <td>
+                                                    <p>269.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>296.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>316.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>296.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>355.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>443.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>316.62</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>27</p>
+                                                </td>
+                                                <td>
+                                                    <p>279.23</p>
+                                                </td>
+                                                <td>
+                                                    <p>310.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>334.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>310.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>373.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>468.44</p>
+                                                </td>
+                                                <td>
+                                                    <p>334.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>28</p>
+                                                </td>
+                                                <td>
+                                                    <p>289.18</p>
+                                                </td>
+                                                <td>
+                                                    <p>325.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>352.74</p>
+                                                </td>
+                                                <td>
+                                                    <p>325.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>390.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>493.83</p>
+                                                </td>
+                                                <td>
+                                                    <p>352.74</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>29</p>
+                                                </td>
+                                                <td>
+                                                    <p>299.21</p>
+                                                </td>
+                                                <td>
+                                                    <p>340.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>371.03</p>
+                                                </td>
+                                                <td>
+                                                    <p>340.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>408.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>519.44</p>
+                                                </td>
+                                                <td>
+                                                    <p>371.03</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>30</p>
+                                                </td>
+                                                <td>
+                                                    <p>309.32</p>
+                                                </td>
+                                                <td>
+                                                    <p>355.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>389.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>355.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>426.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>545.26</p>
+                                                </td>
+                                                <td>
+                                                    <p>389.47</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>31</p>
+                                                </td>
+                                                <td>
+                                                    <p>319.52</p>
+                                                </td>
+                                                <td>
+                                                    <p>370.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>408.07</p>
+                                                </td>
+                                                <td>
+                                                    <p>370.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>444.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>571.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>408.07</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>32</p>
+                                                </td>
+                                                <td>
+                                                    <p>329.81</p>
+                                                </td>
+                                                <td>
+                                                    <p>385.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>426.83</p>
+                                                </td>
+                                                <td>
+                                                    <p>385.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>462.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>597.56</p>
+                                                </td>
+                                                <td>
+                                                    <p>426.83</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>33</p>
+                                                </td>
+                                                <td>
+                                                    <p>340.18</p>
+                                                </td>
+                                                <td>
+                                                    <p>400.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>445.74</p>
+                                                </td>
+                                                <td>
+                                                    <p>400.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>480.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>624.03</p>
+                                                </td>
+                                                <td>
+                                                    <p>445.74</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>34</p>
+                                                </td>
+                                                <td>
+                                                    <p>350.63</p>
+                                                </td>
+                                                <td>
+                                                    <p>415.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>464.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>415.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>499.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>650.72</p>
+                                                </td>
+                                                <td>
+                                                    <p>464.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>35</p>
+                                                </td>
+                                                <td>
+                                                    <p>361.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>431.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>484.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>431.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>517.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>677.63</p>
+                                                </td>
+                                                <td>
+                                                    <p>484.02</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>36</p>
+                                                </td>
+                                                <td>
+                                                    <p>371.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>447.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>503.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>447.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>536.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>704.76</p>
+                                                </td>
+                                                <td>
+                                                    <p>503.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>37</p>
+                                                </td>
+                                                <td>
+                                                    <p>382.51</p>
+                                                </td>
+                                                <td>
+                                                    <p>462.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>522.93</p>
+                                                </td>
+                                                <td>
+                                                    <p>462.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>555.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>732.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>522.93</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>38</p>
+                                                </td>
+                                                <td>
+                                                    <p>393.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>478.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>542.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>478.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>574.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>759.66</p>
+                                                </td>
+                                                <td>
+                                                    <p>542.61</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>39</p>
+                                                </td>
+                                                <td>
+                                                    <p>404.18</p>
+                                                </td>
+                                                <td>
+                                                    <p>494.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>562.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>494.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>593.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>787.43</p>
+                                                </td>
+                                                <td>
+                                                    <p>562.45</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td>
                                                     <p>40</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.44</p>
+                                                    <p>415.15</p>
                                                 </td>
                                                 <td>
-                                                    <p></p>
+                                                    <p>510.75</p>
                                                 </td>
                                                 <td>
-                                                    <p></p>
+                                                    <p>582.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>510.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>612.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>815.43</p>
+                                                </td>
+                                                <td>
+                                                    <p>582.45</p>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Buffs/Debuffs/Toggles/Clan Vitality
-                                        </div>
-                                        <br>
-                                        <ul>
-                                            <li>If you have more than one of these, you multiply all of your buffs into
-                                                the formula.</li>
-                                            <li>Please be aware of buffs that do not stack.</li>
-                                        </ul>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>buff</p>
-                                                </th>
-                                                <th>
-                                                    <p>lvl</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <p>Skill</p>
-                                                </th>
-                                                <th>
-                                                    <p>Level</p>
-                                                </th>
-                                                <th>
-                                                    <p>Value</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Battle Roar</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Bless the Body</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.10</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Body of Avatar</p>
-                                                </td>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.35</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Chant of Victory</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.03</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.05</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.06</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Final Servitor</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Prophecy of Fire</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Song of Vitality</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Warrior Servitor</p>
-                                                </td>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.20</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Boost HP
-                                        </div>
-                                        <br>
-                                        <table class="table-4">
+                                        <table class="table-2">
                                             <tr>
                                                 <th>
                                                     <p>level</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Mystic</p>
                                                 </th>
                                                 <th>
-                                                    <p>level</p>
+                                                    <p>Wizard</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Cleric</p>
                                                 </th>
                                                 <th>
-                                                    <p>level</p>
+                                                    <p>Sorc/Necro</p>
                                                 </th>
                                                 <th>
-                                                    <p>modifier</p>
+                                                    <p>Warlock</p>
+                                                </th>
+                                                <th>
+                                                    <p>Bishop</p>
+                                                </th>
+                                                <th>
+                                                    <p>Prophet</p>
                                                 </th>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>1</p>
+                                                    <p>41</p>
                                                 </td>
+                                                <td>
+                                                    <p>426.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>527.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>602.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>533.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>642.54</p>
+                                                </td>
+                                                <td>
+                                                    <p>850.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>609.10</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>42</p>
+                                                </td>
+                                                <td>
+                                                    <p>437.33</p>
+                                                </td>
+                                                <td>
+                                                    <p>543.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>622.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>556.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>672.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>884.85</p>
+                                                </td>
+                                                <td>
+                                                    <p>635.95</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>43</p>
+                                                </td>
+                                                <td>
+                                                    <p>448.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>559.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>643.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>579.52</p>
+                                                </td>
+                                                <td>
+                                                    <p>702.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>919.96</p>
+                                                </td>
+                                                <td>
+                                                    <p>663.01</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>44</p>
+                                                </td>
+                                                <td>
+                                                    <p>459.86</p>
+                                                </td>
+                                                <td>
+                                                    <p>576.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>663.98</p>
+                                                </td>
+                                                <td>
+                                                    <p>602.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>732.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>955.34</p>
+                                                </td>
+                                                <td>
+                                                    <p>690.28</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>45</p>
+                                                </td>
+                                                <td>
+                                                    <p>471.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>593.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>684.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>626.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>763.38</p>
+                                                </td>
+                                                <td>
+                                                    <p>990.99</p>
+                                                </td>
+                                                <td>
+                                                    <p>717.75</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>46</p>
+                                                </td>
+                                                <td>
+                                                    <p>482.72</p>
+                                                </td>
+                                                <td>
+                                                    <p>610.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>705.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>649.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>794.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>1026.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>745.42</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>47</p>
+                                                </td>
+                                                <td>
+                                                    <p>494.28</p>
+                                                </td>
+                                                <td>
+                                                    <p>627.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>726.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>673.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>825.16</p>
+                                                </td>
+                                                <td>
+                                                    <p>1063.07</p>
+                                                </td>
+                                                <td>
+                                                    <p>773.30</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>48</p>
+                                                </td>
+                                                <td>
+                                                    <p>505.93</p>
+                                                </td>
+                                                <td>
+                                                    <p>644.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>747.99</p>
+                                                </td>
+                                                <td>
+                                                    <p>697.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>856.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>1099.51</p>
+                                                </td>
+                                                <td>
+                                                    <p>801.39</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>49</p>
+                                                </td>
+                                                <td>
+                                                    <p>517.66</p>
+                                                </td>
+                                                <td>
+                                                    <p>661.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>769.38</p>
+                                                </td>
+                                                <td>
+                                                    <p>721.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>887.86</p>
+                                                </td>
+                                                <td>
+                                                    <p>1136.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>829.68</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>50</p>
+                                                </td>
+                                                <td>
+                                                    <p>529.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>678.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>790.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>746.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>919.56</p>
+                                                </td>
+                                                <td>
+                                                    <p>1173.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>858.17</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>51</p>
+                                                </td>
+                                                <td>
+                                                    <p>541.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>696.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>812.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>770.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>951.48</p>
+                                                </td>
+                                                <td>
+                                                    <p>1210.44</p>
+                                                </td>
+                                                <td>
+                                                    <p>886.87</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>52</p>
+                                                </td>
+                                                <td>
+                                                    <p>553.36</p>
+                                                </td>
+                                                <td>
+                                                    <p>714.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>834.48</p>
+                                                </td>
+                                                <td>
+                                                    <p>795.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>983.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1247.94</p>
+                                                </td>
+                                                <td>
+                                                    <p>915.78</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>53</p>
+                                                </td>
+                                                <td>
+                                                    <p>565.43</p>
+                                                </td>
+                                                <td>
+                                                    <p>731.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>856.49</p>
+                                                </td>
+                                                <td>
+                                                    <p>820.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>1016.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>1285.71</p>
+                                                </td>
+                                                <td>
+                                                    <p>944.89</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>54</p>
+                                                </td>
+                                                <td>
+                                                    <p>577.58</p>
+                                                </td>
+                                                <td>
+                                                    <p>749.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>878.65</p>
+                                                </td>
+                                                <td>
+                                                    <p>845.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>1048.60</p>
+                                                </td>
+                                                <td>
+                                                    <p>1323.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>974.20</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>55</p>
+                                                </td>
+                                                <td>
+                                                    <p>589.82</p>
+                                                </td>
+                                                <td>
+                                                    <p>767.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>900.97</p>
+                                                </td>
+                                                <td>
+                                                    <p>870.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1081.44</p>
+                                                </td>
+                                                <td>
+                                                    <p>1362.06</p>
+                                                </td>
+                                                <td>
+                                                    <p>1003.72</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>56</p>
+                                                </td>
+                                                <td>
+                                                    <p>602.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>785.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>923.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>895.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1114.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1400.63</p>
+                                                </td>
+                                                <td>
+                                                    <p>1033.45</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>57</p>
+                                                </td>
+                                                <td>
+                                                    <p>614.56</p>
+                                                </td>
+                                                <td>
+                                                    <p>804.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>946.08</p>
+                                                </td>
+                                                <td>
+                                                    <p>921.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1147.78</p>
+                                                </td>
+                                                <td>
+                                                    <p>1439.46</p>
+                                                </td>
+                                                <td>
+                                                    <p>1063.38</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>58</p>
+                                                </td>
+                                                <td>
+                                                    <p>627.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>822.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>968.86</p>
+                                                </td>
+                                                <td>
+                                                    <p>947.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>1181.30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1478.56</p>
+                                                </td>
+                                                <td>
+                                                    <p>1093.51</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>59</p>
+                                                </td>
+                                                <td>
+                                                    <p>639.63</p>
+                                                </td>
+                                                <td>
+                                                    <p>840.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>991.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>972.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1215.04</p>
+                                                </td>
+                                                <td>
+                                                    <p>1517.93</p>
+                                                </td>
+                                                <td>
+                                                    <p>1123.85</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td>
                                                     <p>60</p>
                                                 </td>
                                                 <td>
-                                                    <p>+5</p>
+                                                    <p>652.30</p>
                                                 </td>
                                                 <td>
-                                                    <p>496</p>
+                                                    <p>859.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>+20</p>
+                                                    <p>1014.90</p>
                                                 </td>
                                                 <td>
-                                                    <p>546</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2</p>
+                                                    <p>999.00</p>
                                                 </td>
                                                 <td>
-                                                    <p>100</p>
+                                                    <p>1249.02</p>
                                                 </td>
                                                 <td>
-                                                    <p>+6</p>
+                                                    <p>1557.57</p>
                                                 </td>
                                                 <td>
-                                                    <p>500</p>
-                                                </td>
-                                                <td>
-                                                    <p>+21</p>
-                                                </td>
-                                                <td>
-                                                    <p>550</p>
+                                                    <p>1154.40</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>3</p>
+                                                    <p>61</p>
                                                 </td>
                                                 <td>
-                                                    <p>150</p>
+                                                    <p>665.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>+7</p>
+                                                    <p>878.25</p>
                                                 </td>
                                                 <td>
-                                                    <p>503</p>
+                                                    <p>1038.15</p>
                                                 </td>
                                                 <td>
-                                                    <p>+22</p>
+                                                    <p>1025.25</p>
                                                 </td>
                                                 <td>
-                                                    <p>553</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>4</p>
+                                                    <p>1283.22</p>
                                                 </td>
                                                 <td>
-                                                    <p>200</p>
+                                                    <p>1597.47</p>
                                                 </td>
                                                 <td>
-                                                    <p>+8</p>
-                                                </td>
-                                                <td>
-                                                    <p>506</p>
-                                                </td>
-                                                <td>
-                                                    <p>+23</p>
-                                                </td>
-                                                <td>
-                                                    <p>556</p>
+                                                    <p>1185.15</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>5</p>
+                                                    <p>62</p>
                                                 </td>
                                                 <td>
-                                                    <p>250</p>
+                                                    <p>677.88</p>
                                                 </td>
                                                 <td>
-                                                    <p>+9</p>
+                                                    <p>897.12</p>
                                                 </td>
                                                 <td>
-                                                    <p>510</p>
+                                                    <p>1061.55</p>
                                                 </td>
                                                 <td>
-                                                    <p>+24</p>
+                                                    <p>1051.67</p>
                                                 </td>
                                                 <td>
-                                                    <p>560</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>6</p>
+                                                    <p>1317.64</p>
                                                 </td>
                                                 <td>
-                                                    <p>300</p>
+                                                    <p>1637.63</p>
                                                 </td>
                                                 <td>
-                                                    <p>+10</p>
-                                                </td>
-                                                <td>
-                                                    <p>513</p>
-                                                </td>
-                                                <td>
-                                                    <p>+25</p>
-                                                </td>
-                                                <td>
-                                                    <p>563</p>
+                                                    <p>1216.10</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>7</p>
+                                                    <p>63</p>
                                                 </td>
                                                 <td>
-                                                    <p>350</p>
+                                                    <p>690.80</p>
                                                 </td>
                                                 <td>
-                                                    <p>+11</p>
+                                                    <p>916.12</p>
                                                 </td>
                                                 <td>
-                                                    <p>516</p>
+                                                    <p>1085.11</p>
                                                 </td>
                                                 <td>
-                                                    <p>+26</p>
+                                                    <p>1078.27</p>
                                                 </td>
                                                 <td>
-                                                    <p>566</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>8</p>
+                                                    <p>1352.30</p>
                                                 </td>
                                                 <td>
-                                                    <p>400</p>
+                                                    <p>1678.06</p>
                                                 </td>
                                                 <td>
-                                                    <p>+12</p>
-                                                </td>
-                                                <td>
-                                                    <p>520</p>
-                                                </td>
-                                                <td>
-                                                    <p>+27</p>
-                                                </td>
-                                                <td>
-                                                    <p>570</p>
+                                                    <p>1247.26</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>9</p>
+                                                    <p>64</p>
                                                 </td>
                                                 <td>
-                                                    <p>440</p>
+                                                    <p>703.81</p>
                                                 </td>
                                                 <td>
-                                                    <p>+13</p>
+                                                    <p>935.25</p>
                                                 </td>
                                                 <td>
-                                                    <p>523</p>
+                                                    <p>1108.83</p>
                                                 </td>
                                                 <td>
-                                                    <p>+28</p>
+                                                    <p>1105.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>573</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>10</p>
+                                                    <p>1387.18</p>
                                                 </td>
                                                 <td>
-                                                    <p>480</p>
+                                                    <p>1718.76</p>
                                                 </td>
                                                 <td>
-                                                    <p>+14</p>
-                                                </td>
-                                                <td>
-                                                    <p>526</p>
-                                                </td>
-                                                <td>
-                                                    <p>+29</p>
-                                                </td>
-                                                <td>
-                                                    <p>576</p>
+                                                    <p>1278.63</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>(Power)</p>
-                                                </td>
-                                                <td></td>
-                                                <td>
-                                                    <p>+15</p>
+                                                    <p>65</p>
                                                 </td>
                                                 <td>
-                                                    <p>530</p>
+                                                    <p>716.90</p>
                                                 </td>
                                                 <td>
-                                                    <p>+30</p>
+                                                    <p>954.50</p>
                                                 </td>
                                                 <td>
-                                                    <p>580</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+1</p>
+                                                    <p>1132.70</p>
                                                 </td>
                                                 <td>
-                                                    <p>483</p>
+                                                    <p>1132.00</p>
                                                 </td>
                                                 <td>
-                                                    <p>+16</p>
+                                                    <p>1422.30</p>
                                                 </td>
                                                 <td>
-                                                    <p>533</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+2</p>
+                                                    <p>1759.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>486</p>
-                                                </td>
-                                                <td>
-                                                    <p>+17</p>
-                                                </td>
-                                                <td>
-                                                    <p>536</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+3</p>
-                                                </td>
-                                                <td>
-                                                    <p>490</p>
-                                                </td>
-                                                <td>
-                                                    <p>+18</p>
-                                                </td>
-                                                <td>
-                                                    <p>540</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>+4</p>
-                                                </td>
-                                                <td>
-                                                    <p>493</p>
-                                                </td>
-                                                <td>
-                                                    <p>+19</p>
-                                                </td>
-                                                <td>
-                                                    <p>543</p>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Weapon Bonus
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                Critical Anger SA is added, not multiplied.
-                                            </li>
-                                        </ul>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>type</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Health SA</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.25</p>
+                                                    <p>1310.20</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Hero Weapon if it boosts HP</p>
+                                                    <p>66</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.25</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Anger SA</p>
+                                                    <p>730.07</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.85</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Conversion SA</p>
+                                                    <p>973.87</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.60</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Critical Anger SA</p>
+                                                    <p>1156.72</p>
                                                 </td>
                                                 <td>
-                                                    <p>-11.98</p>
+                                                    <p>1159.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>1457.64</p>
+                                                </td>
+                                                <td>
+                                                    <p>1800.96</p>
+                                                </td>
+                                                <td>
+                                                    <p>1341.97</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Dark Legion's Edge*Tallum Blade</p>
+                                                    <p>67</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.15</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            Armor Bonus
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                Armor sets actually add a decimal value to you HP despite the in game
-                                                description.
-                                            </li>
-                                        </ul>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>type</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Avadon heavy set</p>
+                                                    <p>743.33</p>
                                                 </td>
                                                 <td>
-                                                    <p>294.49</p>
+                                                    <p>993.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1180.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>1186.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>1493.20</p>
+                                                </td>
+                                                <td>
+                                                    <p>1842.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>1373.95</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Brigandine no Shield</p>
+                                                    <p>68</p>
                                                 </td>
                                                 <td>
-                                                    <p>153</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Brigandine w/Shield</p>
+                                                    <p>756.68</p>
                                                 </td>
                                                 <td>
-                                                    <p>173</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Chain set</p>
+                                                    <p>1013.00</p>
                                                 </td>
                                                 <td>
-                                                    <p>198.21</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Clan Oath Plate Armor</p>
+                                                    <p>1205.24</p>
                                                 </td>
                                                 <td>
-                                                    <p>85</p>
+                                                    <p>1213.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>1529.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>1884.21</p>
+                                                </td>
+                                                <td>
+                                                    <p>1406.14</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Demon set</p>
+                                                    <p>69</p>
                                                 </td>
                                                 <td>
-                                                    <p>-269.65</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Doom heavy set</p>
+                                                    <p>770.11</p>
                                                 </td>
                                                 <td>
-                                                    <p>320</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Full Plate set</p>
+                                                    <p>1032.75</p>
                                                 </td>
                                                 <td>
-                                                    <p>269.65</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Imperial Crusader set</p>
+                                                    <p>1229.73</p>
                                                 </td>
                                                 <td>
-                                                    <p>445</p>
+                                                    <p>1241.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>1565.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>1926.24</p>
+                                                </td>
+                                                <td>
+                                                    <p>1438.53</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Mithril heavy set</p>
+                                                    <p>70</p>
                                                 </td>
                                                 <td>
-                                                    <p>126.13</p>
+                                                    <p>783.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1052.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1254.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1269.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1601.28</p>
+                                                </td>
+                                                <td>
+                                                    <p>1968.54</p>
+                                                </td>
+                                                <td>
+                                                    <p>1471.12</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Wooden set</p>
+                                                    <p>71</p>
                                                 </td>
                                                 <td>
-                                                    <p>41</p>
+                                                    <p>797.22</p>
+                                                </td>
+                                                <td>
+                                                    <p>1072.62</p>
+                                                </td>
+                                                <td>
+                                                    <p>1279.17</p>
+                                                </td>
+                                                <td>
+                                                    <p>1297.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1637.76</p>
+                                                </td>
+                                                <td>
+                                                    <p>2011.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>1503.92</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Zubei heavy set</p>
+                                                    <p>72</p>
                                                 </td>
                                                 <td>
-                                                    <p>294.49</p>
+                                                    <p>810.91</p>
+                                                </td>
+                                                <td>
+                                                    <p>1092.75</p>
+                                                </td>
+                                                <td>
+                                                    <p>1304.13</p>
+                                                </td>
+                                                <td>
+                                                    <p>1325.55</p>
+                                                </td>
+                                                <td>
+                                                    <p>1674.46</p>
+                                                </td>
+                                                <td>
+                                                    <p>2053.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1536.93</p>
                                                 </td>
                                             </tr>
-                                        </table>
-                                        <br>
-                                        <hr class="solid">
-                                        <br>
-                                        <div class="header center-text">
-                                            M.Def. Bonus
-                                        </div>
-                                        <br>
-                                        <table class="table-4">
                                             <tr>
-                                                <th>
-                                                    <p>type</p>
-                                                </th>
-                                                <th>
-                                                    <p>modifier</p>
-                                                </th>
+                                                <td>
+                                                    <p>73</p>
+                                                </td>
+                                                <td>
+                                                    <p>824.68</p>
+                                                </td>
+                                                <td>
+                                                    <p>1113.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>1329.24</p>
+                                                </td>
+                                                <td>
+                                                    <p>1353.90</p>
+                                                </td>
+                                                <td>
+                                                    <p>1711.40</p>
+                                                </td>
+                                                <td>
+                                                    <p>2097.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>1570.14</p>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>Necklace of Valakas</p>
+                                                    <p>74</p>
                                                 </td>
                                                 <td>
-                                                    <p>445</p>
+                                                    <p>838.53</p>
+                                                </td>
+                                                <td>
+                                                    <p>1133.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1354.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1382.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>1748.56</p>
+                                                </td>
+                                                <td>
+                                                    <p>2140.37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1603.55</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>75</p>
+                                                </td>
+                                                <td>
+                                                    <p>852.47</p>
+                                                </td>
+                                                <td>
+                                                    <p>1153.87</p>
+                                                </td>
+                                                <td>
+                                                    <p>1379.92</p>
+                                                </td>
+                                                <td>
+                                                    <p>1411.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>1785.96</p>
+                                                </td>
+                                                <td>
+                                                    <p>2184.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>1637.17</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>76</p>
+                                                </td>
+                                                <td>
+                                                    <p>866.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1174.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1405.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>1440.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>1823.58</p>
+                                                </td>
+                                                <td>
+                                                    <p>2227.89</p>
+                                                </td>
+                                                <td>
+                                                    <p>1671.00</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>77</p>
+                                                </td>
+                                                <td>
+                                                    <p>880.61</p>
+                                                </td>
+                                                <td>
+                                                    <p>1195.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>1431.23</p>
+                                                </td>
+                                                <td>
+                                                    <p>1469.05</p>
+                                                </td>
+                                                <td>
+                                                    <p>1861.42</p>
+                                                </td>
+                                                <td>
+                                                    <p>2272.04</p>
+                                                </td>
+                                                <td>
+                                                    <p>1705.03</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>78</p>
+                                                </td>
+                                                <td>
+                                                    <p>894.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>1216.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>1457.11</p>
+                                                </td>
+                                                <td>
+                                                    <p>1498.27</p>
+                                                </td>
+                                                <td>
+                                                    <p>1899.50</p>
+                                                </td>
+                                                <td>
+                                                    <p>2316.46</p>
+                                                </td>
+                                                <td>
+                                                    <p>1739.26</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>79</p>
+                                                </td>
+                                                <td>
+                                                    <p>909.08</p>
+                                                </td>
+                                                <td>
+                                                    <p>1237.12</p>
+                                                </td>
+                                                <td>
+                                                    <p>1483.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>1527.67</p>
+                                                </td>
+                                                <td>
+                                                    <p>1937.80</p>
+                                                </td>
+                                                <td>
+                                                    <p>2361.15</p>
+                                                </td>
+                                                <td>
+                                                    <p>1773.70</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>80</p>
+                                                </td>
+                                                <td>
+                                                    <p>923.45</p>
+                                                </td>
+                                                <td>
+                                                    <p>1258.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>1509.35</p>
+                                                </td>
+                                                <td>
+                                                    <p>1557.25</p>
+                                                </td>
+                                                <td>
+                                                    <p>1976.34</p>
+                                                </td>
+                                                <td>
+                                                    <p>2406.11</p>
+                                                </td>
+                                                <td>
+                                                    <p>1808.35</p>
                                                 </td>
                                             </tr>
                                         </table>
