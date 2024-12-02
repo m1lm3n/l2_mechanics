@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/css_reset.css"> -->
+    <link rel="stylesheet" href="css/controls.css">
+    <link rel="stylesheet" href="css/deco.css">
+    <link rel="stylesheet" href="css/nav_btn.css">
+    <link rel="stylesheet" href="css/nav_mobile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <script type="text/javascript" src="./js/core.js"></script>
+    <script type="text/javascript" src="./js/addon_status-window-info.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Lineage 2 Mechanics</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="background-top"></div>
+        <div class="background-fill"></div>
+        <div class="background-footer"></div>
+    </div>
+
+    <div id="cd-nav" class="cd-nav">
+
+        <div class="cd-navigation-wrapper">
+            <div class="flex">
+                <div class="element-left"></div>
+                <div class="under-flex-cont">
+                    <div class="black-h-line"></div>
+                    <div class="middle-container">
+                        <div class="black-v-line"></div>
+                        <div class="container">
+                            <div class="gray-h-line"></div>
+                            <div class="middle-container">
+                                <div class="gray-v-line"></div>
+                                <div class="container">
+                                    <div class="black-h-line"></div>
+                                    <div class="middle-container">
+                                        <div class="black-v-line"></div>
+                                        <div class="container-inner-3">
+                                            <div class="app-header">
+
+                                                <div class="logo-header">
+                                                    <a class="link" href="../index.html">
+                                                        <img class="logo-image" src="../img/logo.svg"
+                                                            alt="L2 Mechanics Logo" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="logo-text-header">Lineage 2 Mechanics</div>
+
+                                                <a href="#cd-nav" class="cd-nav-trigger">
+                                                    <div class="btn-header-2"> <span class="close"></span></div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="black-v-line"></div>
+                                    </div>
+                                    <div class="black-h-line"></div>
+                                </div>
+                                <div class="blue-v-line-1"></div>
+                                <div class="blue-v-line-2"></div>
+                            </div>
+                            <div class="gray-h-line"></div>
+                        </div>
+                        <div class="black-v-line"></div>
+                    </div>
+                    <div class="black-h-line"></div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="element-left-2"></div>
+                <div class="under-flex-cont">
+                    <div class="black-h-line"></div>
+                    <div class="middle-container">
+                        <div class="black-v-line"></div>
+                        <div class="container">
+                            <div class="gray-h-line"></div>
+                            <div class="middle-container">
+                                <div class="gray-v-line"></div>
+                                <div class="container">
+                                    <div class="black-h-line"></div>
+                                    <div class="middle-container">
+                                        <div class="black-v-line"></div>
+                                        <div class="container-inner-3">
+                                            <div class="container-inner-2">
+                                                <img class="flag" src="../img/united-kingdom-flag-icon-64.png" alt="GB">
+                                                <!-- <img class="flag" src="../img/ukraine-flag-icon-64.png" alt="UA">
+                                                <img class="flag" src="../img/spain-flag-small.png" alt="GB"> -->
+                                            </div>
+                                        </div>
+                                        <div class="black-v-line"></div>
+                                    </div>
+                                    <div class="black-h-line"></div>
+                                </div>
+                                <div class="blue-v-line-1"></div>
+                                <div class="blue-v-line-2"></div>
+                            </div>
+                            <div class="gray-h-line"></div>
+                        </div>
+                        <div class="black-v-line"></div>
+                    </div>
+                    <div class="black-h-line"></div>
+                </div>
+            </div>
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> Menu </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="mob_btn_hide()" class="btn-hide"></div>
+            </div>
+
+            <div id="mob-cont" class="mob-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner">
+                                        <div class="cd-half-block">
+                                            <nav class="mob-nav">
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_1_1()" class="nav-header nav-btn-1">Skills and
+                                                        Items</div>
+                                                    <div id="nav-1-1" class="nav-1-1">
+                                                        <a class="menu-link" href="../boss-jewelry.html">
+                                                            <div class="nav-item"><img class="icon-menu-2"
+                                                                    src="../img/items/accessory_necklace_of_valakas_i00.png" />
+                                                                <div class="nav-text">Boss Jewelry</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../hero-weapons.html">
+                                                            <div class="nav-item"><img class="icon-menu-3"
+                                                                    src="../img/items/weapon_the_mace_of_hero_i00_0.png" />
+                                                                <div class="nav-text">Hero Weapons</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../6-armor-bonuses.html">
+                                                            <div class="nav-item"><img class="icon-menu-3"
+                                                                    src="../img/items/etc_scroll_of_enchant_armor_i04.png" />
+                                                                <div class="nav-text">+6 Armor Bonuses</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu"
+                                                                    src="../img/items/skill1352.png" />
+                                                                <div class="nav-text">Buffs</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../passives.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0258.png" />
+                                                                <div class="nav-text">Passives</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../toggles.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0312.png" />
+                                                                <div class="nav-text">Toggles</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../summon.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1225.png" />
+                                                                <div class="nav-text">Summons and Pets</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../skillenchant.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/etc_codex_of_giant_i00.png" />
+                                                                <div class="nav-text">Skill Enchant</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="nav-section">
+                                                    <div onclick="nav_btn_2_2()" class="nav-header nav-btn-2">Status
+                                                        Window Info</div>
+                                                    <div id="nav-2-2" class="nav-2-2">
+                                                        <a class="menu-link" href="../status-window-info.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/question_mark.png" />
+                                                                <div class="nav-text">Overview</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="./basestats.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/base_stats.png" />
+                                                                <div class="nav-text">Base Stats</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="./hp.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0211.png" />
+                                                                <div class="nav-text">HP</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="./cp.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0440.png" />
+                                                                <div class="nav-text">CP</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0213.png" />
+                                                                <div class="nav-text">MP</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1068.png" />
+                                                                <div class="nav-text">P.Atk.</div>
+                                                            </button>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1059.png" />
+                                                                <div class="nav-text">M.Atk.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1040.png" />
+                                                                <div class="nav-text">P.Def.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1036.png" />
+                                                                <div class="nav-text">M.Def.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0256.png" />
+                                                                <div class="nav-text">Accuracy</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1087.png" />
+                                                                <div class="nav-text">Evasion</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1077.png" />
+                                                                <div class="nav-text">Critical</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1204.png" />
+                                                                <div class="nav-text">Speed</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill0168.png" />
+                                                                <div class="nav-text">Atk. Spd.</div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="menu-link" href="../buffs.html">
+                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                                    src="../img/items/skill1085.png" />
+                                                                <div class="nav-text">Casting Spd.</div>
+                                                            </div>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <br>
+                                        <div class="nav-section">
+                                            <div onclick="nav_btn_3_3()" class="nav-header nav-btn-3">
+                                                Mastery
+                                            </div>
+                                            <div id="nav-3-3" class="nav-3-3">
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill0141.png" />
+                                                        <div class="nav-text">Weapon</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill0142.png" />
+                                                        <div class="nav-text">Armor</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill0146.png" />
+                                                        <div class="nav-text">M.Def</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="nav-section">
+                                            <div onclick="nav_btn_4_4()" class="nav-header nav-btn-4">
+                                                Debuffs
+                                            </div>
+                                            <div id="nav-4-4" class="nav-4-4">
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/theory.png" />
+                                                        <div class="nav-text">Theory</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill0122.png" />
+                                                        <div class="nav-text">Base Land Rates</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="nav-section">
+                                            <div onclick="nav_btn_5_5()" class="nav-header nav-btn-5">Combat
+                                                Physics & Misc.</div>
+                                            <div id="nav-5-5" class="nav-5-5">
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/attributes.png" />
+                                                        <div class="nav-text">Attributes</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill1303.png" />
+                                                        <div class="nav-text">Magic Critical Hits</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/aa.png" />
+                                                        <div class="nav-text">Non-Skill Attacks</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill1016.png" />
+                                                        <div class="nav-text">Resurrection</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill1304.png" />
+                                                        <div class="nav-text">Shield Block Rate</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill1257.png" />
+                                                        <div class="nav-text">Weight Limit</div>
+                                                    </div>
+                                                </a>
+                                                <a class="menu-link" href="../buffs.html">
+                                                    <div class="nav-item"><img class="icon-menu-4"
+                                                            src="../img/items/skill0000.png" />
+                                                        <div class="nav-text">Misc.</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </nav>
+                                    </div><!-- .cd-half-block -->
+                                </div>
+                                <div class="black-v-line"></div>
+                            </div>
+                            <div class="black-h-line"></div>
+                        </div>
+                        <div class="gray-v-line"></div>
+                    </div>
+                    <div class="gray-h-line"></div>
+                </div>
+                <div class="black-v-line"></div>
+            </div>
+            <div class="black-h-line"></div>
+        </div>
+    </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+
+
+    <header>
+        <div class="lang">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="lang_btn_hide()" class="lang-btn-hide"></div>
+            </div>
+
+            <div id="lang-cont" class="lang-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner-2">
+                                        <img class="flag" src="../img/united-kingdom-flag-icon-64.png" alt="GB">
+                                        <!-- <img class="flag" src="../img/ukraine-flag-icon-64.png" alt="UA">
+                                        <img class="flag" src="../img/spain-flag-small.png" alt="GB"> -->
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="gray-v-line"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </div>
+        <div class="logotype">
+            <div class="logo"><a class="link" href="../index.html">
+                    <img class="logo-image" src="../img/logo.svg" alt="L2 Mechanics Logo" />
+                </a>
+            </div>
+            <div class="gap-2"></div>
+            <div class="logo-text">Lineage 2 Mechanics</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex">
+            <div class="element-left"></div>
+            <div class="under-flex-cont">
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner-3">
+                                        <div class="app-header">
+                                            <a href="#cd-nav" class="cd-nav-trigger">
+                                                <div class="btn-header"> <span class="cd-nav-icon"></span></div>
+                                            </a>
+
+                                            <div class="logo-header"><a class="link" href="../index.html">
+                                                    <img class="logo-image" src="../img/logo.svg"
+                                                        alt="L2 Mechanics Logo" />
+                                                </a>
+                                            </div>
+                                            <div class="logo-text-header">Lineage 2 Mechanics</div>
+                                        </div>
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="blue-v-line-1"></div>
+                            <div class="blue-v-line-2"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <nav class="navigation">
+            <div class="nav-section">
+                <div onclick="nav_btn_1()" class="nav-header nav-btn-1">Skills and Items</div>
+                <div id="nav-1" class="nav-1">
+                    <a class="menu-link" href="../boss-jewelry.html">
+                        <div class="nav-item"><img class="icon-menu-2"
+                                src="../img/items/accessory_necklace_of_valakas_i00.png" />
+                            <div class="nav-text">Boss Jewelry</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../hero-weapons.html">
+                        <div class="nav-item"><img class="icon-menu-3"
+                                src="../img/items/weapon_the_mace_of_hero_i00_0.png" />
+                            <div class="nav-text">Hero Weapons</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../6-armor-bonuses.html">
+                        <div class="nav-item"><img class="icon-menu-3"
+                                src="../img/items/etc_scroll_of_enchant_armor_i04.png" />
+                            <div class="nav-text">+6 Armor Bonuses</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu" src="../img/items/skill1352.png" />
+                            <div class="nav-text">Buffs</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../passives.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0258.png" />
+                            <div class="nav-text">Passives</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../toggles.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0312.png" />
+                            <div class="nav-text">Toggles</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../summon.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1225.png" />
+                            <div class="nav-text">Summons and Pets</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../skillenchant.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/etc_codex_of_giant_i00.png" />
+                            <div class="nav-text">Skill Enchant</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_2()" class="nav-header nav-btn-2">Status Window Info</div>
+                <div id="nav-2" class="nav-2">
+                    <a class="menu-link" href="../status-window-info.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/question_mark.png" />
+                            <div class="nav-text">Overview</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="./basestats.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/base_stats.png" />
+                            <div class="nav-text">Base Stats</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="./hp.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0211.png" />
+                            <div class="nav-text">HP</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="./cp.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0440.png" />
+                            <div class="nav-text">CP</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div  class="nav-item"><img class="icon-menu-4" src="../img/items/skill0213.png" />
+                            <div class="nav-text">MP</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill1068.png" />
+                            <div class="nav-text">P.Atk.</div>
+                        </button>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1059.png" />
+                            <div class="nav-text">M.Atk.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1040.png" />
+                            <div class="nav-text">P.Def.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1036.png" />
+                            <div class="nav-text">M.Def.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0256.png" />
+                            <div class="nav-text">Accuracy</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1087.png" />
+                            <div class="nav-text">Evasion</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1077.png" />
+                            <div class="nav-text">Critical</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1204.png" />
+                            <div class="nav-text">Speed</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0168.png" />
+                            <div class="nav-text">Atk. Spd.</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1085.png" />
+                            <div class="nav-text">Casting Spd.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_3()" class="nav-header nav-btn-3">Mastery</div>
+                <div id="nav-3" class="nav-3">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0141.png" />
+                            <div class="nav-text">Weapon</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0142.png" />
+                            <div class="nav-text">Armor</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0146.png" />
+                            <div class="nav-text">M.Def</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_4()" class="nav-header nav-btn-4">Debuffs</div>
+                <div id="nav-4" class="nav-4">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/theory.png" />
+                            <div class="nav-text">Theory</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0122.png" />
+                            <div class="nav-text">Base Land Rates</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="nav-section">
+                <div onclick="nav_btn_5()" class="nav-header nav-btn-5">Combat Physics & Misc.</div>
+                <div id="nav-5" class="nav-5">
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/attributes.png" />
+                            <div class="nav-text">Attributes</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1303.png" />
+                            <div class="nav-text">Magic Critical Hits</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/aa.png" />
+                            <div class="nav-text">Non-Skill Attacks</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1016.png" />
+                            <div class="nav-text">Resurrection</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1304.png" />
+                            <div class="nav-text">Shield Block Rate</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1257.png" />
+                            <div class="nav-text">Weight Limit</div>
+                        </div>
+                    </a>
+                    <a class="menu-link" href="../buffs.html">
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0000.png" />
+                            <div class="nav-text">Misc.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="gap"></div>
+        <section class="main-content">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs">Physical Atk.</div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+                <div onclick="show_conf()" class="btn-close"></div>
+                <div onclick="main_btn_hide()" class="btn-hide"></div>
+            </div>
+
+            <div id="main-cont" class="main-cont">
+                <div class="shadow"></div>
+                <div class="black-h-line"></div>
+                <div class="middle-container">
+                    <div class="black-v-line"></div>
+                    <div class="container">
+                        <div class="gray-h-line"></div>
+                        <div class="middle-container">
+                            <div class="gray-v-line"></div>
+                            <div class="container">
+                                <div class="black-h-line"></div>
+                                <div class="middle-container">
+                                    <div class="black-v-line"></div>
+                                    <div class="container-inner">
+                                        <ul>
+                                            <li>
+                                                P.Atk. = (Weapon P.Atk.*Level Modifier*STR Modifier*Mastery
+                                                Modifier*Armor Bonus*M.Def. Bonus*Buffs Type 1)+Weapon Mastery+Buffs
+                                                Type 2+Weapon Bonus
+                                            </li>
+                                            <li>
+                                                The final P.Atk. is rounded down.
+                                            </li>
+                                            <li>
+                                                Still no information on how Weaon SAs apply on P.Atk.
+                                            </li>
+                                        </ul>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Weapon P.Atk.
+                                        </div>
+                                        <p>If you have no weapon equipped, use:</p>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>P.Atk.</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Level Modifier
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                (level+89)/100
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            STR Modifier
+                                        </div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>STR</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                                <th>
+                                                    <p>STR</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                                <th>
+                                                    <p>STR</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>0.30</td>
+                                                <td>18</td>
+                                                <td>0.55</td>
+                                                <td>35</td>
+                                                <td>1.01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>0.31</td>
+                                                <td>19</td>
+                                                <td>0.57</td>
+                                                <td>36</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>0.32</td>
+                                                <td>20</td>
+                                                <td>0.59</td>
+                                                <td>37</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>0.34</td>
+                                                <td>21</td>
+                                                <td>0.61</td>
+                                                <td>38</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>0.35</td>
+                                                <td>22</td>
+                                                <td>0.63</td>
+                                                <td>39</td>
+                                                <td>1.16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>0.36</td>
+                                                <td>23</td>
+                                                <td>0.66</td>
+                                                <td>40</td>
+                                                <td>1.20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>0.37</td>
+                                                <td>24</td>
+                                                <td>0.68</td>
+                                                <td>41</td>
+                                                <td>1.24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>0.39</td>
+                                                <td>25</td>
+                                                <td>0.71</td>
+                                                <td>42</td>
+                                                <td>1.29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>0.40</td>
+                                                <td>26</td>
+                                                <td>0.73</td>
+                                                <td>43</td>
+                                                <td>1.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>0.42</td>
+                                                <td>27</td>
+                                                <td>0.76</td>
+                                                <td>44</td>
+                                                <td>1.38</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>0.43</td>
+                                                <td>28</td>
+                                                <td>0.78</td>
+                                                <td>45</td>
+                                                <td>1.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>0.45</td>
+                                                <td>29</td>
+                                                <td>0.81</td>
+                                                <td>46</td>
+                                                <td>1.48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>0.46</td>
+                                                <td>30</td>
+                                                <td>0.84</td>
+                                                <td>47</td>
+                                                <td>1.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>0.48</td>
+                                                <td>31</td>
+                                                <td>0.87</td>
+                                                <td>48</td>
+                                                <td>1.59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>0.50</td>
+                                                <td>32</td>
+                                                <td>0.90</td>
+                                                <td>49</td>
+                                                <td>1.65</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>0.51</td>
+                                                <td>33</td>
+                                                <td>0.94</td>
+                                                <td>50</td>
+                                                <td>1.71</td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td>0.53</td>
+                                                <td>34</td>
+                                                <td>0.97</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Mastery Modifier
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                Do not use Mastery Modifier if you do not have any levels in Weapon
+                                                Mastery.
+                                            </li>
+                                        </ul>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>Type</p>
+                                                </th>
+                                                <th>
+                                                    <p>Formula</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.085</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.450</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Armor Bonus
+                                        </div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>Doom light set</td>
+                                                <td>1.027</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nightmare Heavy set</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Majestic Heavy set</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dark Crystal light set</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Majestic light set</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Draconic light set</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            M.Def. Bonus
+                                        </div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Necklace of Valakas</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.04</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Buffs/Debuffs/Toggles Type 1
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                If you have more than one of these, you multiply all of your buffs into
+                                                the formula.
+                                            </li>
+                                            <li>
+                                                Please be aware of buffs that do not stack.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>buff</p>
+                                                </th>
+                                                <th>
+                                                    <p>lvl</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>Attack Aura</td>
+                                                <td>1</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Attack Aura</td>
+                                                <td>2</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bear Spirit Totem</td>
+                                                <td>1</td>
+                                                <td>1.20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Berserker Spirit</td>
+                                                <td>1</td>
+                                                <td>1.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Berserker Spirit</td>
+                                                <td>2</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bison Spirit Totem</td>
+                                                <td>1</td>
+                                                <td>1.43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chant of Battle</td>
+                                                <td>1</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chant of Battle</td>
+                                                <td>2</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chant of Battle</td>
+                                                <td>3</td>
+                                                <td>1.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chant of Victory</td>
+                                                <td>1</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Clan Might</td>
+                                                <td>1</td>
+                                                <td>1.03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Clan Might</td>
+                                                <td>2</td>
+                                                <td>1.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Clan Might</td>
+                                                <td>3</td>
+                                                <td>1.06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curse: Weakness</td>
+                                                <td>1</td>
+                                                <td>0.83</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curse: Weakness</td>
+                                                <td>2-5</td>
+                                                <td>0.80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curse: Weakness</td>
+                                                <td>6+</td>
+                                                <td>0.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dance of Warrior</td>
+                                                <td>1</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demonic Blade Dance</td>
+                                                <td>1-3</td>
+                                                <td>0.90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demonic Blade Dance</td>
+                                                <td>4-5</td>
+                                                <td>0.85</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demonic Blade Dance</td>
+                                                <td>6-7</td>
+                                                <td>0.80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demonic Blade Dance</td>
+                                                <td>8-9</td>
+                                                <td>0.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demonic Blade Dance</td>
+                                                <td>10</td>
+                                                <td>0.70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Servitor</td>
+                                                <td>1</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (1hs/1hb/Pole)</td>
+                                                <td>1</td>
+                                                <td>2.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (1hs/1hb/Pole)</td>
+                                                <td>2</td>
+                                                <td>2.4976</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (1hs/1hb/Pole)</td>
+                                                <td>3</td>
+                                                <td>3.4638</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (2hs/2hb)</td>
+                                                <td>1</td>
+                                                <td>2.5026</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (2hs/2hb)</td>
+                                                <td>2</td>
+                                                <td>2.9955</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (2hs/2hb)</td>
+                                                <td>3</td>
+                                                <td>4.0195</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (other)</td>
+                                                <td>1-2</td>
+                                                <td>1.30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Frenzy (other)</td>
+                                                <td>3</td>
+                                                <td>1.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gift of Queen</td>
+                                                <td>1</td>
+                                                <td>1.06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gift of Queen</td>
+                                                <td>2</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gift of Queen</td>
+                                                <td>3+</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greater Might</td>
+                                                <td>1</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greater Might</td>
+                                                <td>2</td>
+                                                <td>1.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greater Might</td>
+                                                <td>3</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herb of Strength</td>
+                                                <td>1</td>
+                                                <td>1.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Howl</td>
+                                                <td>1+</td>
+                                                <td>0.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Might</td>
+                                                <td>1</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Might</td>
+                                                <td>2</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Might</td>
+                                                <td>3</td>
+                                                <td>1.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mighty Servitor</td>
+                                                <td>1</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mighty Servitor</td>
+                                                <td>2</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mighty Servitor</td>
+                                                <td>3</td>
+                                                <td>1.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pa'agrian Gift</td>
+                                                <td>1</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pa'agrian Gift</td>
+                                                <td>2</td>
+                                                <td>1.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pa'agrian Gift</td>
+                                                <td>3</td>
+                                                <td>1.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Poltergeist Cubic</td>
+                                                <td>1</td>
+                                                <td>0.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Break</td>
+                                                <td>1-2</td>
+                                                <td>0.80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Break</td>
+                                                <td>3+</td>
+                                                <td>0.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prophecy of Fire</td>
+                                                <td>1</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rabbit Spirit Totem</td>
+                                                <td>1</td>
+                                                <td>0.70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage (1hs/1hb/Pole)</td>
+                                                <td>1</td>
+                                                <td>1.4520</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage (1hs/1hb/Pole)</td>
+                                                <td>2</td>
+                                                <td>1.5486</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage (2hs/2hb)</td>
+                                                <td>1</td>
+                                                <td>1.5536</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage (2hs/2hb)</td>
+                                                <td>2</td>
+                                                <td>1.64085</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage (other)</td>
+                                                <td>1-2</td>
+                                                <td>1.20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage of Pa'agrio</td>
+                                                <td>1</td>
+                                                <td>1.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rage of Pa'agrio</td>
+                                                <td>2</td>
+                                                <td>1.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sanctuary</td>
+                                                <td>1+</td>
+                                                <td>0.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Seal of Despair</td>
+                                                <td>1</td>
+                                                <td>0.90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stealth</td>
+                                                <td>1-3</td>
+                                                <td>0.55</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Chant</td>
+                                                <td>1</td>
+                                                <td>1.04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Chant</td>
+                                                <td>2</td>
+                                                <td>1.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Chant</td>
+                                                <td>3</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Cry</td>
+                                                <td>1</td>
+                                                <td>1.20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Cry</td>
+                                                <td>2</td>
+                                                <td>1.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Warrior Servitor</td>
+                                                <td>1</td>
+                                                <td>1.10</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Weapon Mastery
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                see <a href="">here</a>
+                                            </li>
+                                            <li>
+                                                don't forget that fighters have generic Weapon Mastery from being pre-20
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Buffs/Debuffs/Toggles Type 2
+                                        </div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>buff</p>
+                                                </th>
+                                                <th>
+                                                    <p>lvl</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>Archery</td>
+                                                <td>1</td>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Assassination</td>
+                                                <td>1</td>
+                                                <td>70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>1</td>
+                                                <td>124</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>2</td>
+                                                <td>134</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>3</td>
+                                                <td>145</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>4</td>
+                                                <td>155</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>5</td>
+                                                <td>166</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>6</td>
+                                                <td>177</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>7</td>
+                                                <td>188</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dead Eye</td>
+                                                <td>8</td>
+                                                <td>199</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>1</td>
+                                                <td>32.9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>2</td>
+                                                <td>39.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>3</td>
+                                                <td>46.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>4</td>
+                                                <td>54.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>5</td>
+                                                <td>63.3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>6</td>
+                                                <td>72.7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>7</td>
+                                                <td>79.3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>8</td>
+                                                <td>86.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>9</td>
+                                                <td>93.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>10</td>
+                                                <td>100.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>11</td>
+                                                <td>107.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>12</td>
+                                                <td>114.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>13</td>
+                                                <td>122.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Final Frenzy</td>
+                                                <td>14</td>
+                                                <td>129.3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heroic Berserker</td>
+                                                <td>1</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heroic Valor</td>
+                                                <td>1</td>
+                                                <td>250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Master of Combat</td>
+                                                <td>1</td>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>1</td>
+                                                <td>62</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>2</td>
+                                                <td>67</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>3</td>
+                                                <td>73</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>4</td>
+                                                <td>78</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>5</td>
+                                                <td>83</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>6</td>
+                                                <td>89</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>7</td>
+                                                <td>94</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rapid Fire</td>
+                                                <td>8</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>1</td>
+                                                <td>124</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>2</td>
+                                                <td>134</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>3</td>
+                                                <td>145</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>4</td>
+                                                <td>155</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>5</td>
+                                                <td>166</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>6</td>
+                                                <td>177</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>7</td>
+                                                <td>188</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snipe</td>
+                                                <td>8</td>
+                                                <td>199</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>1</td>
+                                                <td>4.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>2</td>
+                                                <td>14.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>3</td>
+                                                <td>33.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>4</td>
+                                                <td>66.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>5</td>
+                                                <td>90.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>6</td>
+                                                <td>141.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>7</td>
+                                                <td>208.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>8</td>
+                                                <td>247.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>9</td>
+                                                <td>310.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Cry</td>
+                                                <td>10</td>
+                                                <td>375.5</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Weapon Bonus
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Weapon SAs actually add a decimal value to your patk despite what the in
+                                                game descriptions say.
+                                            </li>
+                                            <li>
+                                                Critical Damage SA only adds to P.Atk. on a critical hit. There is still
+                                                debate as to whether this SA is affected by buffs, critical buffs or
+                                                soulshots.
+                                            </li>
+                                            <li>
+                                                I have no idea what's up with Critical Anger, I assume it works like
+                                                Critical Damage.
+                                            </li>
+                                            <li>
+                                                *=I really doubt that's accurate.
+                                            </li>
+                                        </ul>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th><p>Anger SA</p></th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Battle Axe</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blood Tornado</td>
+                                                <td>38.09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Deadman's Glory</td>
+                                                <td>30.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doom Crusher</td>
+                                                <td>11%*</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dwarven Hammer</td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dwarven War Hammer</td>
+                                                <td>22.64</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Elysian Axe</td>
+                                                <td>32.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Great Axe</td>
+                                                <td>28.59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy War Axe</td>
+                                                <td>28.59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ice Storm Hammer</td>
+                                                <td>28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lance</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Orcish Glaive</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scorpion</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scythe</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Silver Axe</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Skull Graver</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tallum Blade</td>
+                                                <td>31.30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Axe</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yaksa Mace</td>
+                                                <td>26.78</td>
+                                            </tr>
+                                            <tr>
+                                                <th><p>Critical Anger SA</p></th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Stormbringer</td>
+                                                <td>248.56</td>
+                                            </tr>
+                                            <tr>
+                                                <th><p>Critical Damage SA</p></th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Angel Slayer</td>
+                                                <td>265.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Battle Axe</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Berserker Blade</td>
+                                                <td>269.91</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blood Tornado</td>
+                                                <td>38.09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caliburs</td>
+                                                <td>213.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caliburs*Caliburs</td>
+                                                <td>127.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Crystal Dagger</td>
+                                                <td>140.87</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dark Legion's Edge</td>
+                                                <td>326.28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Demon's Sword</td>
+                                                <td>159.93</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doom Crusher</td>
+                                                <td>11%*</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dwarven Hammer</td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dwarven War Hammer</td>
+                                                <td>22.64</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Elysian Axe</td>
+                                                <td>32.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Elven Sword*Elven Long Sword</td>
+                                                <td>61.40</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flamberge</td>
+                                                <td>174.78</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Great Axe</td>
+                                                <td>28.59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Great Sword</td>
+                                                <td>247.98</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy War Axe</td>
+                                                <td>28.59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ice Storm Hammer</td>
+                                                <td>28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Infernal Master</td>
+                                                <td>297</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Infinity Cleaver</td>
+                                                <td>504.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Katana</td>
+                                                <td>194.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Katana*Raid Sword</td>
+                                                <td>84.11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Katana*Sword of Limit</td>
+                                                <td>146.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lance</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Orcish Glaive</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Raid Sword*Sword of Limit</td>
+                                                <td>146.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samurai Longsword</td>
+                                                <td>231.29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scorpion</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scythe</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shamshir*Katana</td>
+                                                <td>84.11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shamshir*Sword of Limit</td>
+                                                <td>146.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Silver Axe</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Skull Graver</td>
+                                                <td>20.44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spirit Sword</td>
+                                                <td>194.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spirit Sword*Sword of Limit</td>
+                                                <td>146.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stormbringer</td>
+                                                <td>248.56</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stormbringer*Shamshir</td>
+                                                <td>49.42</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stormbringer*Sword of Limit</td>
+                                                <td>166.26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soul Seperator</td>
+                                                <td>200.79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sword of Damascus</td>
+                                                <td>262.57</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sword of Delusion*Samurai Long Sword</td>
+                                                <td>133.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sword of Delusion*Sword of Nightmare</td>
+                                                <td>127.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sword of Limit*Sword of Limit</td>
+                                                <td>127.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tallum Blade</td>
+                                                <td>31.30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tsurugi</td>
+                                                <td>213.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>War Axe</td>
+                                                <td>24.77</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yaksa Mace</td>
+                                                <td>26.78</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class="header center-text">
+                                            Blunt Mastery Enchanted for Critical Damage
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Works the same as Critical Damage SA
+                                            </li>
+                                        </ul>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>effect</p>
+                                                </th>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>effect</p>
+                                                </th>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>effect</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>113</td>
+                                                <td>11</td>
+                                                <td>252</td>
+                                                <td>21</td>
+                                                <td>390</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>127</td>
+                                                <td>12</td>
+                                                <td>266</td>
+                                                <td>22</td>
+                                                <td>404</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>141</td>
+                                                <td>13</td>
+                                                <td>279</td>
+                                                <td>23</td>
+                                                <td>418</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>155</td>
+                                                <td>14</td>
+                                                <td>293</td>
+                                                <td>24</td>
+                                                <td>432</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>169</td>
+                                                <td>15</td>
+                                                <td>307</td>
+                                                <td>25</td>
+                                                <td>445</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>183</td>
+                                                <td>16</td>
+                                                <td>321</td>
+                                                <td>26</td>
+                                                <td>459</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>196</td>
+                                                <td>17</td>
+                                                <td>335</td>
+                                                <td>27</td>
+                                                <td>473</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>210</td>
+                                                <td>18</td>
+                                                <td>349</td>
+                                                <td>28</td>
+                                                <td>487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>224</td>
+                                                <td>19</td>
+                                                <td>362</td>
+                                                <td>29</td>
+                                                <td>501</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>238</td>
+                                                <td>20</td>
+                                                <td>376</td>
+                                                <td>30</td>
+                                                <td>515</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="black-v-line"></div>
+                                </div>
+                                <div class="black-h-line"></div>
+                            </div>
+                            <div class="gray-v-line"></div>
+                        </div>
+                        <div class="gray-h-line"></div>
+                    </div>
+                    <div class="black-v-line"></div>
+                </div>
+                <div class="black-h-line"></div>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="gui-frame">
+                <div class="gui-frame-left"></div>
+                <div class="gui-frame-mid"></div>
+                <div class="breadscrumbs"> </div>
+                <div class="gui-frame-mid"></div>
+                <div class="gui-frame-back"></div>
+            </div>
+            <div class="shadow"></div>
+
+            <div class="black-h-line"></div>
+            <div class="middle-container">
+                <div class="black-v-line"></div>
+                <div class="container">
+                    <div class="gray-h-line"></div>
+                    <div class="middle-container">
+                        <div class="gray-v-line"></div>
+                        <div class="container">
+                            <div class="black-h-line"></div>
+                            <div class="middle-container">
+                                <div class="black-v-line"></div>
+                                <div class="container-inner">
+                                    <p class="footer-credits">All exclusive rights, rights to the Game and/or its
+                                        elements belong to NCsoft.
+                                    </p>
+                                    <br>
+                                    <p class="footer-credits"> Made with &#128151 in Ukraine </p>
+                                </div>
+                                <div class="black-v-line"></div>
+                            </div>
+                            <div class="black-h-line"></div>
+                        </div>
+                        <div class="gray-v-line"></div>
+                    </div>
+                    <div class="gray-h-line"></div>
+                </div>
+                <div class="black-v-line"></div>
+            </div>
+            <div class="black-h-line"></div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div id=confirmation-window style="display:none">
+        <div class="gui-frame">
+            <div class="gui-frame-left"></div>
+            <div class="breadscrumbs"></div>
+            <div class="gui-frame-back"></div>
+            <div onclick="show_conf()" class="btn-close"></div>
+        </div>
+        <div class="shadow"></div>
+
+        <div class="black-h-line"></div>
+        <div class="middle-container">
+            <div class="black-v-line"></div>
+            <div class="container">
+                <div class="gray-h-line"></div>
+                <div class="middle-container">
+                    <div class="gray-v-line"></div>
+                    <div class="container">
+                        <div class="black-h-line"></div>
+                        <div class="middle-container">
+                            <div class="black-v-line"></div>
+                            <div class="conf-cont">
+                                <p class="conf-text">Are you really sure that you want to exit from the game?</p>
+                                <div onclick="show_conf()" onmouseover="btn_exit(this)" id="btn-exit">Exit</div>
+                            </div>
+                            <div class="black-v-line"></div>
+                        </div>
+                        <div class="black-h-line"></div>
+                    </div>
+                    <div class="gray-v-line"></div>
+                </div>
+                <div class="gray-h-line"></div>
+            </div>
+            <div class="black-v-line"></div>
+        </div>
+        <div class="black-h-line"></div>
+    </div>
+    <div class="preloader">
+        <div class="preloader-bg">
+            <div class="fading-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

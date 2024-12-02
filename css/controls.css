@@ -166,6 +166,7 @@
     color: #e6d9be;
     font-size: 14px;
     line-height: 21px;
+    filter: drop-shadow(1px 2px 2px #0000009c);
 }
 
 .nav-item:hover {

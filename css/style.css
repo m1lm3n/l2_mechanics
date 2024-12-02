@@ -20,7 +20,7 @@ html * {
 body {
     background-color: #222222;
     color: #e6d9be;
-    font-family: Verdana, sans-serif;
+    font-family:"Calibri", sans-serif;
     overflow-x: hidden;
     position: relative;
     line-height: 120%;
@@ -195,7 +195,8 @@ header {
     font-family: "Philosopher", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 2px #000000;
+    filter: drop-shadow(0px 0px 10px #000000);
 }
 
 .link {
@@ -355,7 +356,7 @@ main {
     background-image: url("../img/header_200.png");
     text-align: center;
     font-size: 11px;
-    filter: drop-shadow(2px 4px 2px #000000);
+    filter: drop-shadow(2px 4px 2px #0000009c);
 }
 
 /* .nav-header:hover {
@@ -365,6 +366,10 @@ main {
 .header {
     font-size: 24px;
     line-height: 100%;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    filter: drop-shadow(0px 0px 6px #e6d9be9d);
+
 }
 
 footer {
@@ -651,7 +656,7 @@ table {
 }
 
 table tr:nth-child(odd) {
-    background-color: #191511;
+    background-color: #221c16;
 }
 
 table tr:nth-child(even) {
@@ -673,6 +678,10 @@ table tr:nth-child(even) {
 }
 
 .table-2 tr th>* {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
     background-color: #e6d9be;
     color: #191511;
 }
@@ -695,6 +704,19 @@ table tr:nth-child(even) {
     margin: auto;
 }
 
+.table-4 tr th>* {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: #e6d9be;
+    color: #191511;
+}
+
+.table-4 tr:nth-child(odd) th>* {
+    background-color: #c0a038;
+
+}
 .items {
     margin-top: 8px;
     margin-bottom: 4px;
