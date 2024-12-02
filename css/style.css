@@ -633,7 +633,7 @@ footer {
 table,
 th,
 td {
-    border: 1px solid #000000;
+    border: 1px solid rgb(116, 100, 71);
     line-height: 100%;
 }
 
@@ -642,7 +642,7 @@ p {
 }
 
 th {
-    padding: 4px;
+    /* padding: 4px; */
 }
 
 td {
@@ -680,8 +680,8 @@ table tr:nth-child(even) {
 .table-2 tr th>* {
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 2px;
+    padding-right: 2x;
     background-color: #e6d9be;
     color: #191511;
 }
@@ -707,8 +707,8 @@ table tr:nth-child(even) {
 .table-4 tr th>* {
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
     background-color: #e6d9be;
     color: #191511;
 }
