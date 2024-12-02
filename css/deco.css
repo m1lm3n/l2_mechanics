@@ -106,6 +106,7 @@
 
 hr.solid {
     border-top: 3px solid #e6d9be;
+    border-radius: 2px;
 }
 
 .background {
