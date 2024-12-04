@@ -642,7 +642,7 @@ p {
 }
 
 th {
-    /* padding: 4px; */
+    padding: 1px;
 }
 
 td {
@@ -685,7 +685,7 @@ table tr:nth-child(even) {
     background-color: #e6d9be;
     color: #191511;
 }
-.table-2 tr:nth-child(odd) th>* {
+.table-2 tr:first-child th>* {
     background-color: #c0a038;
 
 }
@@ -713,7 +713,7 @@ table tr:nth-child(even) {
     color: #191511;
 }
 
-.table-4 tr:nth-child(odd) th>* {
+.table-4 tr:first-child th>* {
     background-color: #c0a038;
 
 }
