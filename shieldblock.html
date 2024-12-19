@@ -364,16 +364,16 @@
                                                             </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <button disabled class="nav-item"><img class="icon-menu-4"
+                                                            <div class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill1016.png" />
                                                                 <div class="nav-text">Resurrection</div>
-                                                            </button>
+                                                            </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill1304.png" />
                                                                 <div class="nav-text">Shield Block Rate</div>
-                                                            </div>
+                                                            </button>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
                                                             <div class="nav-item"><img class="icon-menu-4"
@@ -698,14 +698,14 @@
                         </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill1016.png" />
+                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1016.png" />
                             <div class="nav-text">Resurrection</div>
-                        </button>
+                        </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1304.png" />
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill1304.png" />
                             <div class="nav-text">Shield Block Rate</div>
-                        </div>
+                        </button>
                     </a>
                     <a class="menu-link" href="../buffs.html">
                         <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill1257.png" />
@@ -725,7 +725,7 @@
             <div class="gui-frame">
                 <div class="gui-frame-left"></div>
                 <div class="gui-frame-mid"></div>
-                <div class="breadscrumbs">Resurrection</div>
+                <div class="breadscrumbs">Shield Block Rate</div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
                 <div onclick="show_conf()" class="btn-close"></div>
@@ -748,278 +748,94 @@
                                     <div class="container-inner">
                                         <ul>
                                             <li>
-                                                Percent gained back from a Resurrection = (Base Res %)*(WIT Modifier)
+                                                Shield Block Rate = Base Shield Block Rate*DEX Modifier*Shield
+                                                Mastery*Buffs*Set Bonus </li>
+                                            <li>
+                                                If the attacker is using a bow, multiply the Shield Block Rate by 3.
                                             </li>
                                             <li>
-                                                This is not rounded as far as I am aware, except that it may round you
-                                                down by 1 whole point of exp.
-                                            </li>
-                                            <li>
-                                                The maximum % boost from the WIT modifier is capped at +20%. You cannot
-                                                get higher.
+                                                The following skills "have a chance" to ignore shield block rate -
+                                                Spinning Slasher, Thunder Storm, Punch of Doom, Hammer Crush, Triple
+                                                Sonic Slash, Burning Fist, Soul Breaker, Hurricane Assault, Crush of
+                                                Doom, Shock Blast, and Earthquake
                                             </li>
                                         </ul>
                                         <hr class="solid">
                                         <br>
-                                        <div class=" header center-text">Base Res %</div>
+                                        <div class=" header center-text">Base Shield Block Rate</div>
                                         <br>
-                                        <p class="center-text"><b>Resurrection</b></p>
+                                        <p class="center-text">0.20. Anyway.... </p>
                                         <br>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>level</p>
-                                                </th>
-                                                <th>
-                                                    <p>%</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>40</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>50</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>55</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>7</p>
-                                                </td>
-                                                <td>
-                                                    <p>60</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>65</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>9</p>
-                                                </td>
-                                                <td>
-                                                    <p>70</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <p class="center-text"><b>Mass Resurrection</b></p>
-                                        <br>
-                                        <table class="table-4">
-                                            <tr>
-                                                <th>
-                                                    <p>level</p>
-                                                </th>
-                                                <th>
-                                                    <p>%</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>20</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>30</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>40</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>50</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>55</p>
-                                                </td>
-                                            </tr>
-                                        </table>
                                         <hr class="solid">
                                         <br>
-                                        <div class=" header center-text">WIT Modifier</div>
+                                        <div class=" header center-text">DEX modifier</div>
                                         <br>
                                         <table class="table-4">
                                             <tr>
                                                 <th>
-                                                    <p>WIT</p>
+                                                    <p>DEX</p>
                                                 </th>
                                                 <th>
                                                     <p>modifier</p>
                                                 </th>
                                                 <th>
-                                                    <p>WIT</p>
+                                                    <p>DEX</p>
                                                 </th>
                                                 <th>
                                                     <p>modifier</p>
                                                 </th>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <p>1</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.40</p>
-                                                </td>
-                                                <td>
-                                                    <p>17</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.86</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.42</p>
-                                                </td>
-                                                <td>
-                                                    <p>18</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.91</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>3</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.44</p>
-                                                </td>
-                                                <td>
-                                                    <p>19</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.95</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.46</p>
-                                                </td>
-                                                <td>
-                                                    <p>20</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.00</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>5</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.48</p>
-                                                </td>
                                                 <td>
                                                     <p>21</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.05</p>
+                                                    <p>1.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>33</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.13</p>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <p>6</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.51</p>
-                                                </td>
                                                 <td>
                                                     <p>22</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.10</p>
+                                                    <p>1.02</p>
+                                                </td>
+                                                <td>
+                                                    <p>34</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.14</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>7</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.53</p>
-                                                </td>
-                                                <td>
                                                     <p>23</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.03</p>
+                                                </td>
+                                                <td>
+                                                    <p>35</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.15</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.04</p>
+                                                </td>
+                                                <td>
+                                                    <p>36</p>
                                                 </td>
                                                 <td>
                                                     <p>1.16</p>
@@ -1027,13 +843,83 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>8</p>
+                                                    <p>25</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.56</p>
+                                                    <p>1.05</p>
                                                 </td>
                                                 <td>
-                                                    <p>24</p>
+                                                    <p>37</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.17</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>26</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.06</p>
+                                                </td>
+                                                <td>
+                                                    <p>38</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.18</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>27</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.07</p>
+                                                </td>
+                                                <td>
+                                                    <p>39</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.19</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>28</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.08</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.20</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>29</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.09</p>
+                                                </td>
+                                                <td>
+                                                    <p>41</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.21</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>30</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.10</p>
+                                                </td>
+                                                <td>
+                                                    <p>42</p>
                                                 </td>
                                                 <td>
                                                     <p>1.22</p>
@@ -1041,108 +927,24 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>9</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.58</p>
-                                                </td>
-                                                <td>
-                                                    <p>25</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.28</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>10</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.61</p>
-                                                </td>
-                                                <td>
-                                                    <p>26</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.34</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>11</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.64</p>
-                                                </td>
-                                                <td>
-                                                    <p>27</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.41</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>12</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.68</p>
-                                                </td>
-                                                <td>
-                                                    <p>28</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.48</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>13</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.72</p>
-                                                </td>
-                                                <td>
-                                                    <p>29</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.55</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>14</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.75</p>
-                                                </td>
-                                                <td>
-                                                    <p>30</p>
-                                                </td>
-                                                <td>
-                                                    <p>1.63</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>15</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.78</p>
-                                                </td>
-                                                <td>
                                                     <p>31</p>
                                                 </td>
                                                 <td>
-                                                    <p>1.71</p>
+                                                    <p>1.11</p>
+                                                </td>
+                                                <td>
+                                                    <p>43</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.24</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <p>16</p>
+                                                    <p>32</p>
                                                 </td>
                                                 <td>
-                                                    <p>0.82</p>
+                                                    <p>1.12</p>
                                                 </td>
                                                 <td>
                                                     <p></p>
@@ -1152,6 +954,255 @@
                                                 </td>
                                             </tr>
                                         </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Shield Mastery</div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.50</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.70</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.85</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                                <td>
+                                                    <p>2.00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Buffs</div>
+                                        <ul>
+                                            <li>
+                                                If you have more than one of these, you multiply all of your buffs into
+                                                the formula.
+                                            </li>
+                                            <li>
+                                                Buffs within the same table do not stack.
+                                            </li>
+                                        </ul>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>buff</p>
+                                                </th>
+                                                <th>
+                                                    <p>level</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.30</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.50</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>4</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.60</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>5</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.70</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bless Shield</p>
+                                                </td>
+                                                <td>
+                                                    <p>6</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Clan Withstand-Attack</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>?</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Guard Stance</p>
+                                                </td>
+                                                <td>
+                                                    <p>1+</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.50</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Under the Protection of Pa'agrio</p>
+                                                </td>
+                                                <td>
+                                                    <p>1</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.30</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Under the Protection of Pa'agrio</p>
+                                                </td>
+                                                <td>
+                                                    <p>2</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Under the Protection of Pa'agrio</p>
+                                                </td>
+                                                <td>
+                                                    <p>3</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.50</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Set Bonus</div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>set</p>
+                                                </th>
+                                                <th>
+                                                    <p>Modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Avadon heavy</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.24</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Crystal heavy</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.18</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Doom heavy</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.24</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Full Plate</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.0526</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Infinity Axe</div>
+                                        <br>
+                                        <p class="center-text">
+                                            If you have this, multiply your shield block rate by 1.39
+                                        </p>
                                         <br>
                                     </div>
                                     <div class="black-v-line"></div>
