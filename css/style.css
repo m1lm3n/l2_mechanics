@@ -357,6 +357,7 @@ main {
     text-align: center;
     font-size: 12px;
     filter: drop-shadow(2px 4px 2px #0000009c);
+    color: white;
 }
 
 /* .nav-header:hover {
