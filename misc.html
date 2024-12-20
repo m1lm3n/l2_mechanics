@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/loader.css">
 
     <script type="text/javascript" src="./js/core.js"></script>
+    <script type="text/javascript" src="./js/addon_misc.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -381,10 +382,10 @@
                                                             </div>
                                                         </a>
                                                         <a class="menu-link" href="../buffs.html">
-                                                            <div class="nav-item"><img class="icon-menu-4"
+                                                            <button disabled class="nav-item"><img class="icon-menu-4"
                                                                     src="../img/items/skill0000.png" />
                                                                 <div class="nav-text">Misc.</div>
-                                                            </div>
+                                                            </button>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -712,9 +713,9 @@
                         </div>
                     </a>
                     <a class="menu-link" href="../buffs.html">
-                        <div class="nav-item"><img class="icon-menu-4" src="../img/items/skill0000.png" />
+                        <button disabled class="nav-item"><img class="icon-menu-4" src="../img/items/skill0000.png" />
                             <div class="nav-text">Misc.</div>
-                        </div>
+                        </button>
                     </a>
                 </div>
             </div>
@@ -724,7 +725,7 @@
             <div class="gui-frame">
                 <div class="gui-frame-left"></div>
                 <div class="gui-frame-mid"></div>
-                <div class="breadscrumbs"> Home </div>
+                <div class="breadscrumbs">Miscellaneous Info</div>
                 <div class="gui-frame-mid"></div>
                 <div class="gui-frame-back"></div>
                 <div onclick="show_conf()" class="btn-close"></div>
@@ -745,194 +746,459 @@
                                 <div class="middle-container">
                                     <div class="black-v-line"></div>
                                     <div class="container-inner">
-                                        <br>
-                                        <div class="main-header">
-                                            <p>Welcome! You are in the information portal of one of the famous games
-                                                Lineage 2.</p>
-                                            <p>Information on this portal actually till Interlude Chronicles.</p>
-                                            <p>This is a rework of one of the information portals <a
-                                                    href="http://l2p.lacrafter.ru/" target="blank">l2p.lacrafter.ru</a>
-                                            </p>
+                                        <div class=" header center-text">PVP Damage Bonus</div>
 
-                                            <p>Due to country restrictions on <a href="http://l2p.lacrafter.ru/"
-                                                    target="blank">l2p.lacrafter.ru</a>
-                                                because it has a
-                                                Russian domain name it couldn't be displayed in many countries.</p>
-
-
-                                            <p>Here you will find out how physics in Lineage 2 actually works.</p>
-                                            <P>This site absolutely does not have any advertisements, feel free to share
-                                                it
-                                                with your friends.<br>
-
-                                        </div>
-
+                                        <ul>
+                                            <li>
+                                                Hero, A and S Grade weapons with an SA increase damage done by normal
+                                                hits and skills by 5%</li>
+                                            <li>
+                                                There isn't an observed damage bonus for having reached noblesse status
+                                            </li>
+                                        </ul>
                                         <hr class="solid">
                                         <br>
-                                        <div class="header center-text">
-                                            <p>Credits and Thank-You's</p>
-                                        </div>
+                                        <div class=" header center-text">Regarding Bows</div>
+                                        <ul>
+                                            <li>
+                                                Bows have an attack speed restriction called Weapon Delay (aka the red
+                                                bar). It's the same thing that forces you to wait on a physical skill to
+                                                recharge.
+                                                <ul>
+                                                    <li>
+                                                        A Weapon Delay is applied at the start of a bow attack.
+                                                    </li>
+                                                    <li>
+                                                        A second attack cannot be made until the weapon delay from the
+                                                        first attack is over.
+                                                    </li>
+                                                    <li>
+                                                        Formula for maximum bow shots per second appears to be
+                                                        (Atk.Spd./1000)*(1500/Weapon Delay)
+                                                    </li>
+                                                    <li>
+                                                        Normal bows have a base Weapon Delay of 1500
+                                                    </li>
+                                                    <li>
+                                                        Yumi bows have a base Weapon Delay of 820
+                                                    </li>
+                                                    <li>
+                                                        Standing still and with no SA, normal bows and yumi bows shoot
+                                                        the exact same number of shots per second.
+                                                    </li>
+                                                    <li>
+                                                        Normal Bows allow faster use of skills and more kiteability due
+                                                        to having a higher Atk. Spd. while Yumi Bows have significant
+                                                        P.Atk.
+                                                    </li>
+                                                    <li>
+                                                        The SA "Quick Recovery" reduces the red bar Weapon Delay on a
+                                                        bow to the following:
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bow of Peril</p>
+                                                </td>
+                                                <td>
+                                                    <p>1310</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Crystaliized Ice Bow</p>
+                                                </td>
+                                                <td>
+                                                    <p>1248</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elemental Bow</p>
+                                                </td>
+                                                <td>
+                                                    <p>639</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Shyeed's Bow</p>
+                                                </td>
+                                                <td>
+                                                    <p>680</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Soul Bow</p>
+                                                </td>
+                                                <td>
+                                                    <p>697</p>
+                                                </td>
+                                            </tr>
+                                        </table>
                                         <br>
-                                        <div class="center-text">
-                                            <p>Here is a list of the people who have contributed to the information that
-                                                is
-                                                located in this portal.</p>
-                                        </div>
+                                        <hr class="solid">
                                         <br>
-                                        &#9679 ForsakenFlame - various corrections and a couple of additions to l2calc
-                                        FPCalc, a Japanese Lineage 2 Calculator, for introducing the Japanese community
-                                        to
-                                        L2Calc. <br>
-                                        &#9679 billy - for offering to host L2Calc on l2guru, and keeping it up all this
-                                        time <br>
-                                        &#9679 Chair - helped out quite a lot with Dwarf skills <br>
-                                        &#9679 <a href="https://cromik.exblog.jp/" target="blank">cromik.exblog.jp</a> -
-                                        some of the buff/passive
-                                        info comes from
-                                        here. <br>
-                                        &#9679 DAISEN - various corrections and a couple of additions to l2calc <br>
-                                        &#9679 Dargaard - provided both useful information and a simplification of the
-                                        HP
-                                        formulas for all classes
+                                        <div class=" header center-text">Base Weapon Range</div>
                                         <br>
-                                        &#9679 himred - provided quite a lot of buff statistical data. A lot of the
-                                        Chronicle 5 skills were <br>
-                                        extrapolated as a result of this man's talent. <br>
-                                        &#9679 hostility - this guy has supplied quite a considerable amount of
-                                        "endgame"
-                                        info - hard to get and
-                                        probably wouldn't be known without hostility's support <br>
-                                        &#9679 iuztrewq - lots of support over time, especially with finding my mitsakes
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>type</p>
+                                                </th>
+                                                <th>
+                                                    <p>modifier</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Blunt</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Bow</p>
+                                                </td>
+                                                <td>
+                                                    <p>500</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dagger</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dual Fist</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Polearm</p>
+                                                </td>
+                                                <td>
+                                                    <p>80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Sword</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Etc (spellbook)</p>
+                                                </td>
+                                                <td>
+                                                    <p>40</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Weaponless</p>
+                                                </td>
+                                                <td>
+                                                    <p>20</p>
+                                                </td>
+                                            </tr>
+                                        </table>
                                         <br>
-                                        &#9679 Lance - support in a couple of ways. Lance is one of the first and most
-                                        beneficial members of the
-                                        English-speaking Lineage 2 community. <br>
-                                        &#9679 loopback - javascript help; is the reason why L2Calc doesn't lag much in
-                                        Internet Explorer <br>
-                                        &#9679 Serinda Arnimane - for providing a great deal of help over time,
-                                        especially
-                                        early on. Wouldn't be
-                                        where
-                                        we are without you. <br>
-
-                                        <div class="credits">
-                                            <div class="cont-1">
-                                                &#9679 AACRJimbo <br>
-                                                &#9679 Aeze <br>
-                                                &#9679 Anakozel <br>
-                                                &#9679 AnGrYKiD <br>
-                                                &#9679 APTX4869 <br>
-                                                &#9679 Ask_A_Question <br>
-                                                &#9679 Auro <br>
-                                                &#9679 Blitzball <br>
-                                                &#9679 Borda <br>
-                                                &#9679 botserver <br>
-                                                &#9679 Claira <br>
-                                                &#9679 Communism <br>
-                                                &#9679 Coriantumr <br>
-                                                &#9679 Craylon <br>
-                                                &#9679 CrShNbRn <br>
-                                                &#9679 Dalavita <br>
-                                                &#9679 davviddd <br>
-                                            </div>
-                                            <div class="cont-2">
-                                                &#9679 Degia <br>
-                                                &#9679 deg <br>
-                                                &#9679 Degia <br>
-                                                &#9679 DemonStar <br>
-                                                &#9679 DininX <br>
-                                                &#9679 Dracan <br>
-                                                &#9679 Emina <br>
-                                                &#9679 eric <br>
-                                                &#9679 EternalElement <br>
-                                                &#9679 fel <br>
-                                                &#9679 Ferine <br>
-                                                &#9679 flcon16 <br>
-                                                &#9679 flus <br>
-                                                &#9679 Fumiko <br>
-                                                &#9679 Goldshlager <br>
-                                                &#9679 davviddd <br>
-                                                &#9679 Degia <br>
-
-                                            </div>
-                                            <div class="cont-3">
-                                                &#9679 deg <br>
-                                                &#9679 Degia <br>
-                                                &#9679 DemonStar <br>
-                                                &#9679 DininX <br>
-                                                &#9679 Dracan <br>
-                                                &#9679 Emina <br>
-                                                &#9679 eric <br>
-                                                &#9679 EternalElement <br>
-                                                &#9679 fel <br>
-                                                &#9679 Ferine <br>
-                                                &#9679 flcon16 <br>
-                                                &#9679 flus <br>
-                                                &#9679 Fumiko <br>
-                                                &#9679 Goldshlager <br>
-                                                &#9679 gr4vity <br>
-                                                &#9679 HeadHunter <br>
-                                                &#9679 Hrolf <br>
-                                            </div>
-                                            <div class="cont-4">
-                                                &#9679 iono <br>
-                                                &#9679 IronSmith <br>
-                                                &#9679 Ireral <br>
-                                                &#9679 Jestine <br>
-                                                &#9679 Kane1 <br>
-                                                &#9679 kathooloo <br>
-                                                &#9679 Keian <br>
-                                                &#9679 Kieran <br>
-                                                &#9679 Kilgore <br>
-                                                &#9679 Kirill <br>
-                                                &#9679 koev <br>
-                                                &#9679 krowv <br>
-                                                &#9679 kvza <br>
-                                                &#9679 Luca <br>
-                                                &#9679 Lvrene <br>
-                                                &#9679 maian <br>
-                                                &#9679 -mal- <br>
-
-                                            </div>
-                                            <div class="cont-5">
-                                                &#9679 Martzch <br>
-                                                &#9679 michelgaetano <br>
-                                                &#9679 MooMooCow <br>
-                                                &#9679 Mugi <br>
-                                                &#9679 Nanny <br>
-                                                &#9679 NinjaLoot <br>
-                                                &#9679 Nya <br>
-                                                &#9679 Orlox <br>
-                                                &#9679 Pakas <br>
-                                                &#9679 playa <br>
-                                                &#9679 Populus <br>
-                                                &#9679 prow1er <br>
-                                                &#9679 purehobby <br>
-                                                &#9679 Rairden <br>
-                                                &#9679 RANDOM <br>
-                                                &#9679 Shawnta* <br>
-                                                &#9679 SilverSurfer1 <br>
-                                            </div>
-
-                                            <div class="cont-6">
-                                                &#9679 small <br>
-                                                &#9679 soultaker <br>
-                                                &#9679 Stubbie <br>
-                                                &#9679 Sunspark <br>
-                                                &#9679 SyntesizeR <br>
-                                                &#9679 Tsakiris <br>
-                                                &#9679 ttekert <br>
-                                                &#9679 TwistedElvis <br>
-                                                &#9679 Valador <br>
-                                                &#9679 Veirilli <br>
-                                                &#9679 Vina <br>
-                                                &#9679 Vlahd <br>
-                                                &#9679 warefare <br>
-                                                &#9679 whaiyun <br>
-                                                &#9679 Xadhoom <br>
-                                                &#9679 xmode <br>
-                                            </div>
-                                        </div>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Breath Bonus</div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>Race</p>
+                                                </th>
+                                                <th>
+                                                    <p>Bonus</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Elf</p>
+                                                </td>
+                                                <td>
+                                                    <p>150</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dwarf</p>
+                                                </td>
+                                                <td>
+                                                    <p>80</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elf</p>
+                                                </td>
+                                                <td>
+                                                    <p>150</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Human</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Orc</p>
+                                                </td>
+                                                <td>
+                                                    <p>90</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <hr class="solid">
+                                        <br>
+                                        <div class=" header center-text">Fall Safe Height</div>
+                                        <br>
+                                        <table class="table-4">
+                                            <tr>
+                                                <th>
+                                                    <p>Type</p>
+                                                </th>
+                                                <th>
+                                                    <p>Gender</p>
+                                                </th>
+                                                <th>
+                                                    <p>Height</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Elf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>380</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Elf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>350</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Elf Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>330</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dark Elf Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>300</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dwarf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>200</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Dwarf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>180</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>380</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elf Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>350</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elf Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>330</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elf Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>300</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Human Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>270</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Human Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>250</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Human Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>220</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Human Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>200</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Orc Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>220</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Orc Fighter</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>200</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Orc Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>F</p>
+                                                </td>
+                                                <td>
+                                                    <p>280</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Orc Mystic</p>
+                                                </td>
+                                                <td>
+                                                    <p>M</p>
+                                                </td>
+                                                <td>
+                                                    <p>250</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
                                     </div>
                                     <div class="black-v-line"></div>
                                 </div>
