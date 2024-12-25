@@ -20,7 +20,7 @@ html * {
 body {
     background-color: #222222;
     color: #e6d9be;
-    font-family:"Calibri", sans-serif;
+    font-family: "Calibri", sans-serif;
     overflow-x: hidden;
     position: relative;
     line-height: 120%;
@@ -232,11 +232,13 @@ main {
     -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     -o-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    transition: opacity 1s;
+
 }
 
 .navigation-is-open main {
-    visibility: hidden;
-
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .main-header {
@@ -401,12 +403,13 @@ footer {
     -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     -o-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    transition: opacity 1s;
 
 }
 
 .navigation-is-open footer {
-    visibility: hidden;
-
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .footer {
@@ -472,6 +475,7 @@ footer {
     justify-content: stretch;
     padding: 0px;
 }
+
 .flex-3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -685,10 +689,12 @@ table tr:nth-child(even) {
     background-color: #e6d9be;
     color: #191511;
 }
+
 .table-2 tr:first-child th>* {
     background-color: #c0a038;
 
 }
+
 .table-3 tr td>* {
     text-align: center;
     width: auto;
@@ -698,6 +704,7 @@ table tr:nth-child(even) {
     text-align: center;
     width: 100%;
 }
+
 .table-4 {
     text-align: center;
     width: auto;
@@ -717,6 +724,7 @@ table tr:nth-child(even) {
     background-color: #c0a038;
 
 }
+
 .items {
     margin-top: 8px;
     margin-bottom: 4px;
