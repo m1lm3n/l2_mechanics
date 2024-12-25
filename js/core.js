@@ -100,17 +100,25 @@ jQuery(document).ready(function ($) {
             if ($(this).parents('.csstransitions').length > 0) {
                 // $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
                 isLateralNavAnimating = true;
+
             }
 
             $('body').toggleClass('navigation-is-open');
+
             $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
                 //animation is over
                 // $(".cd-navigation-wrapper").css("padding", "0px");
                 isLateralNavAnimating = false;
+                $('body').toggleClass('mobile-is-open');
+                console.log("asd");
             });
         }
-        // else{
-        //     $(".cd-navigation-wrapper").css("padding","0px 50% 0px 0px");
+        // else {
+        //     $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+        //         //animation is over
+        //         // $(".cd-navigation-wrapper").css("padding", "0px");
+        //         $('body').toggleClass('mobile-is-open');
+        //     });
         // }
     });
     // Optimization: Store the references outside the event handler:
@@ -119,10 +127,12 @@ jQuery(document).ready(function ($) {
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize >= 1024) {
-            if($('body').hasClass('navigation-is-open')){
+            if ($('body').hasClass('navigation-is-open')) {
                 $('body').toggleClass('navigation-is-open');
+                $('body').toggleClass('mobile-is-open');
+
             }
-        
+
         }
     }
     // Execute on load

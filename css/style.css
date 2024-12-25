@@ -235,9 +235,8 @@ main {
 }
 
 .navigation-is-open main {
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
+    visibility: hidden;
+
 }
 
 .main-header {
@@ -406,9 +405,8 @@ footer {
 }
 
 .navigation-is-open footer {
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
+    visibility: hidden;
+
 }
 
 .footer {
